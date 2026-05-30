@@ -6,7 +6,7 @@ draft: false
 categories: ["Coretan]
 tags: ["100daystooffload"]
 slug: "Gaya Bahasa dalam Memotret Sejarah Rasulullah"
-cover: "featured-rasulullah.jpg"
+cover: "featured-muhammad.jpg"
 ---
 
 Awal bulan Februari tahun ini saya membaca tulisan influencer di instagram. Balqis namanya, khas dengan fotonya ditambah kata kata clickbait dengan cerita yang asik dibaca khas bahasa anak jaman sekarang.
