@@ -1,15 +1,14 @@
 ---
-title: Menimbang Gaya Bahasa Balqis dalam Memotret Sejarah Rasulullah
-slug: Gaya Bahasa dalam Memotret Sejarah Rasulullah
+title: "Menimbang Gaya Bahasa Balqis dalam Memotret Sejarah Rasulullah"
 date: 2026-02-28
-description: 
-categories: Coretan
-tags: 
-    - 100daystooffload
-showComments: true
-showTableOfContents: false
+description: ""
 draft: false
+categories: ["Coretan]
+tags: ["100daystooffload"]
+slug: "Gaya Bahasa dalam Memotret Sejarah Rasulullah"
+cover: "featured-rasulullah.jpg"
 ---
+
 Awal bulan Februari tahun ini saya membaca tulisan influencer di instagram. Balqis namanya, khas dengan fotonya ditambah kata kata clickbait dengan cerita yang asik dibaca khas bahasa anak jaman sekarang.
 
 *Disclaimer: ini hanya opini pribadi saya, dan saya belum melihat seluruh kontennya hanya konten terbarunya saja.*
