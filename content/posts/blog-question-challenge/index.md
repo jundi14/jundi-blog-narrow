@@ -1,14 +1,12 @@
 ---
-title: Refleksi diri lewat Blog Question Challenge
-slug: Blog Question Challenge
+title: "Refleksi diri lewat Blog Question Challenge"
 date: 2026-03-12
-description: 
-categories: Blogging
-tags: 
-    - 100daystooffload
-showComments: true
-showTableOfContents: true
+description: ""
 draft: false
+categories: ["Blogging]
+tags: ["100daystooffload"]
+slug: "Blog Question Challenge"
+cover: "featured-blog-question.jpg"
 ---
 
 ## Sejak kapan anda mulai ngeblog?
