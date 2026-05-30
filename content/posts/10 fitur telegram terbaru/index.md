@@ -1,12 +1,12 @@
 ---
-title: Sangat Membantu! Inilah 10 Fitur Telegram Yang Sangat Menarik
-slug: fitur telegram
-description: Fitur-fitur telegram yang sangat menarik
-categories: Teknologi
+title: "Sangat Membantu! Inilah 10 Fitur Telegram Yang Sangat Menarik"
 date: 2021-11-23
-tags:
-showComments: true
-showTableOfContents: true
+description: ""
+draft: false
+categories: ["Teknologi"]
+tags: [""]
+slug: "fitur telegram"
+cover: "featured.jpg"
 ---
 
 Telegram adalah aplikasi pesan instan yang merupakan pesaing Whatsapp. Walaupun telegram diluncurkan setelah whatsapp atau bisa dibilang lebih muda, akan tetapi menurut saya fitur di telegram ini sangat menarik dan jauh lebih banyak dibandingkan whatsapp.
