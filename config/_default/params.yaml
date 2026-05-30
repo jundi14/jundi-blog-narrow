@@ -5,7 +5,7 @@ defaultAuthor: "Jundi Mubarok"
 language: "en"
 shortName: "Jundi" # PWA
 images:
-  - "/images/og-default.avif"
+  - "sampul.avif"
 
 # Favicon
 favicon:
@@ -33,7 +33,7 @@ header:
     link: "/" # Click to home page
   # UI Components Control (header controls)
   showThemeSwitch: true # Set to false to hide theme style switcher (palette icon)
-  showDarkModeSwitch: true # Set to false to hide dark mode switcher (sun/moon icon)
+  showDarkModeSwitch: false # Set to false to hide dark mode switcher (sun/moon icon)
   showLanguageSwitch: false # Set to false to hide language switcher
   languageSwitchMode: "dropdown" # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
 
@@ -109,7 +109,7 @@ post:
   showRelated: false # show related posts
   relatedPostsCount: 3 # posts number
   license:
-    show: false
+    show: true
     author: "Jundi Mubarok"
     name: "CC BY-NC-SA 4.0"
     description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."

@@ -2,7 +2,7 @@ baseURL: https://example.org/
 locale: en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-title: Jundi Blog
+title: Beranda
 theme: "hugo-narrow"
 
 hasCJKLanguage: true
