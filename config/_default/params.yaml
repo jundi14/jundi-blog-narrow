@@ -20,10 +20,13 @@ author:
   social:
     - name: "Instagram"
       url: "https://instagram.com/jundi.mubarok"
-      icon: "instagram"
+      icon: "instagram-bold"
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
       icon: "threads"
+    - name: Support
+      url: "https://nihbuatjajan.com/jundi/"
+      icon: "coffee"
 
 # Header configuration (modularized)
 header:
@@ -49,7 +52,7 @@ contentWidth: "50rem"
 # TOC (Table of Contents)
 toc:
   enabled: true # Enable or disable TOC globally
-  position: "center" # Options: center | side
+  position: "side" # Options: center | side
 
 # Default color scheme
 colorScheme: "nord"
@@ -112,7 +115,7 @@ post:
     show: true
     author: "Jundi Mubarok"
     name: "CC BY-NC-SA 4.0"
-    description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."
+    description: "Atribusi-NonKomersial-BerbagiSerupa"
     url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     displayName: "CC BY-NC-SA 4.0"
 

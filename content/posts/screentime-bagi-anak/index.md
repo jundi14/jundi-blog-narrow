@@ -1,12 +1,12 @@
 ---
-title: Distraksi Yang Luar Biasa Dari Layar Gadget
-slug: distraksi-layar-gadget
-description: 
-categories: Coretan
+title: "Distraksi Yang Luar Biasa Dari Layar Gadget"
 date: 2025-05-23
-tags:
+description: ""
 draft: false
-showComments: true
+categories: ["Coretan"]
+tags: [""]
+slug: "distraksi-layar-gadget"
+cover: "featured-screentime.jpg"
 ---
 
 Dengan kondisi ruangan yang gelap dan semburat cahaya dari lampu LED teras rumah, dan kubuat ruangan senyaman mungkin untuk anak tidur.

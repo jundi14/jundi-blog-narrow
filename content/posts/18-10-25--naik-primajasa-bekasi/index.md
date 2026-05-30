@@ -1,13 +1,12 @@
 ---
-title: Ke Bekasi, Kali Ini Menggunakan Bus Primajasa
-slug: naik Primajasa bekasi
+title: "Ke Bekasi, Kali Ini Menggunakan Bus Primajasa"
 date: 2025-10-18
-description: Temu kangen orang tua di momen liburan yang sempit
-categories: Coretan
-tags:
-showComments: true
-showTableOfContents: true
+description: ""
 draft: false
+categories: ["Coretan"]
+tags: [""]
+slug: "naik Primajasa bekasi"
+cover: "featured.jpg"
 ---
 
 Pekan kemarin di sekolah tempat saya mengajar ada "wabah" demam masal yang menjadi penyebab lebih dari setengah santri tidak bisa bersekolah sehingga mau diadakan KBM pun kurang kondusif.

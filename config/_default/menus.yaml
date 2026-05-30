@@ -30,13 +30,6 @@ main:
   #   params:
   #     icon: categories
 
-  # - name: Tags
-  #   weight: 2
-  #   pageRef: /tags
-  #   parent: More
-  #   params:
-  #     icon: tags
-
   # - name: Series
   #   weight: 3
   #   pageRef: /series
@@ -51,8 +44,6 @@ main:
   #   params:
   #     icon: projects
 
-
-
 # footer menu
 footer:
   # - name: Timeline
@@ -66,6 +57,12 @@ footer:
     weight: 20
     params:
       icon: about
+    
+  - name: Tags
+    weight: 30
+    pageRef: /tags
+    params:
+      icon: tags
 
   # - name: Resume
   #   pageRef: /resume
@@ -85,7 +82,7 @@ social:
     url: https://instagram.com/jundi.mubarok  
     weight: 10
     params:
-      icon: instagram
+      icon: instagram-bold
   - name: Threads
     url: https://threads.net/@jundi.mubarok
     weight: 20

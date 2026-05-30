@@ -1,14 +1,12 @@
 ---
-title: Whatsapp, Aplikasi Yang Paling Ingin Saya Hapus!
-slug: aplikasi whatsapp
+title: "Whatsapp, Aplikasi Yang Paling Ingin Saya Hapus!"
 date: 2025-11-02
-description: Karena nggak mungkin aplikasi ini saya hapus, dengan banyaknya pengguna whatsapp di Indonesia, sampai-sampai kalau ada yang nggak menggunakan whatsapp muncul pertanyaan
-categories: Teknologi
-tags: 
-    - 100daystooffload
-showComments: true
-showTableOfContents: false
+description: "Karena nggak mungkin aplikasi ini saya hapus, dengan banyaknya pengguna whatsapp di Indonesia, sampai-sampai kalau ada yang nggak menggunakan whatsapp muncul pertanyaan"
 draft: false
+categories: ["Teknologi"]
+tags: ["100daystooffload"]
+slug: "aplikasi whatsapp"
+cover: "featured-whatsapp.jpg"
 ---
 
 ![](/whatsapp.jpg)

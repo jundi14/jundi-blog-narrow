@@ -1,14 +1,12 @@
 ---
-title: Kok Nggak Ada Matanya?
-slug: Kok Nggak Ada Matanya
+title: "Kok Nggak Ada Matanya?"
 date: 2025-10-29
-description: Kok Nggak Ada Matanya? Tanya Putri Pertamaku
-categories: Coretan
-tags: 
-    - 100daystooffload
-showComments: true
-showTableOfContents: false
+description: ""
 draft: false
+categories: ["Coretan"]
+tags: ["100daystooffload"]
+slug: "Kok Nggak Ada Matanya"
+cover: "feature-kok-gada-matanya.jpg"
 ---
 
 "*Kok nggak ada matanya?*" 

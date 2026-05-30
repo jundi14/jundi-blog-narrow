@@ -1,14 +1,12 @@
 ---
-title: Mulai Dari Nol Yaa
-slug: Mulai Dari Nol Yaa
+title: "Mulai Dari Nol Yaa"
 date: 2025-10-27
-description: Blog menjadi salah satu cara untuk mencurahkan pikiran paling bebas yang pernah ada. Dari sini ide dan gagasan mulai berkembang
-categories: Coretan
-tags: 
-    - 100daystooffload
-showComments: true
-showTableOfContents: false
+description: "Blog menjadi salah satu cara untuk mencurahkan pikiran paling bebas yang pernah ada. Dari sini ide dan gagasan mulai berkembang"
 draft: false
+categories: ["Coretan"]
+tags: ["100daystooffload"]
+slug: "Mulai Dari Nol Yaa"
+cover: "featured.jpg"
 ---
 Saya pernah menulis di threads dengan menyemangati -*untuk diri sendiri pastinya*- untuk menulis setiap hari selama 100 hari berturut-turut.
 

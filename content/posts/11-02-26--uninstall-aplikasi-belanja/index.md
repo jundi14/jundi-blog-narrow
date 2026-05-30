@@ -1,14 +1,12 @@
 ---
-title: Jebakan Swipe dan Kenapa Saya Memilih Uninstall Aplikasi Belanja
-slug: Uninstall Aplikasi Belanja
+title: "Jebakan Swipe dan Kenapa Saya Memilih Uninstall Aplikasi Belanja"
 date: 2026-02-11
-description: 
-categories: Coretan
-tags: 
-    - 100daystooffload
-showComments: true
-showTableOfContents: false
+description: ""
 draft: false
+categories: ["Coretan"]
+tags: ["100daystooffload"]
+slug: "Uninstall Aplikasi Belanja"
+cover: "featured-jebakan-swipe.jpg"
 ---
 
 Pernahkah kamu membuka HP hanya untuk mengecek satu notifikasi penting, tapi tanpa sadar setengah jam berlalu begitu saja? Niatnya cek WhatsApp, tapi malah "nyasar" ke aplikasi belanja online, ujung-ujungnya sedang menimbang-nimbang apakah harus _check out_ _waist bag_ yang sudah lama diidamkan.
