@@ -15,7 +15,7 @@ favicon:
 author:
   name: "Jundi Mubarok"
   title: "Ngobrol Lewat Tulisan Ringan"
-  description: "Suka mempelajari hal baru dan kadang ditulis ditulis di blog ini"
+  description: "Suka mempelajari hal baru dan kadang ditulis di blog ini"
   avatar: "profile.svg"
   social:
     - name: "Instagram"
@@ -39,7 +39,7 @@ header:
 
 # Dock display mode
 # Options: "scroll" (show on scroll up), "always" (always visible), "float" (floating button)
-dock: "float"
+dock: "scroll"
 
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
