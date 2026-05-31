@@ -121,23 +121,11 @@ post:
 
 # Comments
 comments:
-  enabled: false
+  enabled: true
   # giscus, disqus, utterances, waline, artalk, twikoo
-  system: "giscus"
-  giscus:
-    repo: "tom2almighty/hugo-narrow-giscus"
-    repoId: "R_kgDOO2gwLg"
-    category: "General"
-    categoryId: "DIC_kwDOO2gwLs4CrEaf"
-    mapping: "pathname"
-    strict: "0"
-    reactionsEnabled: "1"
-    emitMetadata: "0"
-    inputPosition: "bottom"
-    theme: "preferred_color_scheme"
-    lang: "en"
+  system: "disqus"
   disqus:
-    shortname: ""
+    shortname: "jundi14"
   utterances:
     repo: ""
     issueTerm: "pathname"
@@ -146,13 +134,13 @@ comments:
   
 # Analytics
 analytics:
-  enabled: false
+  enabled: true
   google:
     enabled: false
     id: "your-google-analytics-id"
   umami:
-    enabled: false
-    id: "your-umami-website-id"
+    enabled: true
+    id: "e8882eba-fabe-4ac5-aeb9-aa30d4ab63c2"
     src: "https://umami.com/myscript.js"
     domains: "example.domain.com"
 

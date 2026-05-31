@@ -1,17 +1,17 @@
 main:
-  - name: Blog
+  - name: Posts
     pageRef: /posts
     weight: 10
     params:
       icon: posts
 
-  - name: Arsip
+  - name: Archives
     pageRef: /archives
     weight: 20
     params:
       icon: archive
 
-  - name: Kategori
+  - name: Categories
     pageRef: /categories
     weight: 30
     params:
