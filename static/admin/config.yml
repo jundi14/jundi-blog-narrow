@@ -26,6 +26,9 @@ collections:
     layout: "about" # Gunakan layout khusus untuk halaman about
     folder: "content/about"   # Bagus, garis miring di depan sudah dihapus
     create: false
+    path: "index" # Memastikan CMS mengedit file content/about/index.md
+    media_folder: "" # Kosongkan agar gambar diunggah ke folder yang sama (content/about)
+    public_folder: "" # Kosongkan agar di dalam Markdown tertulis nama file gambarnya saja (misal: "foto.jpg")
     slug: "{{slug}}" # Karena foldernya sudah unik (pakai slug), nama file cukup index saja melalui properti path.
     fields:
       - { label: "Title", name: "title", widget: "string" }
