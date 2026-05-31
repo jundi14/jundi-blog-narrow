@@ -6,7 +6,7 @@ draft: false
 categories: ["Blogging"]
 tags: [""]
 slug: "Secure Header di Netlify"
-cover: "feature.jpg"
+cover: "featured.jpg"
 ---
 
 Apa itu Security header?
