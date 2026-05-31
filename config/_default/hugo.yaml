@@ -2,7 +2,7 @@ baseURL: https://example.org/
 locale: en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-title: Home
+title: Jundi Mubarok
 theme: "hugo-narrow"
 
 hasCJKLanguage: true
