@@ -6,7 +6,7 @@ draft: false
 categories: ["Blogging"]
 tags: [""]
 slug: "apa itu webp"
-cover: "featured"
+cover: "featured.jpg"
 ---
 
 ## Prolog Sebelum WebP
