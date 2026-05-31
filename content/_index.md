@@ -10,8 +10,8 @@ author:
   social:
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
-      icon: "threads"
-    - name: Support
+      icon: "mingcute--threads-fill"
+    - name: "Donate"
       url: "https://nihbuatjajan.com/jundi/"
-      icon: "coffee"
+      icon: "mingcute--receive-money-fill"
 ---
