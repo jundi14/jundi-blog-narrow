@@ -41,7 +41,7 @@ Selain itu whatsapp juga punya keterbatasan lain, misal:
 
 Telegram punya jauhh lebih banyak fitur dibandingkan dengan whatsapp, walaupun memang ada versi premiumnya tapi fitur gratis saja sudah lebih dari cukup. 
 
-![Fitur Telegram Premium](/screenshot-telegram.jpg)
+![Fitur Telegram Premium](screenshot-telegram.jpg)
 
 Fitur premium di telegram biasanya diperlukan untuk meningkatkan fitur tertentu di beberapa aspek, misalnya :
 - meningkatkan kecepatan download
