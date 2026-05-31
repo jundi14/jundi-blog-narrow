@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: jundi14/jundi-blog-narrow
   branch: master 
 media_folder: "static/images"
 public_folder: "/images"
@@ -9,8 +10,7 @@ collections:
     folder: "content/posts"   # Bagus, garis miring di depan sudah dihapus
     path: "{{slug}}/index"     # Tepat untuk Hugo Page Bundles (tanpa .md)
     create: true
-    # Properti 'nested' dihapus karena sudah digantikan fungsinya secara rapi oleh 'path'
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"           # Karena foldernya sudah unik (pakai slug), nama file cukup index saja melalui properti path.
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Karena foldernya sudah unik (pakai slug), nama file cukup index saja melalui properti path.
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
