@@ -1,5 +1,6 @@
 ---
 title: "Tentang"
+layout: "about"
 ---
 
 ## Siapa Saya
