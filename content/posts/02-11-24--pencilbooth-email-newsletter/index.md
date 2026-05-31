@@ -1,13 +1,12 @@
 ---
-title: Pencilbooth, Layanan Email Newsletter Sederhana Tapi Tetap Customable
-slug: pencilbooth email newsletter
-description:
-categories: Teknologi
+title: "Pencilbooth, Layanan Email Newsletter Sederhana Tapi Tetap Customable"
 date: 2024-11-02
-tags:
-showComments: true
-showTableOfContents: true
+description: ""
 draft: false
+categories: ["Teknologi"]
+tags: [""]
+slug: "pencilbooth email newsletter"
+cover: "feature-pencilbooth.jpg"
 ---
 
 Saya menemukan aplikasi email newsletter yang cukup sederhana tetapi menarik untuk dicoba dan sepertinya belum banyak orang yang menggunakannya, apa itu?

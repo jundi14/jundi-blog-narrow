@@ -1,13 +1,12 @@
 ---
-title: Letterbird, Layanan Form Contact Yang Simpel Dan Fungsional
-slug: letterbird form contact
-description:
-categories: Teknologi
+title: "Letterbird, Layanan Form Contact Yang Simpel Dan Fungsional"
 date: 2024-11-03
-tags:
-showComments: true
-showTableOfContents: true
+description: ""
 draft: false
+categories: ["Teknologi"]
+tags: [""]
+slug: "letterbird form contact"
+cover: "feature-letter.jpg"
 ---
 
 Saat ini saya menggunakan website statis dari hugo dan tidaklah semudah ketika ingin menambahkan form kontak supaya seseorang bisa dengan mudah menghubungi saya via email, karena pada hugo tidak ada plugin seperti wordpress yang bisa dengan menambahkan form kontak.

@@ -1,13 +1,12 @@
 ---
-title: Serabi, Makanan Tradisional Yang Nikmat Dan Murah
-slug: serabi makanan tradisional murah
-description: Serabi merupakan makanan tradisional yang nikmat dan murah dimasak menggunakan tungku yang berbahan tanah liat dengan menggunakan kayu bakar.
-categories: Coretan
+title: "Serabi, Makanan Tradisional Yang Nikmat Dan Murah"
 date: 2024-10-28
-tags:
-showComments: true
-showTableOfContents: true
+description: ""
 draft: false
+categories: ["Coretan"]
+tags: [""]
+slug: "Serabi, Makanan Tradisional Yang Nikmat Dan Murah"
+cover: "feature-serabi.jpg"
 ---
 
 Di pagi minggu yang cerah banyak sekali yang menjajakan makanan di pusat keramaian, salah satunya di OSG (Open Space Gallery) yang berlokasi di antara Desa Bojong dan Desa Linggasana.

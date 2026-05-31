@@ -1,12 +1,12 @@
 ---
-title: Lebaran Tahun Ini Di Kereta Api
-slug: lebaran di kereta
-description: 
-categories: Coretan
+title: "Lebaran Tahun Ini Di Kereta Api"
 date: 2025-04-06
-tags:
+description: ""
 draft: false
-showComments: true
+categories: ["Coretan"]
+tags: [""]
+slug: "lebaran di kereta"
+cover: "feature-mudik-lebaran.jpg"
 ---
 
 Mudik tepat di hari lebaran, tanggal 1 syawal 1446 -31 Maret 2025- bukanlah hal yang ingin saya lakukan, tapi ada alasan sehingga saya terpaksa mengambil di tanggal tersebut.

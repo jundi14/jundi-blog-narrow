@@ -1,13 +1,12 @@
 ---
-title: Mudik Menggunakan Transportasi Publik KAI
-slug: mudik menggunakan kereta
-description: 
-categories: Coretan
+title: "Mudik Menggunakan Transportasi Publik KAI"
 date: 2025-03-17
-tags:
-  - mudik
+description: ""
 draft: false
-showComments: true
+categories: ["Coretan"]
+tags: ["mudik"]
+slug: "mudik menggunakan kereta"
+cover: "featured-mudik-kereta.jpg"
 ---
 
 ## Saatnya Memesan Tiket Kereta!!

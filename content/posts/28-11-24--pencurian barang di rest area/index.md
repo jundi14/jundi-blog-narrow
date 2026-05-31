@@ -1,13 +1,12 @@
 ---
-title: Sinyal Buruk Toyota Calya Di Rest Area Kilometer 39
-slug: pencurian barang di rest area
-description: Tidak pernah terpikir sebelumnya, ternyata rest area merupakan lokasi yang rentan pencurian.
-categories: Coretan
+title: "Sinyal Buruk Toyota Calya Di Rest Area Kilometer 39"
 date: 2024-11-28
-tags:
-showComments: true
-showTableOfContents: true
+description: ""
 draft: false
+categories: ["Coretan"]
+tags: [""]
+slug: "pencurian barang di rest area"
+cover: "featured-rob"
 ---
 
 Sepulang dari bekasi, kami mampir sejenak di rest area 39 yang berada di ruas tol Jakarta-Cikampek. Saya memilih di lokasi yang dekat dengan masjid tetapi hanya sedikit mobil yang parkir.
