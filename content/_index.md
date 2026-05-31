@@ -8,9 +8,6 @@ author:
   description: "Suka mempelajari hal baru dan kadang ditulis di blog ini"
   avatar: "profile.svg"
   social:
-    - name: "Instagram"
-      url: "https://instagram.com/jundi.mubarok"
-      icon: "instagram-bold"
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
       icon: "threads"
