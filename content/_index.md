@@ -5,7 +5,7 @@ title: "Home"
 author:
   name: "Jundi Mubarok"
   title: "Ngobrol Lewat Tulisan Ringan"
-  description: "Suka mempelajari hal baru dan kadang ditulis di blog ini"
+  description: "Suka mempelajari hal baru & kadang ditulis di blog ini"
   avatar: "profile.svg"
   social:
     - name: "Threads"
