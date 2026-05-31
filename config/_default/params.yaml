@@ -125,7 +125,7 @@ comments:
   # giscus, disqus, utterances, waline, artalk, twikoo
   system: "disqus"
   disqus:
-    shortname: "jundi14"
+    shortname: "jundimubarok"
   utterances:
     repo: ""
     issueTerm: "pathname"
