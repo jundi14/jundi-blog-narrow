@@ -1,13 +1,15 @@
 backend:
   name: git-gateway
   branch: master 
-media_folder: "/assets/images"
-public_folder: "/static/images"
+media_folder: "static/images"
+public_folder: "/images"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
-    folder: "/content/posts/" # The path to the folder where the documents are stored
+    folder: "content/posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    nested: # Tambahkan baris ini agar mendukung subfolder
+      depth: 1 # Mengatur seberapa dalam subfolder yang diizinkan (misal sampai 10 tingkat)
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
