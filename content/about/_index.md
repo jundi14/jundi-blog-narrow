@@ -1,5 +1,5 @@
 ---
-title: "Tentang"
+title: "Tentang Saya"
 layout: "about"
 ---
 
@@ -40,7 +40,6 @@ Jika Anda merasa tulisan saya bermanfaat atau sekadar ingin memberi semangat, An
 
 Terima kasih sudah mampir!
 
-Dukung saya disini
 Dukung saya di [nihbuatjajan](https://nihbuatjajan.com/jundi)
 
 Salam hangat,
