@@ -82,10 +82,10 @@ social:
     url: https://instagram.com/jundi.mubarok  
     weight: 10
     params:
-      icon: instagram-bold
+      icon: mingcute--instagram-fill
   - name: Threads
     url: https://threads.net/@jundi.mubarok
     weight: 20
     params:
-      icon: threads
+      icon: mingcute--threads-fill
 

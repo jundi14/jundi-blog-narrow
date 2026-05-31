@@ -21,3 +21,12 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Featured Image", name: "cover", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "About"
+    layout: "about" # Gunakan layout khusus untuk halaman about
+    folder: "content/about"   # Bagus, garis miring di depan sudah dihapus
+    create: false
+    slug: "{{slug}}" # Karena foldernya sudah unik (pakai slug), nama file cukup index saja melalui properti path.
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
