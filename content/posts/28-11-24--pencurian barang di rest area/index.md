@@ -6,7 +6,7 @@ draft: false
 categories: ["Coretan"]
 tags: [""]
 slug: "pencurian barang di rest area"
-cover: "featured-rob"
+cover: "featured-rob.jpg"
 ---
 
 Sepulang dari bekasi, kami mampir sejenak di rest area 39 yang berada di ruas tol Jakarta-Cikampek. Saya memilih di lokasi yang dekat dengan masjid tetapi hanya sedikit mobil yang parkir.
