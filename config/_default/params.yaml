@@ -36,7 +36,7 @@ header:
     link: "/" # Click to home page
   # UI Components Control (header controls)
   showThemeSwitch: true # Set to false to hide theme style switcher (palette icon)
-  showDarkModeSwitch: false # Set to false to hide dark mode switcher (sun/moon icon)
+  showDarkModeSwitch: true # Set to false to hide dark mode switcher (sun/moon icon)
   showLanguageSwitch: false # Set to false to hide language switcher
   languageSwitchMode: "dropdown" # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
 
