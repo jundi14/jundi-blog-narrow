@@ -46,11 +46,11 @@ main:
 
 # footer menu
 footer:
-  - name: About
+  - name: " "
     pageRef: /about
     weight: 20
     params:
-      icon: about
+      icon: simple-icons--aboutdotme
     
   - name: Tags
     weight: 30
