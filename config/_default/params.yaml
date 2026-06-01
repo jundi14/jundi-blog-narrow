@@ -123,12 +123,12 @@ post:
 comments:
   enabled: true
   # giscus, disqus, utterances, waline, artalk, twikoo
-  system: "disqus"
+  system: "utterances"
   disqus:
     shortname: "jundi14"
   utterances:
-    repo: ""
-    issueTerm: "pathname"
+    repo: "jundi14/jundi-blog-narrow"
+    issueTerm: "title"
     label: "comment"
     theme: "preferred-color-scheme"
   
