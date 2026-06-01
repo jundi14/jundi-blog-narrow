@@ -1,6 +1,6 @@
 ---
-title: "Tentang Saya"
-layout: "about"
+title: Tentang Saya
+layout: about
 ---
 
 ## Siapa Saya
@@ -40,7 +40,7 @@ Jika Anda merasa tulisan saya bermanfaat atau sekadar ingin memberi semangat, An
 
 Terima kasih sudah mampir!
 
-Dukung saya di [nihbuatjajan](https://nihbuatjajan.com/jundi)
+Dukung saya [disini](https://nihbuatjajan.com/jundi)
 
 Salam hangat,
 Jundi
