@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: jundi14/jundi-blog-narrow
-  branch: main 
+  branch: master 
 media_folder: "static/images"
 public_folder: "/images"
 collections:
