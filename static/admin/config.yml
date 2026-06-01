@@ -8,7 +8,9 @@ backend:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
     delete: Delete {{collection}} “{{slug}}”
-logo_url: https://jundi.web.id/logo-header.png
+logo:
+  src: https://jundi.web.id/logo-header.png
+  show_in_header: true    
 media_folder: "static"
 public_folder: "/images"
 collections:
