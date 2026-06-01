@@ -125,7 +125,7 @@ comments:
   # giscus, disqus, utterances, waline, artalk, twikoo
   system: "disqus"
   disqus:
-    shortname: "jundimubarok"
+    shortname: "jundi14"
   utterances:
     repo: ""
     issueTerm: "pathname"
@@ -134,7 +134,7 @@ comments:
   
 # Analytics
 analytics:
-  enabled: true
+  enabled: false
   google:
     enabled: false
     id: "your-google-analytics-id"
