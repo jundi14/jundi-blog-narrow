@@ -7,8 +7,11 @@ backend:
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
-    delete: Delete {{collection}} “{{slug}}”  
-media_folder: "static/images"
+    delete: Delete {{collection}} “{{slug}}”
+logo:
+  src: https://jundi.web.id/static/logo-header.png
+  show_in_header: true  
+media_folder: "static"
 public_folder: "/images"
 collections:
   - name: "blog"
