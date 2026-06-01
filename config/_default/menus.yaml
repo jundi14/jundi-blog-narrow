@@ -46,12 +46,6 @@ main:
 
 # footer menu
 footer:
-  # - name: Timeline
-  #   pageRef: /timeline
-  #   weight: 10
-  #   params:
-  #     icon: chart
-
   - name: About
     pageRef: /about
     weight: 20
@@ -63,6 +57,12 @@ footer:
     pageRef: /tags
     params:
       icon: tags
+
+  # - name: Timeline
+  #   pageRef: /timeline
+  #   weight: 10
+  #   params:
+  #     icon: chart
 
   # - name: Resume
   #   pageRef: /resume
@@ -88,4 +88,15 @@ social:
     weight: 20
     params:
       icon: mingcute--threads-fill
+  - name: Email
+    url: mailto:jundimubarok74@gmail.com
+    weight: 30
+    params: 
+      icon: mingcute--mail-send-fill
+  - name: Donate
+    url: https://nihbuatjajan.com/jundi/
+    weight: 40
+    params:
+      icon: coffee
+
 

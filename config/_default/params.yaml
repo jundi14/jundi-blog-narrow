@@ -5,7 +5,7 @@ defaultAuthor: "Jundi Mubarok"
 language: "en"
 shortName: "Jundi" # PWA
 images:
-  - "sampul.avif"
+  - "sampul.png"
 
 # Favicon
 favicon:
