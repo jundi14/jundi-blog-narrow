@@ -46,17 +46,17 @@ main:
 
 # footer menu
 footer:
-  - name: " "
+  - name: " About"
     pageRef: /about
     weight: 20
     params:
-      icon: simple-icons--aboutdotme
+      icon: streamline-logos--about-me-logo-block
     
   - name: Tags
     weight: 30
     pageRef: /tags
     params:
-      icon: tags
+      icon: solar--tag-bold
 
   # - name: Timeline
   #   pageRef: /timeline
