@@ -24,9 +24,6 @@ author:
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
       icon: "mingcute--threads-fill"
-    #- name: "Donate"
-    #  url: "https://nihbuatjajan.com/jundi/"
-    #  icon: "mingcute--receive-money-fill"
 
 # Header configuration (modularized)
 header:
@@ -47,7 +44,7 @@ dock: "scroll"
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
 # You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
-contentWidth: "53rem"
+contentWidth: "54rem"
 
 # TOC (Table of Contents)
 toc:
@@ -115,7 +112,7 @@ post:
     show: true
     author: "Jundi Mubarok"
     name: "CC BY-NC-SA 4.0"
-    description: "Bagikan secara non-komersial•Sertakan sumber•Gunakan lisensi serupa."
+    description: "Bagikan secara non-komersial | Sertakan sumber | Gunakan lisensi serupa."
     url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     displayName: "CC BY-NC-SA 4.0"
 
@@ -124,15 +121,15 @@ comments:
   enabled: true
   # giscus, disqus, utterances, waline, artalk, twikoo
   system: "utterances"
-  disqus:
-    shortname: "jundi14"
   utterances:
     repo: "jundi14/jundi-blog-narrow"
     issueTerm: "title"
     label: "comment"
-    theme: "preferred-color-scheme"
-  
-# Analytics
+    theme: "preferred-color-scheme"  
+  # disqus:
+  #   shortname: "jundi14"
+
+  # Analytics
 analytics:
   enabled: false
   google:
