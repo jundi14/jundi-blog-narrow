@@ -4,6 +4,10 @@ backend:
   name: git-gateway
   repo: jundi14/jundi-blog-narrow
   branch: master 
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”  
 media_folder: "static/images"
 public_folder: "/images"
 collections:
