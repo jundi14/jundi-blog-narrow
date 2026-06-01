@@ -24,9 +24,9 @@ author:
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
       icon: "mingcute--threads-fill"
-    - name: "Donate"
-      url: "https://nihbuatjajan.com/jundi/"
-      icon: "mingcute--receive-money-fill"
+    #- name: "Donate"
+    #  url: "https://nihbuatjajan.com/jundi/"
+    #  icon: "mingcute--receive-money-fill"
 
 # Header configuration (modularized)
 header:
