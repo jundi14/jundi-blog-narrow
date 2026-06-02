@@ -1,5 +1,3 @@
-# when using the default proxy server port
-local_backend: true
 backend:
   name: git-gateway
   repo: jundi14/jundi-blog-narrow
@@ -40,7 +38,6 @@ collections:
     path: "index" # Memastikan CMS mengedit file content/about/index.md
     media_folder: "" # Kosongkan agar gambar diunggah ke folder yang sama (content/about)
     public_folder: "" # Kosongkan agar di dalam Markdown tertulis nama file gambarnya saja (misal: "foto.jpg")
-    slug: "{{slug}}" # Karena foldernya sudah unik (pakai slug), nama file cukup index saja melalui properti path.
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
