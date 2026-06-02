@@ -32,7 +32,6 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Featured Image", name: "cover", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-        comment: 'This is a multiline\ncomment'
   - name: "about"
     label: "About"
     layout: "about" # Gunakan layout khusus untuk halaman about
