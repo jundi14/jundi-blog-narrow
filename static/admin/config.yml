@@ -2,16 +2,18 @@ local_backend: true
 backend:
   name: git-gateway
   repo: jundi14/jundi-blog-narrow
-  branch: master 
+  branch: master
+  squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
     delete: Delete {{collection}} “{{slug}}”
+publish_mode: editorial_workflow # Aktifkan mode editorial untuk memungkinkan review sebelum publikasi
 logo:
   src: https://jundi.web.id/logo-header.png
   show_in_header: true    
 media_folder: "static"
-public_folder: ""
+public_folder: "" 
 collections:
   - name: "blog"
     label: "Blog"
