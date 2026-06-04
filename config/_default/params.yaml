@@ -131,15 +131,15 @@ comments:
 
   # Analytics
 analytics:
-  enabled: false
-  google:
-    enabled: false
-    id: "your-google-analytics-id"
+  enabled: true
+  # google:
+  #   enabled: false
+  #   id: "your-google-analytics-id"
   umami:
     enabled: true
     id: "e8882eba-fabe-4ac5-aeb9-aa30d4ab63c2"
-    src: "https://umami.com/myscript.js"
-    domains: "example.domain.com"
+    src: "https://cloud.umami.is/script.js"
+    domains: "jundi.web.id"
 
 # KaTeX
 katex:
