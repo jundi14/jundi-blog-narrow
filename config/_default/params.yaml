@@ -109,7 +109,7 @@ post:
   showRelated: false # show related posts
   relatedPostsCount: 3 # posts number
   license:
-    show: true
+    show: false
     author: "Jundi Mubarok"
     name: "CC BY-NC-SA 4.0"
     description: "Bagikan secara non-komersial | Sertakan sumber | Gunakan lisensi serupa."
