@@ -1,7 +1,7 @@
 ---
 title: "Mudik 2026 Ke Bekasi Menggunakan Kereta Murah Meriah"
 date: 2026-03-31
-description: "Mudik murah ke bekasi menggunakan kereta api airlangga dan motis tengah."
+description:
 draft: false
 categories: ["Coretan"]
 tags: ["100daystooffload"]
