@@ -1,14 +1,47 @@
 /* ============================================================
-   UBUNTU — Font Face Definitions
+   MERRIWEATHER (heading) + NUNITO (body)
    File: static/css/custom.css
-   Font files: static/fonts/ubuntu-v21-latin-*.woff2
    ============================================================ */
+
+/* --- MERRIWEATHER --- */
+
+/* 400 - Regular */
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Regular'),
+       url('/fonts/merriweather-v33-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 700 - Bold */
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Bold'),
+       url('/fonts/merriweather-v33-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 900 - Black */
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Black'),
+       url('/fonts/merriweather-v33-latin-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- NUNITO --- */
 
 /* 300 - Light */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Light'),
-       url('/fonts/ubuntu-v21-latin-300.woff2') format('woff2');
+  font-family: 'Nunito';
+  src: local('Nunito Light'),
+       url('/fonts/nunito-v32-latin-300.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -16,9 +49,9 @@
 
 /* 300 - Light Italic */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Light Italic'),
-       url('/fonts/ubuntu-v21-latin-300italic.woff2') format('woff2');
+  font-family: 'Nunito';
+  src: local('Nunito Light Italic'),
+       url('/fonts/nunito-v32-latin-300italic.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -26,49 +59,39 @@
 
 /* 400 - Regular */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Regular'),
-       url('/fonts/ubuntu-v21-latin-regular.woff2') format('woff2');
+  font-family: 'Nunito';
+  src: local('Nunito Regular'),
+       url('/fonts/nunito-v32-latin-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* 400 - Italic */
+/* 600 - SemiBold */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Italic'),
-       url('/fonts/ubuntu-v21-latin-italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* 500 - Medium */
-@font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Medium'),
-       url('/fonts/ubuntu-v21-latin-500.woff2') format('woff2');
-  font-weight: 500;
+  font-family: 'Nunito';
+  src: local('Nunito SemiBold'),
+       url('/fonts/nunito-v32-latin-600.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
-/* 500 - Medium Italic */
+/* 600 - SemiBold Italic */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Medium Italic'),
-       url('/fonts/ubuntu-v21-latin-500italic.woff2') format('woff2');
-  font-weight: 500;
+  font-family: 'Nunito';
+  src: local('Nunito SemiBold Italic'),
+       url('/fonts/nunito-v32-latin-600italic.woff2') format('woff2');
+  font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 
 /* 700 - Bold */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Bold'),
-       url('/fonts/ubuntu-v21-latin-700.woff2') format('woff2');
+  font-family: 'Nunito';
+  src: local('Nunito Bold'),
+       url('/fonts/nunito-v32-latin-700.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -76,9 +99,9 @@
 
 /* 700 - Bold Italic */
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu Bold Italic'),
-       url('/fonts/ubuntu-v21-latin-700italic.woff2') format('woff2');
+  font-family: 'Nunito';
+  src: local('Nunito Bold Italic'),
+       url('/fonts/nunito-v32-latin-700italic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -89,7 +112,7 @@
    ============================================================ */
 
 html {
-  font-family: 'Ubuntu', ui-sans-serif, system-ui, -apple-system,
+  font-family: 'Nunito', ui-sans-serif, system-ui, -apple-system,
                BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -102,17 +125,32 @@ html {
   text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+/* Heading pakai Merriweather */
+h1 {
+  font-family: 'Merriweather', ui-serif, Georgia, serif;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2, h3 {
+  font-family: 'Merriweather', ui-serif, Georgia, serif;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
-p, li, blockquote {
-  font-size: 1.08rem;
+h4, h5, h6 {
+  font-family: 'Merriweather', ui-serif, Georgia, serif;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.3;
+}
+
+/* Body text */
+p, li, blockquote {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.75;
   letter-spacing: 0.01em;
 }
 
