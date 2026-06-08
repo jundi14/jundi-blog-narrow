@@ -44,7 +44,7 @@ dock: "scroll"
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
 # You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
-contentWidth: "54rem"
+contentWidth: "52rem"
 
 # TOC (Table of Contents)
 toc:
