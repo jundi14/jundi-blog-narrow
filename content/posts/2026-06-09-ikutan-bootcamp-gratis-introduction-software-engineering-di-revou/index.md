@@ -25,6 +25,8 @@ Melalui kelas dari RevoU ini kita bisa mencicipi gimana ekosistem pembelajaran d
 
 Jangan lupa siapin perangkatnya yaa..
 
+![Pilihan Kelas Gratis dari RevoU](screenshot-2026-06-10-050509.png "Pilihan Kelas Gratis dari RevoU")
+
 So, gimana kamu tertarik ikutan kelas gratis ini? coba deh kamu klik [akses ini](https://www.revou.co/important-links) ada kelas yang dilaksanakan selama 1 hari juga, dan 3 kelas yang sudah saya sebutkan diatas dilaksanakan selama 5 hari. 
 
 Oke silahkan dicoba yaa, semoga rezeki kalian ada dibidang itu. Good Luck. :)
