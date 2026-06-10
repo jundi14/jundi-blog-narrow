@@ -55,4 +55,3 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
