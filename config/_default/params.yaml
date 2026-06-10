@@ -33,7 +33,7 @@ header:
     link: "/" # Click to home page
   # UI Components Control (header controls)
   showThemeSwitch: true # Set to false to hide theme style switcher (palette icon)
-  showDarkModeSwitch: true # Set to false to hide dark mode switcher (sun/moon icon)
+  showDarkModeSwitch: false # Set to false to hide dark mode switcher (sun/moon icon)
   showLanguageSwitch: false # Set to false to hide language switcher
   languageSwitchMode: "dropdown" # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
 
@@ -44,7 +44,7 @@ dock: "scroll"
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
 # You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
-contentWidth: "52rem"
+contentWidth: "53rem"
 
 # TOC (Table of Contents)
 toc:
