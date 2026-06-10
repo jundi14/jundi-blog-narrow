@@ -19,8 +19,6 @@ collections:
     folder: "content/posts"   # Bagus, garis miring di depan sudah dihapus
     path: "{{slug}}/index"     # Tepat untuk Hugo Page Bundles (tanpa .md)
     preview_path: "posts/{{fields.slug}}"
-    # preview_path: "posts/{{slug}}" # Tambahkan ini untuk preview yang benar
-    #preview_path_date_field: "date" # Tambahkan ini untuk memastikan tanggal digunakan dalam URL preview
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Karena foldernya sudah unik (pakai slug), nama file cukup index saja melalui properti path.
     fields:
