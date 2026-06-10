@@ -21,7 +21,7 @@ Oiya RevoU juga menyediakan kelas gratis lainnya bukan hanya Software engineerin
 
 Pastinya ada kelas lanjutan yang harganya belasan juta hingga menyentuh angka 20 juta rupiah yang berlangsung selama 6-8 bulan.
 
-Melalui kelas dari RevoU ini kita bisa mencicipi gimana ekosistem pembelajaran disini sebelum membeli kelas versi fullnya jadi tahu kita bisa merasakan apakah cocok atau ngga dengan sistem belajar mereka, jadi ngga ada salahnya ikutan kelas gratis ini yang bahkan hampir dilaksanakan setiap pekan oleh tim RevoU ini.
+Melalui kelas dari RevoU ini kita bisa mencicipi bagaimana ekosistem pembelajaran disini sebelum membeli kelas versi fullnya, jadi kita bisa merasakan apakah cocok atau ngga dengan sistem belajar mereka, jadi ngga ada salahnya ikutan kelas gratis ini yang bahkan hampir dilaksanakan setiap pekan oleh tim RevoU ini.
 
 Jangan lupa siapin perangkatnya yaa..
 
