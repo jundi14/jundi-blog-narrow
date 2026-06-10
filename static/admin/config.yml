@@ -24,13 +24,13 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Draft", name: "draft", widget: "boolean", required: false, default: false }
       - { label: "Categories", name: "categories", widget: "select", 
           options: ["Teknologi", "Blogging", "Coretan"] } 
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", required: false, default: [] }
       - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Featured Image", name: "cover", widget: "image" }
+      - { label: "Featured Image", name: "cover", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "about"
     label: "About"
@@ -42,4 +42,17 @@ collections:
     public_folder: "" # Kosongkan agar di dalam Markdown tertulis nama file gambarnya saja (misal: "foto.jpg")
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "tags"
+    label: "Tags"
+    layout: "tags" # Gunakan layout khusus untuk halaman tags
+    folder: "content/tags"   # Bagus, garis miring di depan sudah dihapus
+    create: false
+    path: "index" # Memastikan CMS mengedit file content/tags/index.md
+    media_folder: "" # Kosongkan agar gambar diunggah ke folder yang sama (content/tags)
+    public_folder: "" # Kosongkan agar di dalam Markdown tertulis nama file gambarnya saja (misal: "foto.jpg")
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
