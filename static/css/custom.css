@@ -178,9 +178,9 @@ code, pre, kbd, samp {
   font-size: 0.9em;
 }
 
-/* Paksa semua teks artikel pakai Piazzolla */
+/* Paksa semua teks artikel pakai Ubuntu */
 .prose, .prose *, .content, .content *,
 article, article p, article li,
 .post-content, .post-content * {
-  font-family: 'Piazzolla', ui-serif, Georgia, serif !important;
+  font-family: 'Ubuntu', ui-sans-serif, system-ui, sans-serif !important;
 }

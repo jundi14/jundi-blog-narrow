@@ -106,7 +106,7 @@ home:
 
 # Post configuration
 post:
-  showRelated: true # show related posts
+  showRelated: false # show related posts
   relatedPostsCount: 3 # posts number
   license:
     show: false
