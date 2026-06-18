@@ -4,10 +4,10 @@ date: 2026-06-09T18:48:00.000+07:00
 description: Ikutan Kelas Bootcamp Gratis dari RevoU sekaligus bisa ngerjain
   tugas miniproject untuk portfolio dan ngga lupa dapet E-Cerfificate juga.
 draft: false
-categories: Coretan
+categories: '["Teknologi"]'
 tags:
-  - bootcamp
-  - 100daystooffload
+  - '["bootcamp"'
+  - '"100daystooffload"]'
 slug: bootcamp gratis
 cover: bootcamp-gratis.jpg
 ---
