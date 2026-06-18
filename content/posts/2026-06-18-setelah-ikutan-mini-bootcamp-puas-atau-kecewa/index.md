@@ -2,7 +2,8 @@
 title: Setelah Ikutan Mini Bootcamp, Puas atau Kecewa?
 date: 2026-06-18T13:35:00.000+07:00
 draft: false
-categories: ["Teknologi"]
+categories:
+  - Teknologi
 tags:
   - 100daystoofload
   - bootcamp
@@ -21,15 +22,15 @@ Namun saya tidak kecewa karena yang penting ilmu yang kita dapatkan dari mereka 
 
 Ada 1 website yang saya pikir website ini sempurna untuk belajar pemrograman awal, serta bisa mendapatkan sertifikat juga tapi memang harus membayar versi premiumnya dan diperbaharui tiap bulan.
 
-Berita baiknya kita bisa tetap mengakses seluruh kelas dan belajar apa yang mereka sediakan disana, berita kurang baiknya kita harus membayar dengan harga yang lumayan karena nilai rupiah sedang turun drastis dan mereka menggunakan kurs US Dollar sehingga harga yang ditawarkan cukup lumayan. Sekitar 400 ribuan/bulan tapi kita bisa mengakses seluruh materi full stack + sertifikat nya juga.
+Berita baiknya kita bisa tetap mengakses seluruh kelas -versi gratisnya yaa- dan belajar apa yang mereka sediakan dengan cara yang interaktif, berita kurang baiknya kita harus membayar dengan harga yang lumayan karena nilai rupiah sedang turun drastis dan mereka menggunakan kurs US Dollar sehingga harga yang ditawarkan cukup lumayan. Sekitar 400 ribuan/bulan tapi kita bisa mengakses seluruh materi premium + mendapatkan sertifikat juga.
 
-Pada website ini kita bisa langsung praktikkan setelah menonton video yang mereka sediakan, alih alih membagi 1 layar menjadi 2 jendela, mereka menyediakan 1 halaman full yang bisa kita praktekkan setelah kita menonton video penjelasan dari mereka dan bisa kita *check solution* apakah jawaban kita sudah tepat atau belum.
+Pada website ini kita bisa langsung praktikkan setelah menonton video yang mereka sediakan di laman yang sama, alih alih membagi 1 layar menjadi 2 jendela, mereka menyediakan 1 halaman full yang bisa kita praktekkan setelah kita menonton video penjelasan dari mereka dan bisa kita *check solution* apakah jawaban kita sudah benar atau belum.
 
 Jika belum tepat mereka akan memberikan hint atau penjelasan apa yang kurang dari kode kita.
 
 ![Scrimba](screenshot-2026-06-18-213949.png "Laman belajar di scrimba")
 
-1 layar full berisi halaman yang bisa kita ketikkan kode tanpa harus menggunakan text editor seperti Visual Studi Code atau semacamnya, dan sebelah kiri ada mini player yang otomatis akan ter-*minimize* atau *pop-up*  jika dibutuhkan.
+1 layar full berisi halaman yang bisa kita ketikkan kode tanpa harus menggunakan text editor seperti Visual Studio Code atau semacamnya, dan sebelah kiri ada mini player yang otomatis akan ter-*minimize* atau *pop-up*  jika dibutuhkan.
 
 Sehingga kita tidak perlu membuka 2 jendela dalam 1 layar yang sama. 
 
