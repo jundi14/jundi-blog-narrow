@@ -26,9 +26,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Draft", name: "draft", widget: "boolean", required: false, default: false }
-      - { label: "Categories", name: "categories", widget: "select", 
-          options: ["Teknologi", "Blogging", "Coretan"] } 
-      - { label: "Tags", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "Categories", name: "categories", widget: "string"} 
+      - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Featured Image", name: "cover", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
