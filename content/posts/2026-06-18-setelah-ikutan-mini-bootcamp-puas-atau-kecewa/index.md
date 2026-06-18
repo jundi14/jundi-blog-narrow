@@ -2,7 +2,7 @@
 title: Setelah Ikutan Mini Bootcamp, Puas atau Kecewa?
 date: 2026-06-18T13:35:00.000+07:00
 draft: false
-categories: List ["Teknologi"]
+categories: Teknologi
 tags:
   - 100daystoofload
   - bootcamp
@@ -15,11 +15,13 @@ Karena sesi yang berlangsung 1 jam setengah ini terasa begitu singkat, kita hany
 
 Namun bukan berarti ini percuma, dari sini kita tahu roadmap atau setidaknya gambaran awal kita harus belajar apa dulu, saya mengikuti seluruh kegiatan dari awal sampai akhir dan mengisi absensi tidak lupa juga mengerjakan 2 tugas wajib dari tim RevoU.
 
-Entah saya lupa klik kehadiran atau tugas yang saya kerjakan tidak mendapatkan nilai yang memuaskan sehingga tidak bisa mendapatkan sertifikat dari tim RevoU, tapi saya tidak berkecil hati karena yang penting ilmu yang kita dapatkan dari mereka bisa kita kembangkan kembali.
+Entah saya lupa klik kehadiran atau tugas yang saya kerjakan tidak mendapatkan nilai yang memuaskan sehingga tidak bisa mendapatkan sertifikat dari tim RevoU, lumayan lah walaupun hanya sertifikat Introduction Software Engineer tapi cukup untuk mengisi portfolio 😀
+
+Namun saya tidak kecewa karena yang penting ilmu yang kita dapatkan dari mereka bisa kita kembangkan kembali.
 
 Ada 1 website yang saya pikir website ini sempurna untuk belajar pemrograman awal, serta bisa mendapatkan sertifikat juga tapi memang harus membayar versi premiumnya dan diperbaharui tiap bulan.
 
-Berita baiknya kita bisa tetap mengakses seluruh kelas dan belajar apa yang mereka sediakan disana, berita kurang baiknya kita harus membayar dengan harga yang lumayan karena nilai rupiah sedang turun drastis dan mereka menggunakan kurs US Dollar.
+Berita baiknya kita bisa tetap mengakses seluruh kelas dan belajar apa yang mereka sediakan disana, berita kurang baiknya kita harus membayar dengan harga yang lumayan karena nilai rupiah sedang turun drastis dan mereka menggunakan kurs US Dollar sehingga harga yang ditawarkan cukup lumayan. Sekitar 400 ribuan/bulan tapi kita bisa mengakses seluruh materi full stack + sertifikat nya juga.
 
 Pada website ini kita bisa langsung praktikkan setelah menonton video yang mereka sediakan, alih alih membagi 1 layar menjadi 2 jendela, mereka menyediakan 1 halaman full yang bisa kita praktekkan setelah kita menonton video penjelasan dari mereka dan bisa kita *check solution* apakah jawaban kita sudah tepat atau belum.
 
@@ -32,3 +34,5 @@ Jika belum tepat mereka akan memberikan hint atau penjelasan apa yang kurang dar
 Sehingga kita tidak perlu membuka 2 jendela dalam 1 layar yang sama. 
 
 Menarik bukan?
+
+Kalau kamu tertarik untuk mencoba, silahkan akses [link ini](https://scrimba.com)
