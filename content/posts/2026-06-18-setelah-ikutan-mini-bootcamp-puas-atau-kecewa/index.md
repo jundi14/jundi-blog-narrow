@@ -25,10 +25,10 @@ Pada website ini kita bisa langsung praktikkan setelah menonton video yang merek
 
 Jika belum tepat mereka akan memberikan hint atau penjelasan apa yang kurang dari kode kita.
 
-![Scrimba](screenshot-2026-06-18-213949.png)
+![Scrimba](screenshot-2026-06-18-213949.png "Laman belajar di scrimba")
 
-1 layar full berisi halaman yang bisa kita ketikkan langsung tanpa harus menggunakan text editor semacam Visual Studi Code atau semacamnya, dan sebelah kiri ada mini player yang otomatis akan ter-*minimize* atau *pop-up*  jika dibutuhkan.
+1 layar full berisi halaman yang bisa kita ketikkan kode tanpa harus menggunakan text editor seperti Visual Studi Code atau semacamnya, dan sebelah kiri ada mini player yang otomatis akan ter-*minimize* atau *pop-up*  jika dibutuhkan.
 
-Sehingga tidak perlu kita harus membuka 2 jendela dalam 1 layar yang sama. 
+Sehingga kita tidak perlu membuka 2 jendela dalam 1 layar yang sama. 
 
 Menarik bukan?
