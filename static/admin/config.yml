@@ -1,8 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   repo: jundi14/jundi-blog-narrow
   branch: master
-  auth_scope: repo
   squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:
     create: Create {{collection}} “{{slug}}”
