@@ -32,7 +32,11 @@ Jika belum tepat mereka akan memberikan hint atau penjelasan apa yang kurang dar
 
 1 layar full berisi halaman yang bisa kita ketikkan kode tanpa harus menggunakan text editor seperti Visual Studio Code atau semacamnya, dan sebelah kiri ada mini player yang otomatis akan ter-*minimize* atau *pop-up*  jika dibutuhkan.
 
-Sehingga kita tidak perlu membuka 2 jendela dalam 1 layar yang sama. 
+![](screenshot-2026-06-19-100501.png)
+
+Coba kita lihat lagi gambar berikut, sebelah kanan ada *live preview* yang bisa kita lihat ketika telah mengetikan kode yang kita tulis di text editor yang tersedia secara default di web app scrimba.
+
+Sehingga kita tidak perlu membuka 2 jendela dalam 1 layar yang sama. Semuanya ada dalam 1 layar tanpa ada yang dikorbankan atau mengatur *[tiling windows](https://en.wikipedia.org/wiki/Tiling_window_manager).*
 
 Menarik bukan?
 
