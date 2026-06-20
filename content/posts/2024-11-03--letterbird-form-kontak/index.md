@@ -1,17 +1,18 @@
 ---
-title: "Letterbird, Layanan Form Contact Yang Simpel Dan Fungsional"
+title: Letterbird, Layanan Form Contact Yang Simpel Dan Fungsional
 date: 2024-11-03
 description: ""
 draft: false
-categories: ["Teknologi"]
-tags: [""]
-slug: "letterbird form contact"
-cover: "feature-letter.jpg"
+categories:
+  - Teknologi
+tags:
+  - ""
+slug: letterbird form contact
+cover: feature-letter.jpg
 ---
-
 Saat ini saya menggunakan website statis dari hugo dan tidaklah semudah ketika ingin menambahkan form kontak supaya seseorang bisa dengan mudah menghubungi saya via email, karena pada hugo tidak ada plugin seperti wordpress yang bisa dengan menambahkan form kontak.
 
-Akhirnya secara tidak sengaja saya menemukan aplikasi form kontak ketika saya sedang berselancar di blog bule, dengan tampilan yang simpel dan tidak banyak fitur gimmick yang _useless_.
+Akhirnya secara tidak sengaja saya menemukan aplikasi form kontak ketika saya sedang berselancar di blog bule, dengan tampilan yang simpel dan tidak banyak fitur gimmick yang *useless*.
 
 ![homepage letterbird](./letterbird.png)
 
@@ -27,17 +28,17 @@ Walaupun memilih paket yang free, letterbird ini tetap fungsional dengan fitur d
 
 Kecuali untuk kamu yang suka dengan personalisasi lebih dalam, maka perlu upgrade ke plan yang lebih tinggi dan beberapa fitur premium akan terbuka, yaitu:
 
-- Mengizinkan seseorang untuk mengirimimu berkas
-- Custom form CSS
-- Custom form pesan konfirmasi
-- Sembunyikan "Powered by Letterbird"
-- dan lainnya
+* Mengizinkan seseorang untuk mengirimimu berkas
+* Custom form CSS
+* Custom form pesan konfirmasi
+* Sembunyikan "Powered by Letterbird"
+* dan lainnya
 
 Saat form contact disisipkan pada website, secara default header akan disembunyikan, cara untuk menampilkannya tambahkan `data-showheader = "true"` pada script.
 
 Atau bisa lihat lebih lanjut pengaturannya di [link ini](https://letterbird.co/embed#customization)
 
-Berikut contoh screenshoot letterbird yang sudah disisipkan di website pada halaman [contact](https://jundi.web.id/contact/), dan sengaja tidak saya tampilkan headernya supaya lebih simpel.\
+Berikut contoh screenshoot letterbird yang sudah disisipkan di website pada halaman [about](https://jundi.web.id/about/), dan sengaja tidak saya tampilkan headernya supaya lebih simpel.\
 Selamat mencoba!
 
 ![Screenshot Form Letterbird](./screenshot-contact.png)
