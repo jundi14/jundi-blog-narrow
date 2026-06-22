@@ -58,6 +58,12 @@ footer:
     params:
       icon: solar--tag-bold
 
+  - name: Donate
+    weight: 40
+    url: https://nihbuatjajan.com/jundi/
+    params:
+      icon: coffee
+
   # - name: Timeline
   #   pageRef: /timeline
   #   weight: 10
@@ -93,10 +99,3 @@ social:
     weight: 30
     params: 
       icon: mingcute--mail-send-fill
-  - name: Donate
-    url: https://nihbuatjajan.com/jundi/
-    weight: 40
-    params:
-      icon: coffee
-
-
