@@ -30,16 +30,18 @@
     </nav>
   {{ end }}
 
-<div class="flex justify-center items-center h-screen gap-4">
-  <span>
-    <a href="https://github.com/uxai/non-profit-bloggers/" target="_blank"><img src="https://raw.githubusercontent.com/uxai/non-profit-bloggers/main/nonprofit-blogger-badge-green.svg" alt="Non-profit bloggers badge">
-    </a>
-  </span>
-  <span>
-    <a href="https://overbrowsing.com/projects/co2-shield" target="_blank"><img src="https://img.shields.io/badge/CO₂-A_0.10g-20AE69" alt="co2-shield">
-    </a>
-  </span>
-</div>
+<div class="flex justify-center items-center gap-4 py-3 mb-3">
+    <span>
+      <a href="https://github.com/uxai/non-profit-bloggers/" target="_blank" class="no-underline">
+        <img src="https://raw.githubusercontent.com/uxai/non-profit-bloggers/main/nonprofit-blogger-badge-green.svg" alt="Non-profit bloggers badge">
+      </a>
+    </span>
+    <span>
+      <a href="https://overbrowsing.com/projects/co2-shield" target="_blank" class="no-underline">
+        <img src="https://img.shields.io/badge/CO₂-A_0.10g-20AE69" alt="co2-shield">
+      </a>
+    </span>
+  </div>
 
   <!-- 分隔线 -->
   {{ if and site.Menus.footer site.Menus.social }}
@@ -57,7 +59,7 @@
         {{ site.Title }}
       </p>
       <p class="flex flex-wrap items-center justify-center gap-1 md:justify-start">
-        <span>Powered by</span>
+        <span>Made with</span>
         <a
           href="https://gohugo.io/"
           target="_blank"
