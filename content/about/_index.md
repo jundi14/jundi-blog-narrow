@@ -50,5 +50,3 @@ Salam hangat,
 Jundi
 
 ---
-
-![](Written-By-Human-Not-By-AI-Badge-white.svg)<br>
