@@ -1,20 +1,11 @@
-# Izinkan semua mesin pencari merayapi situs
 User-agent: *
-Disallow:
+Allow: /
+# Memblokir folder tag dan kategori agar tidak mubazir di Google
+Disallow: /tags/
+Disallow: /categories/
+# Memblokir halaman hasil pencarian internal blog
+Disallow: /search/
+Disallow: /search?*
 
-# Blokir perayapan bot AI (Opsional namun disarankan)
-User-agent: GPTBot
-Disallow: /
-User-agent: ChatGPT-User
-Disallow: /
-User-agent: ClaudeBot
-Disallow: /
-User-agent: anthropic-ai
-Disallow: /
-User-agent: PerplexityBot
-Disallow: /
-User-agent: Meta-ExternalAgent
-Disallow: /
+Sitemap: https://jundi.web.id/sitemap.xml
 
-# Lokasi Peta Situs (Sitemap)
-Sitemap: https://domainanda.com
