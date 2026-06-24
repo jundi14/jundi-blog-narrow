@@ -6,3 +6,13 @@
   HUGO_VERSION = "0.158.0"
   HUGO_EXTENDED = "true"
   HUGO_ENV = "production"
+
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Security-Policy = "default-src 'self'; img-src *; frame-ancestors 'none'"
+Referrer-Policy = "same-origin"
+Strict-Transport-Security = "max-age=63072000; includeSubdomains; preload"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
