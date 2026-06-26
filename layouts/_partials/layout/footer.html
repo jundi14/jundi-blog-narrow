@@ -30,15 +30,15 @@
     </nav>
   {{ end }}
 
-<div class="flex justify-center items-center gap-2 py-2 mb-2">
+  <div class="flex justify-center items-center gap-2 py-2 mb-2">
     <span>
       <a href="https://github.com/uxai/non-profit-bloggers/" target="_blank" class="no-underline">
         <img src="https://raw.githubusercontent.com/uxai/non-profit-bloggers/main/nonprofit-blogger-badge-green.svg" alt="Non-profit bloggers badge" width="120" height="20">
       </a>
     </span>
-      <a href="https://darktheme.club" target="_blank" rel="noopener noreferrer">
-        <img src="/darkThemeClub_white.webp" height="22" alt="For sites with dark themes as default" title="The Darktheme Club"></img>
-      </a>
+    <a href="https://darktheme.club" target="_blank" rel="noopener noreferrer">
+      <img src="/darkThemeClub_white.webp" height="22" alt="For sites with dark themes as default" title="The Darktheme Club"></img>
+    </a>
     <span>
       <a href="https://overbrowsing.com/projects/co2-shield" target="_blank" class="no-underline">
         <img src="https://img.shields.io/badge/CO₂-A_0.10g-20AE69" alt="co2-shield" width="90" height="20">
@@ -52,58 +52,74 @@
   {{ end }}
 
 
-  <!-- 底部区域：版权信息和社交媒体 -->
+  <!-- 底部区域：Kombinasi Media Sosial + Copyright, dan Kredit HP -->
   <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
-    <!-- 版权信息 -->
-    <div class="text-muted-foreground text-center text-sm md:text-left">
-      <p class="mb-2">
+    
+    <!-- Grup Kiri: Ikon Media Sosial & Tepat di bawahnya ada Copyright -->
+    <div class="flex flex-col items-center gap-2 md:items-start">
+      <!-- 社交媒体图标 -->
+      {{ if site.Menus.social }}
+        <div class="flex items-center gap-3">
+          {{ range site.Menus.social }}
+            <a
+              href="{{ .URL }}"
+              {{ if strings.HasPrefix .URL "http" }}
+                target="_blank" rel="noopener noreferrer"
+              {{ end }}
+              class="text-muted-foreground hover:text-primary focus:ring-primary/20 rounded-lg p-1 transition-all duration-300 ease-out hover:scale-110 focus:ring-2 focus:outline-none"
+              title="{{ .Name }}"
+              aria-label="{{ .Name }}"
+            >
+              {{ if .Params.icon }}
+                {{ partial "features/icon.html" (dict "name" .Params.icon "size" "lg" "ariaLabel" .Name) }}
+              {{ end }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <!-- 版权信息 (Sekarang berada tepat di bawah icon sosmed) -->
+      <p class="text-muted-foreground text-sm text-center md:text-left">
         &copy;
         {{ now.Year }}
         {{ site.Title }}
       </p>
-      <p class="flex flex-wrap items-center justify-center gap-1 md:justify-start">
-        <span>Made with</span>
-        <a
-          href="https://gohugo.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-primary hover:text-primary/80 font-medium transition-colors duration-200 hover:underline"
-        >
-          Hugo 
+    </div>
 
+    <!-- Grup Kanan: Informasi Kredit (Made with...) -->
+    <div class="text-muted-foreground text-center text-sm md:text-right">
+      <p class="flex flex-wrap items-center justify-center gap-1 md:justify-end">
+        <span>Made with</span>
+        <!-- gohugo -->
+        <a
+        href="https://gohugo.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="transition-colors duration-200 flex items-center inline-flex align-middle"
+        style="color: #ef4444 !important;" 
+        title="Hugo"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ef4444" class="w-4 h-4" style="width: 1rem; height: 1rem; fill: #ef4444 !important;">
+          <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+        </svg>
         </a>
-        <span>&</span>
+        <!--ampersand-->
+        <span class="text-muted-foreground/60 italic font-serif text-base mx-1" style="font-family: Georgia, Cambria, serif;">&</span>
+        <!--narrow-->
         <a
           href="https://github.com/tom2almighty/hugo-narrow"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-primary hover:text-primary/80 font-medium transition-colors duration-200 hover:underline"
+          class="transition-colors duration-200 flex items-center inline-flex align-middle"
+          title="Narrow Theme"
         >
-          Narrow
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" style="width: 1rem; height: 1rem; fill: #eab308 !important; filter: drop-shadow(0 0 3px #f59e0b);">
+            <path d="M3.478 2.404a.75.75 0 0 1 .926.349l2.43 4.42a.75.75 0 0 1-.089.862L2.04 12.727a.75.75 0 0 0 .568 1.273h7.11a.75.75 0 0 1 .684.448l2.5 5.5a.75.75 0 0 0 1.372-.016l5.5-12.5a.75.75 0 0 0-.95-.985l-7.314 3.134a.75.75 0 0 1-.722-.05L6.321 6.643l.53-.962a.75.75 0 0 0-.256-.993L3.478 2.404Z" />
+            <path d="M12.97 10.47a.75.75 0 0 0-1.06 0l-6.5 6.5a.75.75 0 1 0 1.06 1.06l6.5-6.5a.75.75 0 0 0 0-1.06Z" />
+          </svg>
         </a>
       </p>
     </div>
-
-    <!-- 社交媒体图标 -->
-    {{ if site.Menus.social }}
-      <div class="flex items-center gap-3">
-        {{ range site.Menus.social }}
-          <a
-            href="{{ .URL }}"
-            {{ if strings.HasPrefix .URL "http" }}
-              target="_blank" rel="noopener noreferrer"
-            {{ end }}
-            class="text-muted-foreground hover:text-primary focus:ring-primary/20 rounded-lg p-1 transition-all duration-300 ease-out hover:scale-110 focus:ring-2 focus:outline-none"
-            title="{{ .Name }}"
-            aria-label="{{ .Name }}"
-          >
-            {{ if .Params.icon }}
-              {{ partial "features/icon.html" (dict "name" .Params.icon "size" "lg" "ariaLabel" .Name) }}
-            {{ end }}
-          </a>
-        {{ end }}
-      </div>
-    {{ end }}
 
   </div>
 </footer>
