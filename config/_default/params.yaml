@@ -52,7 +52,7 @@ toc:
   position: "side" # Options: center | side
 
 # Default color scheme
-colorScheme: "nord"
+colorScheme: "Default"
 themes:
   default:
     name: "Default"
