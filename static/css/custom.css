@@ -159,7 +159,6 @@ h4, h5, h6 {
 /* Body text */
 p, li, blockquote {
   font-size: 1.05rem;
-  font-weight: 400;
   line-height: 1.70;
   letter-spacing: 0.01em;
 }
@@ -179,8 +178,6 @@ code, pre, kbd, samp {
 }
 
 /* Paksa semua teks artikel pakai Ubuntu */
-.prose, .prose *, .content, .content *,
-article, article p, article li,
-.post-content, .post-content * {
+.prose {
   font-family: 'Ubuntu', ui-sans-serif, system-ui, sans-serif !important;
 }
