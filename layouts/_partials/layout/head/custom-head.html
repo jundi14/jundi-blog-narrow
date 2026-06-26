@@ -1,12 +1,14 @@
   <!-- Preload font yang paling penting (optional tapi recommended) -->
 {{- if .IsHome }}
+  {{/* Heading utama + body pertama yang terlihat */}}
   <link rel="preload" href="/fonts/merriweather-v33-latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ubuntu-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
 {{- else if .IsPage }}
+  {{/* Judul artikel (h1=900) + body teks artikel */}}
   <link rel="preload" href="/fonts/merriweather-v33-latin-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/merriweather-v33-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ubuntu-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/ubuntu-v21-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
 {{- end }}
 
 <link rel="stylesheet" href="/css/custom.css">
