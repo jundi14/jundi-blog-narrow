@@ -39,7 +39,7 @@ header:
 
 # Dock display mode
 # Options: "scroll" (show on scroll up), "always" (always visible), "float" (floating button)
-dock: "always"
+dock: "scroll"
 
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
