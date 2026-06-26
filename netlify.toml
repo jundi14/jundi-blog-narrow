@@ -8,10 +8,10 @@
   HUGO_ENV = "production"
 
 [[headers]]
-for = "/*"
-[headers.values]
-Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://utteranc.es; connect-src 'self' https://api.github.com https://api.netlify.com; img-src *; style-src 'self' 'unsafe-inline' https://unpkg.com; frame-src 'self' https://utteranc.es; frame-ancestors 'none'"
-Referrer-Policy = "same-origin"
-Strict-Transport-Security = "max-age=63072000; includeSubdomains; preload"
-X-Content-Type-Options = "nosniff"
-X-Frame-Options = "DENY"
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://utteranc.es https://cloud.umami.is; connect-src 'self' https://api.github.com https://api.netlify.com https://cloud.umami.is; img-src *; style-src 'self' 'unsafe-inline' https://unpkg.com; frame-src 'self' https://utteranc.es; frame-ancestors 'none'"
+    Referrer-Policy = "same-origin"
+    Strict-Transport-Security = "max-age=63072000; includeSubdomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
