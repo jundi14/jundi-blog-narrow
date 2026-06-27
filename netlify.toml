@@ -7,6 +7,9 @@
   HUGO_EXTENDED = "true"
   HUGO_ENV = "production"
 
+[[plugins]]
+package = "netlify-plugin-image-optim"
+
 [[headers]]
   for = "/*"
   [headers.values]
