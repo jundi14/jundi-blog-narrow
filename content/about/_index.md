@@ -37,8 +37,9 @@ Nah, sekarang Anda sudah sedikit mengenal siapa saya. Tapi, sebuah blog tidak ak
 Bisa juga lewat form dibawah ini 
 
 <script data-letterbirduser="jundi" src="https://letterbird.co/embed/v1.js" defer></script>
+<br>
 
-Perlu diketahui, blog ini dikelola dan dibiayai sepenuhnya secara mandiri. Saya sangat mengandalkan dukungan tulus dari para pembaca untuk menjaga dapur "digital" ini tetap mengepul.
+Blog ini dikelola dan dibiayai sepenuhnya secara mandiri. Saya sangat mengandalkan dukungan tulus dari para pembaca untuk menjaga dapur "digital" ini tetap mengepul.
 
 Jika Anda merasa tulisan saya bermanfaat atau sekadar ingin memberi semangat, Anda bisa memberikan apresiasi dalam bentuk donasi (sekali saja atau rutin). Dukungan sekecil apa pun sangat berarti untuk kelangsungan blog ini.
 
