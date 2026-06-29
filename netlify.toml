@@ -10,7 +10,6 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://utteranc.es https://cloud.umami.is; connect-src 'self' https://api.github.com https://api.netlify.com https://cloud.umami.is https://gateway.umami.is *.netlify.com https://*.netlify.app ./.netlify/; img-src * blob: data:; style-src 'self' 'unsafe-inline' https://unpkg.com; frame-src 'self' https://utteranc.es; frame-ancestors 'none'"
     Strict-Transport-Security = "max-age=63072000; includeSubdomains; preload"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
