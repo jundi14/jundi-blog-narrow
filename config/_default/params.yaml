@@ -34,6 +34,7 @@ header:
   # UI Components Control (header controls)
   showThemeSwitch: true # Set to false to hide theme style switcher (palette icon)
   showDarkModeSwitch: true # Set to false to hide dark mode switcher (sun/moon icon)
+  showContentWidthSwitch: true # Set to false to hide content width switcher (expand icon)
   showLanguageSwitch: false # Set to false to hide language switcher
   languageSwitchMode: "dropdown" # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
 
