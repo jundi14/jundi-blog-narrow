@@ -1,5 +1,5 @@
 ---
-title: Hal yang paling saya takutkan, padahal biasa-biasa saja
+title: Hal Yang Paling Saya Takutkan, Padahal Biasa-Biasa Saja
 date: 2026-07-17T22:04:00.000+07:00
 draft: false
 categories:
