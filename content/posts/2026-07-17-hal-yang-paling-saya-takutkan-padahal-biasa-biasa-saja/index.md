@@ -11,11 +11,15 @@ Ada satu hal yang dulu sempat takut kalau itu terjadi di kemudian hari, public s
 
 Ya hal ini menjadi momok yang cukup menakutkan, kalau tiba-tiba ada momen yang mengharuskan saya berbicara atau mungkin terpaksa saya harus berbicara.
 
-Ketika santri saya orang yang agak kalem, kalau ketemu orang orang ngga banyak nanya atau kepo sama urusan orang lain, dan sampai saat ini karakter itu masih melekat dalam diri saya, makannya jujur saya ngga terlalu peduli dengan urusan orang lain, walaupun aslinya saya juga suka membantu, tapi bukan dimanfaatin yaa, ahaha.
+Ketika santri saya orang yang agak kalem, kalau ketemu orang orang ngga banyak nanya atau kepo sama urusan orang lain, dan sampai saat ini karakter itu masih melekat dalam diri saya.
+
+makannya jujur saya ngga terlalu peduli dengan urusan orang lain, walaupun aslinya saya juga suka membantu, tapi bukan dimanfaatin yaa, ahaha.
 
 Nah, apa hubungannya dengan public speaking?
 
-Ketika di momen tertentu kadang saya merasa gagap ketika berbicara, atau memaksa saya memilih diksi yang tepat supaya "gagap" ini tidak terjadi, di momen saya harus memaksa mencari diksi yang tepat disitulah jeda berbicara terlihat jelas, jadi kalau ada momen saya harus maju ke depan khalayak biasanya saya butuh waktu lama untuk menyampaikan tujuan yang ingin saya utarakan, walaupun yaa ngga *lola* (loading lama) juga sih....
+Ketika di momen tertentu kadang saya merasa gagap ketika berbicara, atau memaksa saya memilih diksi yang tepat supaya "gagap" ini tidak terjadi, di momen saya harus memaksa mencari diksi yang tepat disitulah jeda berbicara terlihat jelas.
+
+Jadi kalau ada momen saya harus maju ke depan khalayak biasanya saya butuh waktu lama untuk menyampaikan tujuan yang ingin saya utarakan, walaupun yaa ngga *lola* (loading lama) juga sih....
 
 Tapi ketika dalam kondisi saya semakin dewasa (emang iya?) memaksa saya harus memegang jabatan yang butuh banyak ngomong di depan umum, terutama orang yang lebih tua dibanding saya.\
 \
