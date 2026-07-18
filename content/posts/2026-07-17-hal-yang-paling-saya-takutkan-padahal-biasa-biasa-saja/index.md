@@ -1,10 +1,10 @@
 ---
-title: Hal Yang Paling Saya Takutkan, Padahal Biasa-Biasa Saja
+title: Hal Yang Paling Saya Takutkan, Tapi Ternyata Baik-Baik Saja
 date: 2026-07-17T22:04:00.000+07:00
 draft: false
 categories:
   - Coretan
-slug: hal yang ditakutkan
+slug: hal yang paling saya takutkan
 cover: pexels-alexasfotos-31682443.jpg
 ---
 Ada satu hal yang dulu sempat takut kalau itu terjadi di kemudian hari, public speaking.
