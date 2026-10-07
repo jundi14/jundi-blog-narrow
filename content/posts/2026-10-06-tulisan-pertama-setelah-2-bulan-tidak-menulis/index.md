@@ -40,4 +40,4 @@ Kalau saya yaa agak was was walaupun masih “bisa”diusahakan pegang dan dibua
 
 Walau seringnya saya pukul menggunakan sapu lidi yang fungsinyaselain buat menebah kasur buat tidur tetapi malah kadang buat pukul kecoa juga.
 
-Harus dengan tenaga yang pas ketika memukul, jika terlalupelan ya akan kabur lagi, tapi kalau terlampau keras malah jadi kaya kecoa ‘moncrot’alih alih hanya kena lantai, kena sapu juga yang buat tebah kasur tidur.
+Harus dengan tenaga yang pas ketika memukul, jika terlalupelan ya akan kabur lagi, tapi kalau terlampau keras malah jadi kaya kecoa ‘moncrot’ alih alih hanya kena lantai, kena sapu juga yang buat tebah kasur tidur.
