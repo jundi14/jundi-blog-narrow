@@ -5,6 +5,7 @@ draft: false
 categories:
   - Coretan
 slug: hewan yang menggelikan
+cover: pexels-lebele-19912167.jpg
 ---
 *“Mobil favorit kamu apa dek?”*
 
