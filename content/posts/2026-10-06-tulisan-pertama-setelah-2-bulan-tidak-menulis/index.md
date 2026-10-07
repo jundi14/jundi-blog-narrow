@@ -17,6 +17,8 @@ cover: pexels-lebele-19912167.jpg
 ucap wanita yang telah tinggal bersamaku hampir 5 tahun lamanya, saat akubertanya rumah yang menarik buat kamu yang modelnya seperti apa.
 Ya, hewan yang sangat ditakuti olehnya mungkin lebih tepatnya “geli”.
 
+![](pexels-sanjeev-kumar-maurya-1172834340-31601134.jpg "Foto Kadal")
+
 Hewan yang selalu membuat kejutan yang muncul ditempat tak terduga, saat membuka pintu kamar mandi dan muncul dari balik engselpintu yang sudah mulai bersuara.  
 
 Atau muncul ketika ingin membuang air dari belakangkulkas dari lelehan bunga es *freezer* dari kulkas lama milik almarhumnenek saya.
