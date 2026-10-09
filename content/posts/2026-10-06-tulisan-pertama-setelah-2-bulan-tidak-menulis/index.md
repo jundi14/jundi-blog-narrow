@@ -1,6 +1,6 @@
 ---
-title: 2 Hewan yang Hidup di Sela-sela Rumah
-date: 2026-10-07T09:48:00.000+07:00
+title: 2 Hewan Menyebalkan Yang Hidup Bersama Kita
+date: 2026-10-09T08:03:00.000+07:00
 draft: false
 categories:
   - Coretan
