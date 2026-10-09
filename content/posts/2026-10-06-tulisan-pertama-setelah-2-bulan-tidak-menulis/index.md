@@ -14,18 +14,19 @@ cover: pexels-lebele-19912167.jpg
 \---
 
 *“Rumah yang gada cicaknya”*.
-ucap wanita yang telah tinggal bersamaku hampir 5 tahun lamanya, saat akubertanya rumah yang menarik buat kamu yang modelnya seperti apa.
+ucap wanita yang telah tinggal bersamaku hampir 5 tahun lamanya, saatku bertanya rumah yang menarik untuknya yang modelnya seperti apa.
 Ya, hewan yang sangat ditakuti olehnya mungkin lebih tepatnya “geli”.
 
 ![](pexels-sanjeev-kumar-maurya-1172834340-31601134.jpg "Foto Kadal")
 
-Hewan yang selalu membuat kejutan yang muncul ditempat tak terduga, saat membuka pintu kamar mandi dan muncul dari balik engselpintu yang sudah mulai bersuara.  
+Hewan yang selalu membuat kejutan yang muncul ditempat tak terduga, saat membuka pintu kamar mandi dan muncul dari balik engsel pintu yang berkarat.  
 
-Atau muncul ketika ingin membuang air dari belakangkulkas dari lelehan bunga es *freezer* dari kulkas lama milik almarhumnenek saya.
+Terkadang muncul ketika ingin membuang air dari belakang kulkas dari lelehan bunga es *freezer* dari kulkas lama yang bekas almarhum nenek saya.
 
-Hewan yang dahulu sering saya bunuh ketika masih kecil,dan sekarang saya pun malah seperti ketakutan seperti istri saya saatmelihatnya dekat langsung di depan mata.
+Hewan yang dahulu sering saya bunuh ketika masih kecil,dan sekarang saya pun malah ikut-ikutan 'geli' saat melihat dinding dirayapi oleh hewan *mimikri* ini.
 
-Kata salah satu channel youtube : alam semenit. Hewanini sering kali muncul di tempat hangat, makanya seringnya muncul di malam haridan bersembunyi di balik pintu, di bawah kulkas, dan sudah pasti di dapur yangsepertinya masih menyimpan hawa panas yang tersimpan saat memasak untuk makanmalam tadi.
+Kata salah satu channel youtube : alam semenit. \
+Hewan ini sering kali muncul di tempat hangat, makanya seringnya muncul di malam haridan bersembunyi di balik pintu, di bawah kulkas, dan sudah pasti di dapur yangsepertinya masih menyimpan hawa panas yang tersimpan saat memasak untuk makanmalam tadi.
 
 Kadang saya merasa agak pyscopat ketika memukul bahkanmenggencet mereka dengan rel gordyn bekas yang tak terpakai lagi bahkan ujungnysudah penyok karena pukulan yang agak keras. 
 
