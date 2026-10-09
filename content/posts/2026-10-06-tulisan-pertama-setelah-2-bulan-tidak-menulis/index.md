@@ -41,3 +41,7 @@ Ya istri justru berani dengan kecoa, pernah terbang ke bawah pakaian yang dia pa
 Walau seringnya saya pukul menggunakan sapu lidi yang fungsinya selain buat menebah kasur tetapi malah kadang buat pukul kecoa juga.
 
 Harus dengan tenaga yang pas ketika memukul, kalau pelan ya akan kabur lagi, tapi kalau terlampau keras malah jadi kaya kecoa ‘moncrot’ yang isi perutnya keluar.
+
+Kesimpulannya, rumah yang nyaman itu rumah yang jauh dan minim hewan hewan yang kita takuti, dan mobil yang bagus adalah mobil yang membuat kita tidak mabuk ketika dibawa jalan.
+
+Rasa nyaman memang tidak bisa dibayar oleh harta apapun, bayangkan rumah bagus tetapi banyak cicaknya, ohh ngga banget kan.
