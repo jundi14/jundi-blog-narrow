@@ -127,6 +127,7 @@ comments:
     issueTerm: "title"
     label: "comment"
     theme: "preferred-color-scheme"  
+    theme: "light"
   # disqus:
   #   shortname: "jundi14"
 
