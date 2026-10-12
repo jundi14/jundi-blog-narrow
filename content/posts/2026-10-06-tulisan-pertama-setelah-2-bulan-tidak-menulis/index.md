@@ -1,6 +1,6 @@
 ---
 title: 2 Hewan Menyebalkan Yang Hidup Bersama Kita
-date: 2026-10-09T08:03:00.000+07:00
+date: 2026-10-12T07:47:00.000+07:00
 draft: false
 categories:
   - Coretan
