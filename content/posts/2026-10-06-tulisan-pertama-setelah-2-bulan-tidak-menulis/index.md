@@ -36,6 +36,6 @@ Ketika hewan ini muncul biasanya saya langsung mencari sapu lidi yang fungsinya 
 
 Harus dengan tenaga yang pas ketika memukul, kalau pelan ya akan kabur lagi, tapi kalau terlampau keras malah jadi kaya kecoa ‘moncrot’ yang isi perutnya keluar.
 
-Kesimpulannya, rumah yang nyaman itu rumah yang jauh dan minim hewan hewan yang kita takuti.
+Rmah yang nyaman itu rumah yang jauh dan minim hewan hewan yang kita takuti.
 
-Bayangkan rumah bagus tetapi banyak cicaknya, ohh ngga banget kan. 😅
+Bayangkan rumah bagus tetapi banyak cicak atau kecoanya, ohh ngga banget kan. 😅
