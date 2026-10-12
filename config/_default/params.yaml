@@ -126,8 +126,7 @@ comments:
     repo: "jundi14/jundi-blog-narrow"
     issueTerm: "title"
     label: "comment"
-    theme: "preferred-color-scheme"  
-    theme: "light"
+    theme: "boxy-light"
   # disqus:
   #   shortname: "jundi14"
 
