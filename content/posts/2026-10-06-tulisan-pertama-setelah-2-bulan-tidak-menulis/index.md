@@ -38,4 +38,4 @@ Harus dengan tenaga yang pas ketika memukul, kalau pelan ya akan kabur lagi, tap
 
 Kesimpulannya, rumah yang nyaman itu rumah yang jauh dan minim hewan hewan yang kita takuti.
 
-Bayangkan rumah bagus tetapi banyak cicaknya, ohh ngga banget kan. 😁
+Bayangkan rumah bagus tetapi banyak cicaknya, ohh ngga banget kan. 😅
