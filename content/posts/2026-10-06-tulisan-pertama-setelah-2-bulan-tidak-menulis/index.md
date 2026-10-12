@@ -30,7 +30,7 @@ Hewan ini sering kali muncul di tempat hangat, makanya seringnya muncul di malam
 
 Kadang saya merasa agak phsycopat ketika memukul bahkan menggencet mereka dengan rel gordyn bekas yang tak terpakai lagi bahkan bagian ujungnya sudah penyok karena pukulan yang agak keras. 
 
-Puas rasanya ketika ekor mereka terputus dan mulai sekarat, dalam agama islam ketika berhasil membunuh hewan ini dalam sekali pukulan maka pahalanya akan sempurna, tetapi ketika gagal dan berkali-kali percobaan maka pahala berkurang di setiap pukulan sampai pada akhirnya mati. 
+Puas rasanya ketika hewan tersebut mulai sekarat dan ekor mereka terputus, dalam agama islam ketika berhasil membunuh hewan ini dalam sekali pukulan maka pahalanya akan sempurna, tetapi ketika gagal dan berkali-kali percobaan maka pahala berkurang di setiap pukulan sampai pada akhirnya mati. 
 
 Ya hewan menyebalkan kedua setelah tikus yang paling sering muncul di dinding rumah kontrakan ini sungguh membuat saya berpikir apakah ada dinding yang anti 'ketempelan' cicak, jika ada sepertinya akan sangat mahal harganya.
 
