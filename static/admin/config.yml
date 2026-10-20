@@ -49,14 +49,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   
-  - name: "tags"
-    label: "Tags"
-    layout: "tags" # Gunakan layout khusus untuk halaman tags
-    folder: "content/tags"   # Bagus, garis miring di depan sudah dihapus
-    create: false
-    path: "index" # Memastikan CMS mengedit file content/tags/index.md
-    media_folder: "" # Kosongkan agar gambar diunggah ke folder yang sama (content/tags)
-    public_folder: "" # Kosongkan agar di dalam Markdown tertulis nama file gambarnya saja (misal: "foto.jpg")
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false }
+  # - name: "tags"
+  #   label: "Tags"
+  #   layout: "tags" # Gunakan layout khusus untuk halaman tags
+  #   folder: "content/tags"   # Bagus, garis miring di depan sudah dihapus
+  #   create: false
+  #   path: "index" # Memastikan CMS mengedit file content/tags/index.md
+  #   media_folder: "" # Kosongkan agar gambar diunggah ke folder yang sama (content/tags)
+  #   public_folder: "" # Kosongkan agar di dalam Markdown tertulis nama file gambarnya saja (misal: "foto.jpg")
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Description", name: "description", widget: "text", required: false }
