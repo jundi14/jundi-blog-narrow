@@ -37,4 +37,10 @@ Masih banyak konten yang lebih bisa dinikmati ketimbang konten generated AI tanp
 
 Tapi saya yakin tulisan yang 'bernyawa' punya nilai lebih di hati para pembacanya, bukan sekedar tulisan yang natural yang kadang typo, tapi juga punya sisi manusia yang lebih bisa kita terima dibanding tulisan robot yang kadang terlalu gramatical.
 
-Apalagi saat ini media tulis di internet yang menerima tulisan kontribusi menerima syarat tulisan dengan tanpa bantuan AI murni, tentu AI bisa membantu tetapi bukan berarti semua dari AI diambil seluruhnya tanpa filter.
+Apalagi saat ini media tulis di internet yang menerima tulisan kontribusi menerima tulisan dengan syarat tanpa bantuan AI murni, tentu AI bisa membantu tetapi bukan berarti semua konten dari AI diambil mentah-mentah.
+
+Saya yakin semua orang punya gaya tulisan yang berbeda supaya menarik pembacanya, jangan sampai hari ini tulisan penuh emosi dan manusia *banget.* Tapi esoknya sangat terstruktur dan rapih sekali, seperti tidak ada cela dan tidak ada kesalahan apapun, dan sampai terpikir oleh pembaca *"kok seperti bukan dia yang nulis yaa..".*
+
+Nah, ini yang keliru.
+
+Coba deh lihat tulisan Agus Mulyadi, content writer asal yogya ini punya tulisan yang seringkali mengambil dari pengalaman sederhana di kehidupannya. Enak dibaca, *guyon* nya ada, dan tulisannya apa adanya, tentu dengan diksi yang baik yang saya pun masih belajar mencari pilihan kata yang tepat.
