@@ -1,7 +1,7 @@
 ---
 title: Apakah Kita Masih Menikmati Konten Original di Tengah Kepungan AI?
 date: 2026-10-20T09:31:00.000+07:00
-draft: true
+draft: false
 categories:
   - Coretan
 slug: Menikmati Konten Original di Tengah Kepungan AI?
