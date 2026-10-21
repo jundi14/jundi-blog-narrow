@@ -29,7 +29,7 @@ Contoh diatas masih penerapan dalam tahapan yang sangat sederhana, untuk tingkat
 
 Jadi, apakah AI bisa membantu kita? Ya bisa.
 
-Tapi...
+**Tapi...**
 
 #### Konten 'bernyawa' lebih dinikmati
 
