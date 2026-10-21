@@ -31,7 +31,7 @@ Jadi, apakah AI bisa membantu kita? Ya bisa.
 
 Tapi...
 
-### Konten 'bernyawa' lebih dinikmati
+#### Konten 'bernyawa' lebih dinikmati
 
 Masih banyak konten yang lebih bisa dinikmati ketimbang konten generated AI tanpa ubahan sedikitpun, walaupun kadang saya juga suka menonton konten video buatan AI, di facebook sudah mulai bertebaran video generated AI, ada yang rapih ada juga yang agak aneh.
 
@@ -44,3 +44,7 @@ Saya yakin semua orang punya gaya tulisan yang berbeda supaya menarik pembacanya
 Nah, ini yang keliru.
 
 Coba deh lihat tulisan [Agus Mulyadi](https://agusmulyadi.web.id), content writer asal yogya ini punya tulisan yang seringkali mengambil dari pengalaman sederhana di kehidupannya. Enak dibaca, *guyon* nya ada, dan tulisannya apa adanya, tentu dengan diksi yang tepat.
+
+Saya yakin pasti kamu akan menikmati tulisan Mas Agus!
+
+### Ketika Mesin Keliru Menerjemahkan Realita
