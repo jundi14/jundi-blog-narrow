@@ -4,7 +4,7 @@ date: 2026-10-20T09:31:00.000+07:00
 draft: false
 categories:
   - Coretan
-slug: Menikmati Konten Original di Tengah Kepungan AI?
+slug: Menikmati Konten Original di Tengah Kepungan AI
 cover: pexels-tara-winstead-8386434.jpg
 ---
 ### Apakah kita sebetulnya membutuhkan AI?
@@ -44,5 +44,3 @@ Saya yakin semua orang punya gaya tulisan yang berbeda supaya menarik pembacanya
 Nah, ini yang keliru.
 
 Coba deh lihat tulisan [Agus Mulyadi](https://agusmulyadi.web.id), content writer asal yogya ini punya tulisan yang seringkali mengambil dari pengalaman sederhana di kehidupannya. Enak dibaca, *guyon* nya ada, dan tulisannya apa adanya, tentu dengan diksi yang tepat.
-
-Lain waktu saya akan membeli kelasnya di angka 127 rupiah, saat ini saya ingin konsisten dulu belajar menuangkan apa yang ada di isi kepala ke dalam sebuah tulisan
