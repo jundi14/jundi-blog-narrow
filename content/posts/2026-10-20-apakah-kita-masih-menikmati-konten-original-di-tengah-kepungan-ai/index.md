@@ -48,3 +48,11 @@ Coba deh lihat tulisan [Agus Mulyadi](https://agusmulyadi.web.id), content write
 Saya yakin pasti kamu akan menikmati tulisan Mas Agus!
 
 ### Ketika Mesin Keliru Menerjemahkan Realita
+
+Saya Gen-Z kadang masih suka liat video panjang di facebook, dominasi saat ini bukan hanya ibu ibu yang suka bikin video random dari kegiatan sehari-hari tapi juga hasil generate AI sudah mulai melimpah.
+
+Dari mulai film drama sampai tutorial.
+
+Sudah ngga asing lagi video AI ngga natural, mengindahkan kaidah alam.
+
+Seperti
