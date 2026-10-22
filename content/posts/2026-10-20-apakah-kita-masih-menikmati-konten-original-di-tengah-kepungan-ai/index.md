@@ -53,6 +53,4 @@ Saya Gen-Z kadang masih suka liat video panjang di facebook, dominasi saat ini b
 
 Dari mulai film drama sampai tutorial.
 
-Sudah ngga asing lagi video AI ngga natural, mengindahkan kaidah alam.
-
-Seperti
+Tapi karena yang konten tersebut adalah robot alias AI, maka terkadang sulit menerjemahkan ke dalam realita
