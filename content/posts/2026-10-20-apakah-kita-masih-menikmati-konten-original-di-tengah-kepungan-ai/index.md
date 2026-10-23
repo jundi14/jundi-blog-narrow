@@ -1,6 +1,6 @@
 ---
 title: Apakah Kita Masih Menikmati Konten Original di Tengah Kepungan AI?
-date: 2026-10-20T09:31:00.000+07:00
+date: 2026-10-23T08:14:00.000+07:00
 draft: false
 categories:
   - Coretan
