@@ -9,7 +9,7 @@ images:
 
 # Site-wide broadcast announcement
 announcement:
-  enabled: true
+  enabled: false
   message: "Saya jundi saya suka nulis hal dari kehidupan sehari-hari mari konek."
   type: "info" # info | warning | destructive
   dismissible: true
