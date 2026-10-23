@@ -119,8 +119,8 @@ home:
 
 # Post configuration
 post:
-  showRelated: true
-  relatedPostsCount: 6
+  showRelated: false
+  relatedPostsCount: 3
   license: "CC BY-NC-SA 4.0" # shown in the post meta line; empty to hide
 
 # Comments
