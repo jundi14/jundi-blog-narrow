@@ -106,16 +106,16 @@ home:
     - featured-projects.html
 
 # Post configuration
-post:
-  showRelated: false # show related posts
-  relatedPostsCount: 3 # posts number
-  license:
-    show: "false"
-    author: "Jundi Mubarok"
-    name: "CC BY-NC-SA 4.0"
-    description: "Bagikan secara non-komersial | Sertakan sumber | Gunakan lisensi serupa."
-    url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    displayName: "CC BY-NC-SA 4.0"
+#post:
+ # showRelated: false # show related posts
+  #relatedPostsCount: 3 # posts number
+  #license:
+  #  show: false
+  #  author: "Jundi Mubarok"
+  #  name: "CC BY-NC-SA 4.0"
+  #  description: "Bagikan secara non-komersial | Sertakan sumber | Gunakan lisensi serupa."
+  #  url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  #  displayName: "CC BY-NC-SA 4.0"
 
 # Comments
 comments:
