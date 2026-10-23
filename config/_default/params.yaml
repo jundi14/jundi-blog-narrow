@@ -1,8 +1,8 @@
 # Basic site info with SEO
 description: "Ngobrol lewat tulisan ringan bersama Jundi Mubarok. Menghadirkan catatan harian, opini aplikasi, dan cerita perjalanan yang relatable untuk teman ngopi Kamu 😁"
 keywords: ["Catatan", "Blogging", "Personal", "Sharing"]
-defaultAuthor: "Jundi Mubarok"
-language: "en"
+#defaultAuthor: "Jundi Mubarok"
+#language: "en"
 shortName: "Jundi" # PWA
 images:
   - "sampul.png"
@@ -33,17 +33,15 @@ author:
       url: "https://threads.net/@jundi.mubarok"
       icon: "mingcute--threads-fill"
 
-# Header configuration (modularized)
-header:
-  sticky: true # Enable sticky navigation bar
-  logo:
-    image: "logo-header.png" # Logo path relative to static folder, leave empty to use site title first letter
-    link: "/" # Click to home page
- 
+# Search
+search:
+  # Number of characters of each page stored in the client-side search index.
+  indexContentLength: 2000
+
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
 # You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
-contentWidth: "56rem"
+contentWidth: "52rem"
 # Default backdrop blur radius in px (0-24) for floating dock, popovers and context bar.
 backdropBlur: 12
 # Default background grain size (0-100, 0 disables the grain texture).
@@ -56,54 +54,15 @@ toc:
 
 # Default color scheme
 colorScheme: "Default"
-themes:
-  default:
-    name: "Default"
-    order: 1
-  claude:
-    name: "Claude"
-    order: 2
-  bumblebee:
-    name: "Bumblebee"
-    order: 3
-  emerald:
-    name: "Emerald"
-    order: 4
-  nord:
-    name: "Nord"
-    order: 5
-  sunset:
-    name: "Sunset"
-    order: 6
-  abyss:
-    name: "Abyss"
-    order: 7
-  dracula:
-    name: "Dracula"
-    order: 8
-  amethyst:
-    name: "Amethyst"
-    order: 9
-  slate:
-    name: "Slate"
-    order: 10
-  twitter:
-    name: "Twitter"
-    order: 11
-  minimal:
-    name: "Minimal"
-    order: 12
 
 # Home page configuration
 home:
   recentPostsCount: 10 # Number of recent posts to show on the home page
-
   # Content order configuration - customize the order of home page sections
   # Available sections: author-section, recent-posts, featured-projects, page-content
   # You can add your custom content by creating files in `layouts/_partials/home/` folder, then add it to the list
   contentOrder:
     - author-section
-    - page-content
     - recent-posts
     - featured-projects.html
 
