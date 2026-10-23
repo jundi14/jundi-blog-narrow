@@ -7,6 +7,14 @@ shortName: "Jundi" # PWA
 images:
   - "sampul.png"
 
+# Site-wide broadcast announcement
+announcement:
+  enabled: true
+  message: "Saya jundi saya suka nulis hal dari kehidupan sehari-hari mari konek."
+  type: "info" # info | warning | destructive
+  dismissible: true
+  autoClose: 6 # seconds; 0 or omit to keep it visible until dismissed
+
 # Favicon
 favicon:
   svg: "/favicon.ico" # SVG format favicon (recommended)
@@ -46,11 +54,15 @@ dock: "scroll"
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
 # You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
 contentWidth: "56rem"
+# Default backdrop blur radius in px (0-24) for floating dock, popovers and context bar.
+backdropBlur: 12
+# Default background grain size (0-100, 0 disables the grain texture).
+grainSize: 25
 
 # TOC (Table of Contents)
 toc:
   enabled: true # Enable or disable TOC globally
-  position: "side" # Options: center | side
+  #position: "side" # Options: center | side
 
 # Default color scheme
 colorScheme: "Default"
@@ -106,16 +118,10 @@ home:
     - featured-projects.html
 
 # Post configuration
-#post:
- # showRelated: false # show related posts
-  #relatedPostsCount: 3 # posts number
-  #license:
-  #  show: false
-  #  author: "Jundi Mubarok"
-  #  name: "CC BY-NC-SA 4.0"
-  #  description: "Bagikan secara non-komersial | Sertakan sumber | Gunakan lisensi serupa."
-  #  url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-  #  displayName: "CC BY-NC-SA 4.0"
+post:
+  showRelated: true
+  relatedPostsCount: 3
+  license: "CC BY-NC-SA 4.0" # shown in the post meta line; empty to hide
 
 # Comments
 comments:
@@ -178,12 +184,15 @@ lightbox:
   enabled: true
 
 # Code block
+# Colors come from markup.highlight.style in hugo.yaml. Use a style with a
+# dark counterpart (for example catppuccin-latte or github).
+# https://gohugo.io/functions/css/chromastyles/
+# https://gohugo.io/quick-reference/syntax-highlighting-styles/
 codeblock:
   collapse:
     enabled: true
-    defaultState: expanded # expanded, collapsed
-    autoCollapseLines: 30
-    autoCollapseHeight: 400
+    defaultState: expanded # expanded | collapsed
+    maxLines: 30
     collapsedHeight: 120
 
 # Reading progress
