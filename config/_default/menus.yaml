@@ -15,7 +15,7 @@ main:
     pageRef: /categories
     weight: 30
     params:
-      icon: categories    
+      icon: categories
 
   # Example: parent item with dropdown submenu children
   # - name: More
@@ -51,7 +51,7 @@ footer:
     weight: 20
     params:
       icon: streamline-logos--about-me-logo-block
-    
+
   - name: Tags
     weight: 30
     pageRef: /tags
@@ -62,7 +62,7 @@ footer:
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
-      icon: coffee
+      icon: mingcute--receive-money-fill
 
   # - name: Timeline
   #   pageRef: /timeline
@@ -85,7 +85,7 @@ footer:
 # footer social link
 social:
   - name: Instagram
-    url: https://instagram.com/jundi.mubarok  
+    url: https://instagram.com/jundi.mubarok
     weight: 10
     params:
       icon: mingcute--instagram-fill
@@ -97,5 +97,5 @@ social:
   - name: Email
     url: mailto:jundimubarok74@gmail.com
     weight: 30
-    params: 
+    params:
       icon: mingcute--mail-send-fill
