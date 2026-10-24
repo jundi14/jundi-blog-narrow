@@ -48,8 +48,8 @@ markup:
         subscript:
           enable: true
         superscript:
-          enable: true   
-      strikethrough: true 
+          enable: true
+      strikethrough: true
   highlight:
     codeFences: true
     guessSyntax: false
