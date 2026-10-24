@@ -199,3 +199,8 @@ timeFormat:
   # Custom examples:
   # long: "15:04:05"
   # short: "3:04 PM"
+en:
+  locale: en-US
+  params:
+    dateFormat:
+      short: "01/02/2006"
