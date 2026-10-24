@@ -57,7 +57,9 @@ colorScheme: "Default"
 
 # Home page configuration
 home:
-  recentPostsCount: 10 # Number of recent posts to show on the home page
+  recentPostsCount: 10 
+
+# Number of recent posts to show on the home page
   # Content order configuration - customize the order of home page sections
   # Available sections: author-section, recent-posts, featured-projects, page-content
   # You can add your custom content by creating files in `layouts/_partials/home/` folder, then add it to the list
@@ -68,7 +70,7 @@ home:
 
 # Post configuration
 post:
-  showRelated: true
+  showRelated: false
   relatedPostsCount: 3
   license: "CC BY-NC-SA 4.0" # shown in the post meta line; empty to hide
 
@@ -199,8 +201,3 @@ timeFormat:
   # Custom examples:
   # long: "15:04:05"
   # short: "3:04 PM"
-en:
-  locale: en-US
-  params:
-    dateFormat:
-      short: "01/02/2006"
