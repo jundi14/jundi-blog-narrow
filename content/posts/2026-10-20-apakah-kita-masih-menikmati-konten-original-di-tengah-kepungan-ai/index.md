@@ -1,15 +1,18 @@
 ---
 title: Apakah Kita Masih Menikmati Konten Original di Tengah Kepungan AI?
 date: 2026-10-23T08:14:00.000+07:00
+description: ''
 draft: false
 categories:
   - Coretan
+tags: []
 slug: Menikmati Konten Original di Tengah Kepungan AI
 cover: pexels-tara-winstead-8386434.jpg
 ---
+
 ### Apakah kita sebetulnya membutuhkan AI?
 
-Era gempuran AI ini banyak konten kreator, pemilik bisnis, bahkan '*pengacara*' alias pengangguran banyak acara, terbantu dari teknologi ini.
+Era gempuran AI ini banyak konten kreator, pemilik bisnis, bahkan '_pengacara_' alias pengangguran banyak acara, terbantu dari teknologi ini.
 
 **Contoh pertama**, ada seorang penulis ingin membuat tulisan tentang kondisi kebakaran hutan saat ini, dia mencari segala sumber tentang hal yang berkaitan tentang hutan maupun penyebab kebakaran hutan dan melihat histori tentang kebakaran pada hutan yang pernah terjadi sebelumnya.
 
@@ -39,11 +42,11 @@ Tapi saya yakin tulisan yang 'bernyawa' punya nilai lebih di hati para pembacany
 
 Apalagi saat ini media tulis di internet yang menerima tulisan kontribusi menerima tulisan dengan syarat tanpa bantuan AI murni, tentu AI bisa membantu tetapi bukan berarti semua konten dari AI diambil mentah-mentah.
 
-Saya yakin semua orang punya gaya tulisan yang berbeda supaya menarik pembacanya, jangan sampai hari ini tulisan penuh emosi dan manusia *banget.* Tapi esoknya sangat terstruktur dan rapih sekali, seperti tidak ada cela dan tidak ada kesalahan apapun, dan sampai terpikir oleh pembaca *"kok seperti bukan dia yang nulis yaa..".*
+Saya yakin semua orang punya gaya tulisan yang berbeda supaya menarik pembacanya, jangan sampai hari ini tulisan penuh emosi dan manusia _banget._ Tapi esoknya sangat terstruktur dan rapih sekali, seperti tidak ada cela dan tidak ada kesalahan apapun, dan sampai terpikir oleh pembaca _"kok seperti bukan dia yang nulis yaa.."._
 
 Nah, ini yang keliru.
 
-Coba deh lihat tulisan [Agus Mulyadi](https://agusmulyadi.web.id), content writer asal yogya ini punya tulisan yang seringkali mengambil dari pengalaman sederhana di kehidupannya. Enak dibaca, *guyon* nya ada, dan tulisannya apa adanya, tentu dengan diksi yang tepat.
+Coba deh lihat tulisan [Agus Mulyadi](https://agusmulyadi.web.id), content writer asal yogya ini punya tulisan yang seringkali mengambil dari pengalaman sederhana di kehidupannya. Enak dibaca, _guyon_ nya ada, dan tulisannya apa adanya, tentu dengan diksi yang tepat.
 
 Saya yakin pasti kamu akan menikmati tulisan Mas Agus!
 
@@ -53,4 +56,4 @@ Saya Gen-Z kadang masih suka liat video panjang di facebook, dominasi saat ini b
 
 Dari mulai film drama sampai tutorial.
 
-Tapi karena yang konten tersebut adalah robot alias AI, maka terkadang sulit menerjemahkan ke dalam realita
+Tapi ya yang namanya robot AI kadangkala tidak natural dalam pembuatan videonya, entah itu gerakannya sampai sudut pengambilan videonya tidak tepat atau ukuran ruangnya tidak proporsional. Sehingga kadang terlihat agak aneh
