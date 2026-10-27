@@ -76,15 +76,15 @@ post:
 comments:
   enabled: true
   # giscus, disqus, utterances, waline, artalk, twikoo
-  system: "disqus"
-  disqus:
-    shortname: "jundi14"
-  # utterances:
-  #   repo: "jundi14/jundi-blog-narrow"
-  #   issueTerm: "title"
-  #   label: "comment"
-  #   theme: "boxy-light"
-  # Analytics
+  system: "utterances"
+  utterances:
+    repo: "jundi14/jundi-blog-narrow"
+    issueTerm: "title"
+    label: "comment"
+    theme: "preferred-color-scheme"
+  # disqus:
+  #   shortname: "jundi14"
+# Analytics
 analytics:
   enabled: true
   # google:
