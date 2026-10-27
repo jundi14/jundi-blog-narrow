@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: jundi14/jundi-blog-narrow
+  base_url: https://netlify-cms-github-oauth-provider-teal.vercel.app
   branch: master
   squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:
@@ -10,9 +11,9 @@ backend:
 publish_mode: editorial_workflow # Aktifkan mode editorial untuk memungkinkan review sebelum publikasi
 logo:
   src: https://jundi.web.id/logo-header.png
-  show_in_header: true    
+  show_in_header: true
 media_folder: "static"
-public_folder: "" 
+public_folder: ""
 collections:
   - name: "blog"
     label: "Blog"
@@ -28,10 +29,10 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Draft", name: "draft", widget: "boolean", required: false, default: false }
-      - { label: "Categories", name: "categories", widget: "select", 
-          multiple: 
-           true, min: 1, max: 1, 
-           options: 
+      - { label: "Categories", name: "categories", widget: "select",
+          multiple:
+           true, min: 1, max: 1,
+           options:
             ["Teknologi", "Coretan", "Blogging"] }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Slug", name: "slug", widget: "string" }
@@ -48,7 +49,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  
+
   # - name: "tags"
   #   label: "Tags"
   #   layout: "tags" # Gunakan layout khusus untuk halaman tags
