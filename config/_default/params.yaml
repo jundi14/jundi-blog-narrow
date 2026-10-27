@@ -50,7 +50,6 @@ grainSize: 15
 # TOC (Table of Contents)
 toc:
   enabled: true # Enable or disable TOC globally
-  #position: "side" # Options: center | side
 
 # Default color scheme
 colorScheme: "Default"
@@ -77,15 +76,14 @@ post:
 comments:
   enabled: true
   # giscus, disqus, utterances, waline, artalk, twikoo
-  system: "utterances"
-  utterances:
-    repo: "jundi14/jundi-blog-narrow"
-    issueTerm: "title"
-    label: "comment"
-    theme: "boxy-light"
-  # disqus:
-  #   shortname: "jundi14"
-
+  system: "disqus"
+  disqus:
+    shortname: "jundi14"
+  # utterances:
+  #   repo: "jundi14/jundi-blog-narrow"
+  #   issueTerm: "title"
+  #   label: "comment"
+  #   theme: "boxy-light"
   # Analytics
 analytics:
   enabled: true
