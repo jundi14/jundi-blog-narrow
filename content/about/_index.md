@@ -1,5 +1,5 @@
 ---
-title: Tentang Saya
+title: About Me
 layout: about
 ---
 
