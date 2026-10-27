@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: jundi14/jundi-blog-narrow
-  base_url: https://netlify-cms-github-oauth-provider-teal.vercel.app
   branch: master
   squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:

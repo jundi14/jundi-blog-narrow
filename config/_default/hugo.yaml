@@ -23,7 +23,6 @@ pagination:
   pagerSize: 10
   path: "page"
 
-
 taxonomies:
   category: categories
   tag: tags
