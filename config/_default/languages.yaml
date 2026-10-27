@@ -4,6 +4,6 @@ en:
   weight: 1
   params:
     dateFormat:
-      long: "Mondah, 2 January 2006"
+      long: "Monday, 2 January 2006"
       medium: "2 January, 2006"
       short: "2 Jan 2006"
