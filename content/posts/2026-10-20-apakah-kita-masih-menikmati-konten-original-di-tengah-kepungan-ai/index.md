@@ -56,4 +56,6 @@ Saya Gen-Z kadang masih suka liat video panjang di facebook, dominasi saat ini b
 
 Dari mulai film drama sampai tutorial.
 
-Tapi ya yang namanya robot AI kadangkala tidak natural dalam pembuatan videonya, entah itu gerakannya sampai sudut pengambilan videonya tidak tepat atau ukuran ruangnya tidak proporsional. Sehingga kadang terlihat agak aneh
+Tapi ya yang namanya robot AI kadangkala tidak natural dalam pembuatan videonya, entah itu gerakannya sampai sudut pengambilan videonya tidak tepat atau ukuran ruangnya tidak proporsional. Sehingga kadang terlihat agak aneh.
+
+Tapi kalau urusan mau menonton atau tidak terserah saja, toh semua jenis video punya target dengan rentang usia yang berbeda.
