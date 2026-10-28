@@ -1,7 +1,10 @@
+site_url: "https://jundi.web.id"
+display_url: "https://jundi.web.id"
 backend:
   name: github
   repo: jundi14/jundi-blog-narrow
   branch: master
+  preview_context: "Vercel"
   squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:
     create: Create {{collection}} “{{slug}}”
@@ -34,7 +37,7 @@ collections:
            options:
             ["Teknologi", "Coretan", "Blogging"] }
       - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9-]+$', "Tidak boleh ada spasi, gunakan tanda hubung"] }
       - { label: "Featured Image", name: "cover", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "about"
