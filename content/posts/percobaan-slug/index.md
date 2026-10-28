@@ -1,6 +1,6 @@
 ---
 title: Percobaan
-date: 2026-10-28T20:19:00
+date: 2026-10-28T20:27:00
 description: percobaan deskripsi
 draft: false
 categories:
