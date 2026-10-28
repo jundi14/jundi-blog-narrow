@@ -21,7 +21,7 @@ collections:
     label: "Blog"
     folder: "content/posts"   # Bagus, garis miring di depan sudah dihapus
     path: "{{slug}}/index"     # Tepat untuk Hugo Page Bundles (tanpa .md)
-    preview_path: "posts/{{fields.slug}}"
+    preview_path: "posts/{{slug}}"
     media_folder: ""  # <-- Tambahkan baris ini
     public_folder: "" # <-- Tambahkan baris ini
     create: true
