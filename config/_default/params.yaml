@@ -57,10 +57,10 @@ colorScheme: "Default"
 # Home page configuration
 home:
   recentPostsCount: 10
-# Number of recent posts to show on the home page
-  # Content order configuration - customize the order of home page sections
+  # Content order configuration - customize the order of home page sections.
   # Available sections: author-section, recent-posts, featured-projects, page-content
-  # You can add your custom content by creating files in `layouts/_partials/home/` folder, then add it to the list
+  # You can add your custom content by creating files in `layouts/_partials/home/` folder,
+  # then add it to the list.
   contentOrder:
     - author-section
     - recent-posts
@@ -75,15 +75,17 @@ post:
 # Comments
 comments:
   enabled: true
-  # giscus, disqus, utterances, waline, artalk, twikoo
+  # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
   system: "utterances"
   utterances:
     repo: "jundi14/jundi-blog-narrow"
     issueTerm: "title"
     label: "comment"
     theme: "preferred-color-scheme"
+  # Example:
   # disqus:
   #   shortname: "jundi14"
+
 # Analytics
 analytics:
   enabled: true
