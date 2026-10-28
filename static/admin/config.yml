@@ -1,7 +1,10 @@
+site_url: "https://jundi.web.id"
+display_url: "https://jundi.web.id"
 backend:
   name: github
   repo: jundi14/jundi-blog-narrow
   branch: master
+  preview_context: "Vercel"
   squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:
     create: Create {{collection}} “{{slug}}”
