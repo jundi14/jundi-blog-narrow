@@ -1,4 +1,5 @@
 baseURL: https://jundi.web.id/
+timeZone: "Asia/Jakarta"
 locale: en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
@@ -12,7 +13,6 @@ enableEmoji: true
 # If not configured, Hugo will automatically select the section with the most pages
 # This configuration affects functions such as recent articles on the homepage, search index, and archive pages
 mainSections: ["posts"]  # Multiple values can be configured, e.g. ["posts", "blog", "articles"]
-
 permalinks:
   posts: /posts/:slug/
   projects: /projects/:slug/
