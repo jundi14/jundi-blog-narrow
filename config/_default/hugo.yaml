@@ -72,3 +72,7 @@ module:
   hugoVersion:
     extended: true
     min: 0.165.0
+# Pengaturan khusus tema (Parameter)
+params:
+  home:
+    recentPostsCount: 10
