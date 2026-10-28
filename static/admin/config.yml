@@ -1,16 +1,13 @@
-site_url: "https://jundi.web.id"
-display_url: "https://jundi.web.id"
 backend:
   name: github
   repo: jundi14/jundi-blog-narrow
   branch: master
-  preview_context: "Vercel"
   squash_merges: true #menghapus riwayat commit yang tidak perlu saat melakukan merge
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
     delete: Delete {{collection}} “{{slug}}”
-publish_mode: editorial_workflow # Aktifkan mode editorial untuk memungkinkan review sebelum publikasi
+# publish_mode: editorial_workflow # Aktifkan mode editorial untuk memungkinkan review sebelum publikasi
 logo:
   src: https://jundi.web.id/logo-header.png
   show_in_header: true
@@ -21,7 +18,7 @@ collections:
     label: "Blog"
     folder: "content/posts"   # Bagus, garis miring di depan sudah dihapus
     path: "{{slug}}/index"     # Tepat untuk Hugo Page Bundles (tanpa .md)
-    preview_path: "posts/{{slug}}"
+    preview_path: "posts/{{fields.slug}}"
     media_folder: ""  # <-- Tambahkan baris ini
     public_folder: "" # <-- Tambahkan baris ini
     create: true
