@@ -1,6 +1,6 @@
 ---
 title: Apakah Kita Masih Menikmati Konten Original di Tengah Kepungan AI?
-date: 2026-10-23T08:14:00.000+07:00
+date: 2026-10-28T11:31:00
 description: ''
 draft: false
 categories:
@@ -56,6 +56,20 @@ Saya Gen-Z kadang masih suka liat video panjang di facebook, dominasi saat ini b
 
 Dari mulai film drama sampai tutorial.
 
-Tapi ya yang namanya robot AI kadangkala tidak natural dalam pembuatan videonya, entah itu gerakannya sampai sudut pengambilan videonya tidak tepat atau ukuran ruangnya tidak proporsional. Sehingga kadang terlihat agak aneh.
+Tapi, namanya robot AI kadangkala tidak natural dalam pembuatan videonya, entah itu gerakannya sampai sudut pengambilan videonya tidak tepat atau ukuran ruangnya tidak proporsional. Sehingga kadang terlihat _nyeleneh_.
 
-Tapi kalau urusan mau menonton atau tidak terserah saja, toh semua jenis video punya target dengan rentang usia yang berbeda.
+Tapi kalau urusan mau menonton atau tidak terserah saja, toh semua jenis video punya target usia yang berbeda.
+
+## Cara menggunakan AI versi saya
+
+AI itu hanya membantu kita atau mempercepat alur kerja yang sudah dimiliki.
+
+Sebut saja saya ingin membuat artikel lalu ingin mencari ide yang fresh, selain kita suka membaca literasi di berbagai media, atau brainstorming dari AI sekaligus kita melihat darimana referensi yang diambil oleh AI.
+
+Setelah itu kita tinggal menuliskan outline yang dibuat oleh AI, diketikkan dengan bahasa kita sendiri supaya terlihat natural.
+
+Apalagi saat ini yang paling tepat ketika menjadi content creator adalah hasil dari menulis dari hati, bukan dari "otak" robot. 
+
+Kenapa seperti itu?
+
+Karena kita punya perasaan punya emosi yang kita bisa menuangkannya ke dalam bentuk tulisan, robot AI tidak punya itu, kita punya kekhasan ketika kita menulis, tetapi AI tidak.
