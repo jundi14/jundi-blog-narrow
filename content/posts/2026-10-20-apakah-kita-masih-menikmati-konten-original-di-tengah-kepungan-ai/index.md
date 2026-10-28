@@ -6,7 +6,7 @@ draft: false
 categories:
   - Coretan
 tags: []
-slug: Menikmati Konten Original di Tengah Kepungan AI
+slug: Menikmati-Konten-Original-di-Tengah-Kepungan-AI
 cover: pexels-tara-winstead-8386434.jpg
 ---
 
