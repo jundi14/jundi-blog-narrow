@@ -7,7 +7,7 @@ backend:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
     delete: Delete {{collection}} “{{slug}}”
-# publish_mode: editorial_workflow # Aktifkan mode editorial untuk memungkinkan review sebelum publikasi
+publish_mode: editorial_workflow # Aktifkan mode editorial untuk memungkinkan review sebelum publikasi
 logo:
   src: https://jundi.web.id/logo-header.png
   show_in_header: true
