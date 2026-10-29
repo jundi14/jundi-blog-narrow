@@ -79,8 +79,8 @@ comments:
   giscus:
     repo: "jundi14/jundi-blog-narrow"
     repoId: "R_kgDOSsUq3A"
-    category: "General"
-    categoryId: "Announcements"
+    category: "Announcements"
+    categoryId: "DIC_kwDOSsUq3M4DJ4CD"
     mapping: "title"
     strict: "0"
     reactionsEnabled: "1"
@@ -88,6 +88,7 @@ comments:
     inputPosition: "top"
     theme: "preferred_color_scheme"
     lang: "id"
+    loading: "lazy"
   # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
   # system: "utterances"
   # utterances:
