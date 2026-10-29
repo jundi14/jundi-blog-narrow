@@ -75,7 +75,7 @@ post:
 # Comments
 comments:
   enabled: true
-  provider: "giscus"
+  system: "giscus"
   giscus:
     repo: "jundi14/jundi-blog-narrow"
     repoId: "R_kgDOSsUq3A"
