@@ -86,7 +86,7 @@ comments:
     reactionsEnabled: "1"
     emitMetadata: "0"
     inputPosition: "top"
-    theme: "preferred_color_scheme"
+    theme: "gruvbox_light"
     lang: "id"
     loading: "lazy"
   # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
