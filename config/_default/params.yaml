@@ -70,7 +70,7 @@ home:
 post:
   showRelated: false
   relatedPostsCount: 3
-  license: "CC BY-NC-SA 4.0" # shown in the post meta line; empty to hide
+  #license: "CC BY-NC-SA 4.0" # shown in the post meta line; empty to hide
 
 # Comments
 comments:
@@ -86,7 +86,7 @@ comments:
     reactionsEnabled: "1"
     emitMetadata: "0"
     inputPosition: "top"
-    theme: "gruvbox_light"
+    theme: "preferred_color_scheme"
     lang: "id"
     loading: "lazy"
   # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
