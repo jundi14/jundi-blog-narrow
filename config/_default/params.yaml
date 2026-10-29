@@ -88,7 +88,6 @@ comments:
     inputPosition: "top"
     theme: "preferred_color_scheme"
     lang: "id"
-    loading: "lazy"
   # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
   # system: "utterances"
   # utterances:
