@@ -74,7 +74,7 @@ post:
 
 # Comments
 comments:
-  enabled: false
+  enabled: true
   provider: "giscus"
   giscus:
     repo: "jundi14/jundi-blog-narrow"
