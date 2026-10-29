@@ -78,16 +78,17 @@ comments:
   provider: "giscus"
   giscus:
     repo: "jundi14/jundi-blog-narrow"
-    repoId: ""
+    repoId: "R_kgDOSsUq3A"
     category: "General"
-    categoryId: ""
-    mapping: "pathname"
+    categoryId: "Announcements"
+    mapping: "title"
     strict: "0"
     reactionsEnabled: "1"
     emitMetadata: "0"
     inputPosition: "top"
     theme: "preferred_color_scheme"
-    lang: "en"
+    lang: "id"
+    loading: "lazy"
   # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
   # system: "utterances"
   # utterances:
