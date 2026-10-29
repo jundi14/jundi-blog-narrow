@@ -74,14 +74,27 @@ post:
 
 # Comments
 comments:
-  enabled: true
-  # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
-  system: "utterances"
-  utterances:
+  enabled: false
+  provider: "giscus"
+  giscus:
     repo: "jundi14/jundi-blog-narrow"
-    issueTerm: "title"
-    label: "comment"
-    theme: "preferred-color-scheme"
+    repoId: ""
+    category: "General"
+    categoryId: ""
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "top"
+    theme: "preferred_color_scheme"
+    lang: "en"
+  # Supported systems: giscus, disqus, utterances, waline, artalk, twikoo
+  # system: "utterances"
+  # utterances:
+  #   repo: "jundi14/jundi-blog-narrow"
+  #   issueTerm: "title"
+  #   label: "comment"
+  #   theme: "preferred-color-scheme"
   # Example:
   # disqus:
   #   shortname: "jundi14"
