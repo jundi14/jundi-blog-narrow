@@ -72,6 +72,3 @@ module:
   hugoVersion:
     extended: true
     min: 0.165.0
-
-# params:
-#   customCSS: ["/css/custom.css"]
