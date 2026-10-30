@@ -1,14 +1,16 @@
 ---
 title: Hal Yang Paling Saya Takutkan, Tapi Ternyata Baik-Baik Saja
 date: 2026-07-18T21:11:00.000+07:00
+description: ''
 draft: false
 categories:
   - Coretan
 tags:
   - 100daystooffload
-slug: hal yang paling saya takutkan
+slug: hal-yang-paling-saya-takutkan
 cover: pexels-alexasfotos-31682443.jpg
 ---
+
 Ada satu hal yang dulu sempat takut kalau itu terjadi di kemudian hari, **public speaking**.
 
 Ya hal ini menjadi momok yang cukup menakutkan, kalau tiba-tiba ada momen yang mengharuskan saya berbicara atau mungkin terpaksa saya harus berbicara.
