@@ -1,12 +1,15 @@
 ---
 title: 2 Hewan Menyebalkan Yang Hidup Bersama Kita
 date: 2026-10-12T07:47:00.000+07:00
+description: ''
 draft: false
 categories:
   - Coretan
-slug: hewan yang menggelikan
+tags: []
+slug: hewan-yang-menggelikan
 cover: pexels-lebele-19912167.jpg
 ---
+
 *“Rumah yang gada cicaknya”*.
 ucap wanita yang telah tinggal bersamaku hampir 5 tahun lamanya, saatku bertanya rumah yang menarik untuknya yang modelnya seperti apa.
 Ya, hewan yang sangat ditakuti olehnya mungkin lebih tepatnya “geli”.
