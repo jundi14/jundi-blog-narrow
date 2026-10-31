@@ -51,7 +51,7 @@
 
   <!-- 底部区域：Kombinasi Media Sosial + Copyright, dan Kredit HP -->
   <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
-    
+
     <!-- Grup Kiri: Ikon Media Sosial & Tepat di bawahnya ada Copyright -->
     <div class="flex flex-col items-center gap-2 md:items-start">
       <!-- 社交媒体图标 -->
@@ -84,35 +84,20 @@
     </div>
 
     <!-- Grup Kanan: Informasi Kredit (Made with...) -->
-    <div class="text-muted-foreground text-center text-sm md:text-right">
-      <p class="flex flex-wrap items-center justify-center gap-1 md:justify-end">
-        <span>Made with</span>
-        <!-- gohugo -->
-        <a
-        href="https://gohugo.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="transition-colors duration-200 flex items-center inline-flex align-middle"
-        style="color: #ef4444 !important;" 
-        title="Hugo"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ef4444" class="w-4 h-4" style="width: 1rem; height: 1rem; fill: #ef4444 !important;">
-          <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-        </svg>
-        </a>
-        <!--ampersand-->
-        <span class="text-muted-foreground/60 font-serif text-base mx-1">&</span>
-        <!--narrow-->
-        <a
-          href="https://github.com/tom2almighty/hugo-narrow"
-          target="_blank"
-          rel="noopener noreferrer"
-          
-        >
-          Narrow
-        </a>
-      </p>
-    </div>
-
+        <div class="text-muted-foreground text-center text-sm md:text-right">
+          <p class="flex flex-wrap items-center justify-center gap-2 md:justify-end">
+            <span>Made with</span>
+            <!-- gohugo badge -->
+            <a
+              href="https://github.com/tom2almighty/hugo-narrow"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transition-opacity duration-200 hover:opacity-80 flex items-center"
+              title="Hugo"
+            >
+              <img src="https://img.shields.io/badge/Hugo-FF4088?style=flat&logo=hugo&logoColor=white" alt="Hugo" class="h-[18px]">
+            </a>
+          </p>
+        </div>
   </div>
 </footer>
