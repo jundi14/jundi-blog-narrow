@@ -5,6 +5,7 @@ shortName: "Jundi" # PWA
 images:
   - "sampul.png"
 
+
 # Site-wide broadcast announcement
 announcement:
   enabled: false

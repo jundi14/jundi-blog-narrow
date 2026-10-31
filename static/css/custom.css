@@ -55,7 +55,7 @@
 
 html, body {
   font-family: var(--font-sans) !important;
-  font-size: 1rem;
+  font-size: 1.11rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,7 +72,7 @@ h1 {
 }
 
 /* Judul di Homepage (Recent Posts) & Sub-judul (H2-H6) */
-h2, h3, h4, h5, h6, 
+h2, h3, h4, h5, h6,
 .title, .post-title,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-family: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif !important;
