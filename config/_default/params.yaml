@@ -21,8 +21,8 @@ favicon:
 # Author info
 author:
   name: "Jundi Mubarok"
-  title: "Ngobrol Lewat Tulisan Ringan"
-  description: "Catatan ● Opini ● Teman Ngopi"
+  title: "Bercerita Lewat Tulisan Ringan"
+  description: "Ayah Dari 2 Putri & Penikmat Tulisan Ringan"
   avatar: "profile.png"
   social:
     - name: "Instagram"
@@ -40,7 +40,7 @@ search:
 # Content width
 # The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
 # You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
-contentWidth: "51rem"
+contentWidth: "48rem"
 # Responsive image variants. Widths are derived from contentWidth, so no
 # per-image breakpoints are needed.
 image:
