@@ -1,4 +1,4 @@
 ---
 title: "Posts"
-description: "Berikut adalah semua artikel yang telah diterbitkan, diurutkan berdasarkan tanggal dalam urutan menurun."
+description: "Berikut adalah artikel yang telah diterbitkan, diurutkan berdasarkan tanggal dalam urutan menurun."
 ---
