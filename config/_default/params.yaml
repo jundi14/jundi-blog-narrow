@@ -32,6 +32,9 @@ author:
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
       icon: "mingcute--threads-fill"
+    - name: "Bluesky"
+      url: "https://bsky.app/profile/jundi.web.id"
+      icon: "bluesky-brands-solid-full"
 
 # Search
 search:

@@ -11,6 +11,12 @@ main:
     params:
       icon: archive
 
+  - name: Tags
+    weight: 25
+    pageRef: /tags
+    params:
+      icon: solar--tag-bold
+
   - name: Categories
     pageRef: /categories
     weight: 30
@@ -52,17 +58,11 @@ footer:
     params:
       icon: streamline-logos--about-me-logo-block
 
-  - name: Tags
-    weight: 30
-    pageRef: /tags
-    params:
-      icon: solar--tag-bold
-
   - name: Donate
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
-      icon: mingcute--receive-money-fill
+      icon: mug-hot-solid-full
 
   # - name: Timeline
   #   pageRef: /timeline
@@ -94,8 +94,8 @@ social:
     weight: 20
     params:
       icon: mingcute--threads-fill
-  - name: Email
-    url: mailto:jundimubarok74@gmail.com
+  - name: Bluesky
+    url: https://bsky.app/profile/jundi.web.id
     weight: 30
     params:
-      icon: mingcute--mail-send-fill
+      icon: bluesky-brands-solid-full
