@@ -28,13 +28,13 @@ author:
   social:
     - name: "Bluesky"
       url: "https://bsky.app/profile/jundi.web.id"
-      icon: "bluesky-brands-solid-full"
+      icon: "bluesky-social-line"
     - name: "Instagram"
       url: "https://instagram.com/jundi.mubarok"
-      icon: "instagram-brands-solid-full"
+      icon: "instagram-line"
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
-      icon: "threads-brands-solid-full"
+      icon: "threads-line"
 
 # Search
 search:

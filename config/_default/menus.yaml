@@ -15,7 +15,7 @@ main:
     weight: 25
     pageRef: /tags
     params:
-      icon: solar--tag-bold
+      icon: tag-line
 
   - name: Categories
     pageRef: /categories
@@ -52,17 +52,17 @@ main:
 
 # footer menu
 footer:
-  - name: " About"
+  - name: About
     pageRef: /about
     weight: 20
     params:
-      icon: streamline-logos--about-me-logo-block
+      icon: user-3-line
 
   - name: Donate
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
-      icon: mug-hot-solid-full
+      icon: hand-fist-line
 
   # - name: Timeline
   #   pageRef: /timeline
@@ -88,14 +88,14 @@ social:
     url: https://instagram.com/jundi.mubarok
     weight: 10
     params:
-      icon: instagram-brands-solid-full
+      icon: instagram-line
   - name: Threads
     url: https://threads.net/@jundi.mubarok
     weight: 20
     params:
-      icon: threads-brands-solid-full
+      icon: threads-line
   - name: Bluesky
     url: https://bsky.app/profile/jundi.web.id
     weight: 5
     params:
-      icon: bluesky-brands-solid-full
+      icon: bluesky-social-line
