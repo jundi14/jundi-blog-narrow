@@ -28,10 +28,10 @@ author:
   social:
     - name: "Instagram"
       url: "https://instagram.com/jundi.mubarok"
-      icon: "mingcute--instagram-fill"
+      icon: "instagram-brands-solid-full"
     - name: "Threads"
       url: "https://threads.net/@jundi.mubarok"
-      icon: "mingcute--threads-fill"
+      icon: "threads-brands-solid-full"
     - name: "Bluesky"
       url: "https://bsky.app/profile/jundi.web.id"
       icon: "bluesky-brands-solid-full"

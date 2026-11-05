@@ -88,12 +88,12 @@ social:
     url: https://instagram.com/jundi.mubarok
     weight: 10
     params:
-      icon: mingcute--instagram-fill
+      icon: instagram-brands-solid-full
   - name: Threads
     url: https://threads.net/@jundi.mubarok
     weight: 20
     params:
-      icon: mingcute--threads-fill
+      icon: threads-brands-solid-full
   - name: Bluesky
     url: https://bsky.app/profile/jundi.web.id
     weight: 30
