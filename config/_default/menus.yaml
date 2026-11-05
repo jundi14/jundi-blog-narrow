@@ -96,6 +96,6 @@ social:
       icon: threads-brands-solid-full
   - name: Bluesky
     url: https://bsky.app/profile/jundi.web.id
-    weight: 30
+    weight: 5
     params:
       icon: bluesky-brands-solid-full
