@@ -15,7 +15,7 @@ main:
     weight: 25
     pageRef: /tags
     params:
-      icon: tag-line
+      icon: tags
 
   - name: Categories
     pageRef: /categories
@@ -62,7 +62,7 @@ footer:
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
-      icon: hand-fist-line
+      icon: cash-line
 
   # - name: Timeline
   #   pageRef: /timeline
