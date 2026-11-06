@@ -89,7 +89,7 @@ comments:
     repoId: "R_kgDOSsUq3A"
     category: "Announcements"
     categoryId: "DIC_kwDOSsUq3M4DJ4CD"
-    mapping: "title"
+    mapping: "pathname"
     strict: "0"
     reactionsEnabled: "1"
     emitMetadata: "0"
