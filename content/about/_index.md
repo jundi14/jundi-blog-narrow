@@ -1,8 +1,6 @@
 ---
 title: About Me
 layout: about
-comments: 
-  enable: false
 ---
 
 ## Siapa Saya
