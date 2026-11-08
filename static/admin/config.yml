@@ -36,6 +36,13 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Slug hanya boleh mengandung huruf kecil, angka, dan tanda hubung.'], required: false }
       - { label: "Featured Image", name: "cover", widget: "image", required: false}
+      - label: "Komentar"
+        name: "comments"
+        widget: "object"
+        required: false
+        fields:
+         - { label: "Aktifkan Komentar", name: "enabled", widget: "boolean", default: true, required: false }
+         - { label: "Provider", name: "provider", widget: "hidden", default: "giscus" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "about"
     label: "About"
