@@ -82,7 +82,7 @@ post:
 
 # Comments
 comments:
-  enabled: true
+  enabled: false
   system: "giscus"
   giscus:
     repo: "jundi14/jundi-blog-narrow"
