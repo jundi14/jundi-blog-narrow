@@ -3,6 +3,9 @@ title: 2 Hewan Menyebalkan Yang Hidup Bersama Kita
 date: 2026-10-12T07:47:00.000+07:00
 description: ''
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories:
   - Coretan
 tags: []

@@ -5,6 +5,9 @@ description: Karena nggak mungkin aplikasi ini saya hapus, dengan banyaknya
   pengguna whatsapp di Indonesia, sampai-sampai kalau ada yang nggak menggunakan
   whatsapp muncul pertanyaan
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories:
   - Teknologi
 tags:

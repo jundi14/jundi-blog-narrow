@@ -3,6 +3,9 @@ title: "Serabi, Makanan Tradisional Yang Nikmat Dan Murah"
 date: 2024-10-28
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "Serabi, Makanan Tradisional Yang Nikmat Dan Murah"

@@ -3,6 +3,9 @@ title: "Mengapa Aku Belum Menikah"
 date: 2021-11-29
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "mengapa aku belum menikah"

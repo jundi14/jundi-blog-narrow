@@ -3,6 +3,9 @@ title: "Ketahui Performa Website Dengan 4 Tools Ini"
 date: 2022-11-16
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "cek performa website"

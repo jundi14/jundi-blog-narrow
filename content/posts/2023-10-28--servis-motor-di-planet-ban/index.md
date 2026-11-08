@@ -3,6 +3,9 @@ title: "Pengalaman Pertama Servis Motor di Planet Ban"
 date: 2023-10-28
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "servis-motor-di-planet-ban"

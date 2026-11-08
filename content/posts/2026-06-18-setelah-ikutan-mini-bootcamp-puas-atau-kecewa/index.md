@@ -2,6 +2,9 @@
 title: Setelah Ikutan Mini Bootcamp, Puas atau Kecewa?
 date: 2026-06-18T13:35:00.000+07:00
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories:
   - Teknologi
 tags:

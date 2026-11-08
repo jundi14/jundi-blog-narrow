@@ -3,6 +3,9 @@ title: "9 Cara Agar Kamu Betah Saat Di Pesantren"
 date: 2021-11-30
 description: "Gimana sih caranya biar kamu yang sedang duduk di bangku pesantren bisa betah?"
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["santri"]
 slug: "cara agar betah di pesantren"

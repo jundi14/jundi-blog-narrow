@@ -3,6 +3,9 @@ title: "Mengenal Lebih Dekat Metaverse: Pengertian dan Dampaknya"
 date: 2021-12-05
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "Apa itu metaverse"

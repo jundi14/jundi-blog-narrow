@@ -3,6 +3,9 @@ title: "Refleksi diri lewat Blog Question Challenge"
 date: 2026-03-12
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: ["100daystooffload"]
 slug: "Blog Question Challenge"

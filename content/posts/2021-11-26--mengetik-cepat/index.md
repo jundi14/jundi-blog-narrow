@@ -3,6 +3,9 @@ title: "Mengetik Cepat 10 Jari, Kamu Harus Menguasainya!"
 date: 2021-11-26
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "mengetik cepat"

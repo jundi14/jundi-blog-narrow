@@ -3,6 +3,9 @@ title: "Kontrakan Saat Ini. Dingin!"
 date: 2022-11-21
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["kontrakan"]
 slug: "kontrakan saat ini"

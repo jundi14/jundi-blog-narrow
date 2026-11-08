@@ -3,6 +3,9 @@ title: "Pencilbooth, Layanan Email Newsletter Sederhana Tapi Tetap Customable"
 date: 2024-11-02
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "pencilbooth email newsletter"

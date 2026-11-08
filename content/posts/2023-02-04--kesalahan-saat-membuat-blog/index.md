@@ -3,6 +3,9 @@ title: "Kesalahan Yang Saya Lakukan Saat Membuat Blog"
 date: 2023-02-04
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: [""]
 slug: "kesalahan saat membuat blog"

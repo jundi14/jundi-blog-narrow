@@ -3,6 +3,9 @@ title: "Jas Almamater vs Jaket Gunung"
 date: 2022-11-20
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "jas almamater vs jaket gunung"

@@ -3,6 +3,9 @@ title: "Umami, Alternatif dari Google Analitik yang Lebih Cepat dan Sederhana"
 date: 2023-08-24
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: [""]
 slug: "Umami Alternatif dari Google Analitik"

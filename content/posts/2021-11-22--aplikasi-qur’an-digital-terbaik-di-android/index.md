@@ -3,6 +3,9 @@ title: "Aplikasi Qur’an Digital Terbaik di Android"
 date: 2021-11-22
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "aplikasi qur’an digital terbaik di android"

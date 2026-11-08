@@ -3,6 +3,9 @@ title: "Adat Tiap Tempat Berbeda-beda, Tapi Kenapa Seaneh Ini?"
 date: 2024-08-01
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "adat di berbagai tempat"

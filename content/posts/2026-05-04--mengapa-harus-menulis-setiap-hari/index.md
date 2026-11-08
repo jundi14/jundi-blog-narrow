@@ -3,6 +3,9 @@ title: "Mengapa Saya Harus Menulis Setiap Hari (Journaling)"
 date: 2026-05-04
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: ["100daystooffload"]
 slug: "Mengapa Harus Menulis Setiap Hari"

@@ -3,6 +3,9 @@ title: "3 Fitur Seru dan 7 Kelebihan Telegram Dibandingkan Whatsapp"
 date: 2021-11-21
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "kelebihan telegram dibandingkan whatsapp"

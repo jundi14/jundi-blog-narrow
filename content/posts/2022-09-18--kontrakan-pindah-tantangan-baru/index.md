@@ -3,6 +3,9 @@ title: "Kontrakan Pindah, Tantangan Baru"
 date: 2022-09-18
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["kontrakan"]
 slug: "Kontrakan Pindah, Tantangan Baru"

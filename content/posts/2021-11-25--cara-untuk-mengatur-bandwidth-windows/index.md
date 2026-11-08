@@ -3,6 +3,9 @@ title: "Bikin Koneksi Internetmu Lancar Dengan Mengurangi Bandwidth Windows Upda
 date: 2021-11-25
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "cara untuk mengatur bandwidth windows"

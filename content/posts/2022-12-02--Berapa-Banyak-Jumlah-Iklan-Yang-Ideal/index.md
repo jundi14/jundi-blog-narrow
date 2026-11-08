@@ -3,6 +3,9 @@ title: "Berapa Banyak Jumlah Iklan Yang Ideal Pada Website?"
 date: 2022-12-02
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: [""]
 slug: "Berapa Banyak Jumlah Iklan Yang Ideal"

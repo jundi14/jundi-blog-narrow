@@ -3,6 +3,9 @@ title: "Mulai Dari Nol Yaa"
 date: 2025-10-27
 description: "Blog menjadi salah satu cara untuk mencurahkan pikiran paling bebas yang pernah ada. Dari sini ide dan gagasan mulai berkembang"
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["100daystooffload"]
 slug: "Mulai Dari Nol Yaa"
@@ -48,4 +51,4 @@ Selamat berkarya. Selamat menulis. 😁
 ##### *Ditulis saat hujan deras, nyaman untuk menarik selimut di atas kasur :)* 
 
 (1/100)\
-#100daystooffload 
+#100daystooffload

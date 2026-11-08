@@ -3,6 +3,9 @@ title: "Memori Lama Pengalaman Masa Kecil Yang Teringat Kembali"
 date: 2021-11-27
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "pengalaman masa kecil"

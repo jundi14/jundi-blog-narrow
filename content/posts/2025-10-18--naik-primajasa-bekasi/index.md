@@ -3,6 +3,9 @@ title: "Ke Bekasi, Kali Ini Menggunakan Bus Primajasa"
 date: 2025-10-18
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "naik Primajasa bekasi"

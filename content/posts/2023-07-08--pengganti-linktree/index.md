@@ -3,6 +3,9 @@ title: "Pengganti Linktree Dengan Fitur Yang Lebih Menarik. Carrd.co!"
 date: 2023-07-08
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: [""]
 slug: "Pengganti Linktree Dengan Fitur Yang Lebih Menarik. Carrd.co"

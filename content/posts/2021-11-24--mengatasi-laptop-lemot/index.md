@@ -3,6 +3,9 @@ title: "7 Cara Mudah Mengatasi Laptop Yang Lambat, Dijamin Berhasil !"
 date: 2021-11-24
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "mengatasi laptop lemot"

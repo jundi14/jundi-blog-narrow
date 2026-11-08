@@ -3,6 +3,9 @@ title: "Bearblog, Platform Blogging Yang Sedang Nge-trend"
 date: 2024-07-22
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: [""]
 slug: "platform blogging bearblog"

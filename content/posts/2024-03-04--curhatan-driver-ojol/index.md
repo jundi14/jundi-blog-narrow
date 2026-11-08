@@ -3,6 +3,9 @@ title: "Curhatan Driver Ojol 'Senior' Tapi Junior"
 date: 2024-03-04
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "Curhatan Driver Ojol"

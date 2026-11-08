@@ -3,6 +3,9 @@ title: "Mobil Listrik Lebih Efisienkah Dibanding Mobil Konvensional?"
 date: 2024-05-04
 description: "Kita ulas lebih dalam tentang fakta yang perlu kamu ketahui dari EV yang sekarang sudah merajalela"
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "mobil listrik lebih efisien"

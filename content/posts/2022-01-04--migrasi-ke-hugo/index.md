@@ -3,6 +3,9 @@ title: "Pilihan Menarik, Website Statis"
 date: 2022-01-04
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: ["hugo"]
 slug: "migrasi ke hugo"

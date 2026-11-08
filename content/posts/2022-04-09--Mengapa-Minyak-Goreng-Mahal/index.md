@@ -3,6 +3,9 @@ title: "Mengapa Minyak Goreng Mahal?"
 date: 2022-04-09
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "Mengapa Minyak Goreng Mahal?"

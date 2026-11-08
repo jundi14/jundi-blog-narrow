@@ -3,6 +3,9 @@ title: "Berkendara Online, Rasakan Sensasi Jalan-jalan ke Mancanegara Secara Vir
 date: 2023-08-26
 description: "Saat keuangan tidak mencukupi untuk bepergian ke berbagai negara, aplikasi ini membantu kamu untuk menikmati indahnya jalanan di berbagai kota di mancanegara."
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "menikmati jalan-jalan secara virtual"
@@ -55,4 +58,4 @@ Selamat menikmati jalan jalan virtualnya.
 
 #### UPDATE:
 
-Saat ini domain untuk mengakses website tersebut sudah tidak aktif 
+Saat ini domain untuk mengakses website tersebut sudah tidak aktif

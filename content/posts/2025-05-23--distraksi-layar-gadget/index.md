@@ -3,6 +3,9 @@ title: "Distraksi Yang Luar Biasa Dari Layar Gadget"
 date: 2025-05-23
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "distraksi-layar-gadget"

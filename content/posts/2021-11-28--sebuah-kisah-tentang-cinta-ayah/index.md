@@ -3,6 +3,9 @@ title: "Sebuah Kisah Tentang Cinta Ayah"
 date: 2021-11-28
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "sebuah kisah tentang cinta ayah"

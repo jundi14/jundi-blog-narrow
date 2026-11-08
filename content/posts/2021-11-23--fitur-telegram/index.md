@@ -3,6 +3,9 @@ title: "Sangat Membantu! Inilah 10 Fitur Telegram Yang Sangat Menarik"
 date: 2021-11-23
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "fitur telegram"

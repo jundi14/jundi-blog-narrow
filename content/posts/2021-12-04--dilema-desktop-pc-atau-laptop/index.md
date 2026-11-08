@@ -3,6 +3,9 @@ title: "Dilema, Desktop PC atau Laptop?"
 date: 2021-12-04
 description: "Pilihan yang salah sangat tergantung pada pilihan kamu jika kamu memerlukan desktop atau laptop."
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "dilema desktop pc atau laptop"

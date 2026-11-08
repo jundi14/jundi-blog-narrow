@@ -3,6 +3,9 @@ title: "Prediksi Tahun 2050, Inilah Kondisi Kota Dari Seluruh Dunia di Masa Depa
 date: 2023-01-01
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "prediksi kota masa depan"

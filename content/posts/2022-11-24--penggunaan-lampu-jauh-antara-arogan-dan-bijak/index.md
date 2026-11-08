@@ -3,6 +3,9 @@ title: "Penggunaan Lampu Jauh, Antara Arogan Dan Bijak"
 date: 2022-11-24
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "penggunaan lampu jauh antara arogan dan bijak"

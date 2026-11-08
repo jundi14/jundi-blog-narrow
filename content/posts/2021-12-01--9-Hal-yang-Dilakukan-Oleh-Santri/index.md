@@ -3,6 +3,9 @@ title: "9 Hal yang Dilakukan Oleh Santri"
 date: 2021-12-01
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["santri"]
 slug: "9 Hal yang Dilakukan Oleh Santri"

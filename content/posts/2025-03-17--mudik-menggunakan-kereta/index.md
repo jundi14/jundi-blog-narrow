@@ -3,6 +3,9 @@ title: "Mudik Menggunakan Transportasi Publik KAI"
 date: 2025-03-17
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["mudik"]
 slug: "mudik menggunakan kereta"

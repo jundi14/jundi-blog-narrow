@@ -3,6 +3,9 @@ title: "Inilah Beberapa Hal yang Perlu Anda Ketahui Tentang NFT"
 date: 2021-12-05
 description: "NFT menjadi bahan perbincangan hampir di setiap belahan negara, mari kita simak pembahasannya."
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "Apa itu nft"

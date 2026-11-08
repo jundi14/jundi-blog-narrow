@@ -3,6 +3,9 @@ title: "Chat GPT Besutan Open AI Yang Membuat Kita Malas Berpikir"
 date: 2022-12-20
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "Apa itu Chat GPT"

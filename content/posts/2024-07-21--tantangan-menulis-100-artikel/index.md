@@ -3,6 +3,9 @@ title: "Memulai Tantangan, Menulis Selama 100 Hari Berturut-turut!"
 date: 2024-07-21
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["opini"]
 slug: "tantangan menulis 100 artikel"

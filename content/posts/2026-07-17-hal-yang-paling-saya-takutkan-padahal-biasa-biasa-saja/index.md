@@ -3,6 +3,9 @@ title: Hal Yang Paling Saya Takutkan, Tapi Ternyata Baik-Baik Saja
 date: 2026-07-18T21:11:00.000+07:00
 description: ''
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories:
   - Coretan
 tags:

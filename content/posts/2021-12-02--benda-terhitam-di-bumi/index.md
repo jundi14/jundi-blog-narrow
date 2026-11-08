@@ -3,6 +3,9 @@ title: "Vantablack Material Terhitam Di Bumi, Ini Contoh Penampakannya"
 date: 2021-12-02
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "benda terhitam di bumi"

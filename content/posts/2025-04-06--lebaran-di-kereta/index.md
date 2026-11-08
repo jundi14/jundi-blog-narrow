@@ -3,6 +3,9 @@ title: "Lebaran Tahun Ini Di Kereta Api"
 date: 2025-04-06
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "lebaran di kereta"
@@ -24,4 +27,3 @@ Hanya tersedia tiket yang mahal jika mengambil jadwal setelah lebaran atau sebel
 Jadi, saya izin 2 hari ngga ikut jaga di pondok pesantren.
 
 Seenggaknya masih sempet ikut andil jaga pondok beberapa hari 🙂.
-

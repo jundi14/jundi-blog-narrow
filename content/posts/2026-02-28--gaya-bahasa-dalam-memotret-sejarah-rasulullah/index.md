@@ -3,6 +3,9 @@ title: "Menimbang Gaya Bahasa Balqis dalam Memotret Sejarah Rasulullah"
 date: 2026-02-28
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["100daystooffload"]
 slug: "Gaya Bahasa dalam Memotret Sejarah Rasulullah"

@@ -3,6 +3,9 @@ title: "Jebakan Swipe dan Kenapa Saya Memilih Uninstall Aplikasi Belanja"
 date: 2026-02-11
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["100daystooffload"]
 slug: "Uninstall Aplikasi Belanja"

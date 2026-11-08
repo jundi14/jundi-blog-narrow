@@ -3,6 +3,9 @@ title: "DANA, Dompet Digital Yang Sering Saya Gunakan"
 date: 2024-05-26
 description: "Dompet digital menjadi sebuah keharusan di era digital ini, sebuah opsi transaksi yang hampir wajib di setiap lini kehidupan kita."
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: ["opini"]
 slug: "dompet-digital-pilihanku"

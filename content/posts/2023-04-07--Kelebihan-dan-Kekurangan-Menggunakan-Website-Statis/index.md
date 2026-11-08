@@ -3,6 +3,9 @@ title: "Kelebihan dan Kekurangan Menggunakan Website Statis"
 date: 2023-04-07
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Blogging"]
 tags: ["hugo"]
 slug: "Kelebihan dan Kekurangan Menggunakan Website Statis"

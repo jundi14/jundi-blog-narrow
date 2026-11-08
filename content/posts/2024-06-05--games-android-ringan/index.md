@@ -3,6 +3,9 @@ title: "2 Player Games, Kumpulan Game Buat Mengisi Waktu Luang Kamu"
 date: 2024-06-05
 description: "Game sederhana tapi tetap menarik dan bikin ketagihan karena berisi kumpulan game game menarik yang bisa kamu mainkan diwaktu luang kamu"
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "games-android-ringan"

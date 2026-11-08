@@ -3,6 +3,9 @@ title: "Mudik 2026 Ke Bekasi Menggunakan Kereta Murah Meriah"
 date: 2026-03-31
 description:
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["100daystooffload"]
 slug: "Mudik-menggunakan-kereta-api"

@@ -3,6 +3,9 @@ title: "Cerita Saat Saya Membuat Blog Untuk Pertama Kalinya"
 date: 2024-06-11
 description: "Saat pertama kali ingin membuat website pilihan ada pada blogspot dan wordpress, dengan alasan kemudahan karena tutorial bertebaran di internet dan support yang bagus serta komunitas banyak."
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["hugo"]
 slug: "membuat-blog"

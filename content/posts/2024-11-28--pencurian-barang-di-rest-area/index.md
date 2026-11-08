@@ -3,6 +3,9 @@ title: "Sinyal Buruk Toyota Calya Di Rest Area Kilometer 39"
 date: 2024-11-28
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: [""]
 slug: "pencurian barang di rest area"

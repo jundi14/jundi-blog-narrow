@@ -3,6 +3,9 @@ title: "Awal Perjuangan Bukalapak"
 date: 2021-12-03
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "awal perjuangan bukalapak"

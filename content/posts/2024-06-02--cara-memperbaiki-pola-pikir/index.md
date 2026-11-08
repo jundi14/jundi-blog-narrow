@@ -3,6 +3,9 @@ title: "Pola Pikir Akan Negatif Jika Kamu Belum Melakukan 3 Tips Ini"
 date: 2024-06-02
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["opini"]
 slug: "cara-memperbaiki-pola-pikir"

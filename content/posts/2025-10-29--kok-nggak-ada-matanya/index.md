@@ -3,6 +3,9 @@ title: "Kok Nggak Ada Matanya?"
 date: 2025-10-29
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Coretan"]
 tags: ["100daystooffload"]
 slug: "Kok Nggak Ada Matanya"
@@ -40,4 +43,4 @@ Entahlah, apakah seusianya memang sudah seharusnya bisa mengucapkan kata-kata ya
 Kalau baca tulisan ini, berarti kamu juga suka membaca, karena blog ini juga isinya tulisan bukan? 😁
 
 (2/100)\
-#100daystooffload 
+#100daystooffload

@@ -3,6 +3,9 @@ title: "9 Tips Membeli Laptop Bekas"
 date: 2023-03-15
 description: ""
 draft: false
+comments:
+  enabled: true
+  provider: "giscus"
 categories: ["Teknologi"]
 tags: [""]
 slug: "tips-membeli-laptop-bekas"
