@@ -58,11 +58,17 @@ footer:
     params:
       icon: user-3-line
 
-  - name: Donate
+  - name: Support
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
-      icon: cash-line
+      icon: wallet-solid-full
+
+  - name: Microblog
+    weight: 10
+    pageRef: /micro
+    params:
+      icon: pen-to-square-solid-full
 
   # - name: Timeline
   #   pageRef: /timeline

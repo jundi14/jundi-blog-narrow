@@ -44,6 +44,15 @@ collections:
       - { label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Slug hanya boleh mengandung huruf kecil, angka, dan tanda hubung.'], required: false }
       - { label: "Featured Image", name: "cover", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "micro"
+    label: "Micro"
+    folder: "content/micro"
+    create: true
+    # Format ini akan menghasilkan nama file seperti: 2026-11-08-1945.md
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}"
+    fields:
+      - {label: "Tanggal", name: "date", widget: "datetime"}
+      - {label: "Konten", name: "body", widget: "markdown", hint: "Tulis catatan pendek di sini. Tidak perlu judul."}
   - name: "about"
     label: "About"
     layout: "about" # Gunakan layout khusus untuk halaman about
