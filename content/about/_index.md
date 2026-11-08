@@ -1,6 +1,9 @@
 ---
 title: About Me
 layout: about
+comments:
+  enabled: false
+  provider: "giscus"
 ---
 
 ## Siapa Saya
