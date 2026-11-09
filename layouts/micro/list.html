@@ -1,6 +1,5 @@
 {{ define "main" }}
   <style>
-    /* Styling default untuk tampilan Laptop/Desktop */
     .micro-article {
       display: flex;
       gap: 1.5rem;
@@ -11,34 +10,42 @@
     .micro-date {
       flex: 0 0 60px;
       text-align: right;
-      border-right: 1px solid rgba(128, 128, 128, 0.15); /* Garis vertikal */
+      border-right: 1px solid rgba(128, 128, 128, 0.15);
       padding-right: 1rem;
     }
     .micro-time {
       display: flex;
       flex-direction: column;
       font-family: monospace;
-      opacity: 0.6; /* Membuat semua teks di dalamnya redup */
+      opacity: 0.6;
     }
     .micro-content-wrapper {
       flex: 1;
       padding-top: 0;
     }
+    /* Styling Navigasi Paginasi */
+    .micro-pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
 
-    /* Styling responsif untuk layar HP (lebar maksimal 640px) */
     @media (max-width: 640px) {
       .micro-article {
-        flex-direction: column; /* Mengubah susunan menjadi atas-bawah */
-        gap: 0.25rem; /* Jarak antara tanggal dan konten diperkecil */
+        flex-direction: column;
+        gap: 0.25rem;
       }
       .micro-date {
         flex: none;
-        text-align: left; /* Tanggal rata kiri di atas konten */
-        border-right: none; /* Hilangkan garis vertikal pembatas */
+        text-align: left;
+        border-right: none;
         padding-right: 0;
       }
       .micro-time {
-        flex-direction: row; /* Jam dan tanggal menjadi sejajar menyamping */
+        flex-direction: row;
         align-items: baseline;
         gap: 0.5rem;
       }
@@ -53,23 +60,48 @@
   </header>
 
   <div class="micro-feed" style="margin-top: 2rem;">
-    {{ range .Pages.ByDate.Reverse }}
+    <!-- Mengatur paginasi maksimal 20 post per halaman -->
+    {{ $paginator := .Paginate .Pages.ByDate.Reverse 20 }}
+
+    <!-- Melakukan perulangan dari data yang sudah dipaginasi -->
+    {{ range $paginator.Pages }}
       <article class="micro-article">
-
-        <!-- Bagian Waktu & Tanggal -->
         <div class="micro-date">
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="micro-time">
-              <span style="font-size: 0.9em;">{{ .Date.Format "15:04" }}</span>
-              <span style="font-size: 0.75em;">{{ .Date.Format "Jan 2" }}</span>
-            </time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="micro-time">
+            <span style="font-size: 0.9em;">{{ .Date.Format "15:04" }}</span>
+            <span style="font-size: 0.75em;">{{ .Date.Format "Jan 2" }}</span>
+          </time>
         </div>
-
-        <!-- Bagian Konten -->
         <div class="micro-content prose micro-content-wrapper">
           {{ .Content }}
         </div>
-
       </article>
     {{ end }}
   </div>
+
+  <!-- Menampilkan tombol paginasi hanya jika total halaman lebih dari 1 -->
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="micro-pagination">
+      <div>
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}" style="text-decoration: none;">← Lebih baru</a>
+        {{ else }}
+          <span style="opacity: 0.4;">← Lebih baru</span>
+        {{ end }}
+      </div>
+
+      <div style="font-size: 0.85em; font-family: monospace;">
+        Halaman {{ $paginator.PageNumber }} dari {{ $paginator.TotalPages }}
+      </div>
+
+      <div>
+        {{ if $paginator.HasNext }}
+          <a href="{{ $paginator.Next.URL }}" style="text-decoration: none;">Lebih lama →</a>
+        {{ else }}
+          <span style="opacity: 0.4;">Lebih lama →</span>
+        {{ end }}
+      </div>
+    </nav>
+  {{ end }}
+
 {{ end }}
