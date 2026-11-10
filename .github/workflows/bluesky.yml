@@ -1,0 +1,23 @@
+name: Syndicate Micro to Bluesky
+
+on:
+  schedule:
+    # Perintah Cron: mengecek feed setiap jam (menit ke-0)
+    - cron: '0 * * * *' 
+  workflow_dispatch: # Mengizinkan Anda menekan tombol run secara manual di GitHub
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post RSS to Bluesky
+        uses: joschi/blueskyfeedbot@v1
+        with:
+          # Tautan RSS khusus folder micro Anda
+          rss-feed: 'https://jundi.web.id/micro/index.xml'
+          
+          # Username Bluesky Anda
+          username: 'jundi.web.id' 
+          
+          # Memanggil rahasia yang telah disimpan di langkah 2
+          password: ${{ koz6-5jfo-dgeu-l6ce }}
