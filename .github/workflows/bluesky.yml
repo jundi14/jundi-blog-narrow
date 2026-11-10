@@ -1,23 +1,54 @@
-name: Syndicate Micro to Bluesky
-
+name: FeedBot Micro to Bluesky
 on:
   schedule:
-    # Perintah Cron: mengecek feed setiap jam (menit ke-0)
-    - cron: '0 * * * *' 
-  workflow_dispatch: # Mengizinkan Anda menekan tombol run secara manual di GitHub
+    # Mengecek RSS setiap 2 jam sekali
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Memunculkan tombol "Run workflow" agar bisa dicek manual
+
+concurrency:
+  group: feedbot
 
 jobs:
-  publish:
+  rss-to-bluesky:
     runs-on: ubuntu-latest
     steps:
-      - name: Post RSS to Bluesky
-        uses: joschi/blueskyfeedbot@v1
+      - name: Generate cache key
+        uses: actions/github-script@v6
+        id: generate-key
         with:
-          # Tautan RSS khusus folder micro Anda
+          script: |
+            core.setOutput('cache-key', new Date().valueOf())
+            
+      - name: Retrieve cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ github.workspace }}/blueskyfeedbot
+          key: feed-cache-${{ steps.generate-key.outputs.cache-key }}
+          restore-keys: feed-cache-
+          
+      - name: Post RSS to Bluesky
+        uses: 'joschi/blueskyfeedbot@v1'
+        with:
+          # Tautan RSS yang sudah diubah ke folder micro Anda
           rss-feed: 'https://jundi.web.id/micro/index.xml'
           
-          # Username Bluesky Anda
-          username: 'jundi.web.id' 
+          # Template postingan diubah ke "description" karena Micro tidak punya Judul (Title)
+          template: |
+            {{item.description}}
+
+            🔗 {{item.link}}
+            
+          # URL Server utama Bluesky
+          service-url: 'https://bsky.social'
           
-          # Memanggil rahasia yang telah disimpan di langkah 2
+          # Username Bluesky Anda
+          username: 'jundi.web.id'
+          
+          # Mengambil App Password dari GitHub Secrets
           password: ${{ koz6-5jfo-dgeu-l6ce }}
+          
+          # Lokasi penyimpanan memori (cache) agar tidak terjadi spam
+          cache-file: ${{ github.workspace }}/blueskyfeedbot/cache.json
+          
+          # Batas maksimal postingan yang dikirim saat pertama kali bot menyala
+          initial-post-limit: 3
