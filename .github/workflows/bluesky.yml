@@ -4,7 +4,6 @@ on:
   # Bot akan berjalan otomatis setiap kali ada file baru yang tersimpan (publish dari CMS)
   push:
     branches:
-      - main
       - master
   workflow_dispatch:
 
@@ -17,7 +16,7 @@ jobs:
     steps:
       # Jeda 2 menit untuk menunggu Vercel selesai mem-build web dan memperbarui RSS
       - name: Wait for Vercel Build
-        run: sleep 180
+        run: sleep 270
 
       - name: Generate cache key
         uses: actions/github-script@v7
