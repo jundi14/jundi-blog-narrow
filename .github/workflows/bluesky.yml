@@ -1,9 +1,12 @@
 name: FeedBot Micro to Bluesky
+
 on:
-  schedule:
-    # Mengecek RSS setiap 2 jam sekali
-    - cron: '0 */2 * * *'
-  workflow_dispatch: # Memunculkan tombol "Run workflow" agar bisa dicek manual
+  # Bot akan berjalan otomatis setiap kali ada file baru yang tersimpan (publish dari CMS)
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
 
 concurrency:
   group: feedbot
@@ -12,43 +15,34 @@ jobs:
   rss-to-bluesky:
     runs-on: ubuntu-latest
     steps:
+      # Jeda 2 menit untuk menunggu Vercel selesai mem-build web dan memperbarui RSS
+      - name: Wait for Vercel Build
+        run: sleep 180
+
       - name: Generate cache key
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: generate-key
         with:
           script: |
             core.setOutput('cache-key', new Date().valueOf())
-            
+
       - name: Retrieve cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ github.workspace }}/blueskyfeedbot
           key: feed-cache-${{ steps.generate-key.outputs.cache-key }}
           restore-keys: feed-cache-
-          
+
       - name: Post RSS to Bluesky
         uses: 'joschi/blueskyfeedbot@v1'
         with:
-          # Tautan RSS yang sudah diubah ke folder micro Anda
           rss-feed: 'https://jundi.web.id/micro/index.xml'
-          
-          # Template postingan diubah ke "description" karena Micro tidak punya Judul (Title)
           template: |
             {{item.description}}
 
             🔗 {{item.link}}
-            
-          # URL Server utama Bluesky
           service-url: 'https://bsky.social'
-          
-          # Username Bluesky Anda
           username: 'jundi.web.id'
-          
-          # Mengambil App Password dari GitHub Secrets
           password: ${{ secrets.BLUESKY_PASSWORD }}
-          
-          # Lokasi penyimpanan memori (cache) agar tidak terjadi spam
           cache-file: ${{ github.workspace }}/blueskyfeedbot/cache.json
-          
-          # Batas maksimal postingan yang dikirim saat pertama kali bot menyala
           initial-post-limit: 3
