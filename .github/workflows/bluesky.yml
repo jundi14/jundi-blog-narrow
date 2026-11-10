@@ -45,7 +45,7 @@ jobs:
           username: 'jundi.web.id'
           
           # Mengambil App Password dari GitHub Secrets
-          password: ${{ secret.zblu-xi4s-g4im-wnmb }}
+          password: ${{ secrets.BLUESKY_PASSWORD }}
           
           # Lokasi penyimpanan memori (cache) agar tidak terjadi spam
           cache-file: ${{ github.workspace }}/blueskyfeedbot/cache.json
