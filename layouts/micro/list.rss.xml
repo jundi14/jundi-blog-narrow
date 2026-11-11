@@ -28,13 +28,16 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
-      <!-- INI KUNCINYA: Menggunakan .Plain agar enter dan jarak baris <description>{{ .Content | replaceRE "<h[1-6][^>]*>" "\n\n" | replaceRE "<p[^>]*>" "\n\n" | replaceRE "<br\\s*/?>" "\n" | plainify | truncate 250 | html }}</description>tidak dihapus -->
+
+      <!-- Teks Micro: Mengubah enter bawaan HTML menjadi enter nyata lalu membatasi 300 karakter -->
       <description>{{ .Content | replaceRE "(</p>|</h[1-6]>)" " ||BR|| " | plainify | replaceRE "\\s*\\|\\|BR\\|\\|\\s*" "\n\n" | truncate 300 | html }}</description>
+
+      <!-- Gambar Micro: Mengambil gambar pertama dari konten (static) dan mengubahnya jadi URL Absolut -->
       {{ $imgMatch := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
-            {{ if $imgMatch }}
-              {{ $imgUrl := index $imgMatch 0 | replaceRE "<img src=\"([^\"]+)\"" "$1" | absURL }}
-              <enclosure url="{{ $imgUrl }}" type="image/jpeg" length="0" />
-            {{ end }}
+      {{ if $imgMatch }}
+        {{ $imgUrl := index $imgMatch 0 | replaceRE "<img src=\"([^\"]+)\"" "$1" | absURL }}
+        <enclosure url="{{ $imgUrl }}" type="image/jpeg" length="0" />
+      {{ end }}
     </item>
     {{ end }}
   </channel>
