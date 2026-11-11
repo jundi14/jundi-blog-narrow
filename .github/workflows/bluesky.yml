@@ -1,45 +1,38 @@
 name: FeedBot Micro to Bluesky
 
 on:
-  # Bot akan berjalan otomatis setiap kali ada file baru yang tersimpan (publish dari CMS)
-  push:
-    branches:
-      - master
-  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *' # Berjalan otomatis setiap 30 menit
+  workflow_dispatch:       # Bisa dijalankan manual
 
-concurrency:
-  group: feedbot
+permissions:
+  contents: write          # Izin untuk menyimpan file cache.json ke repo
 
 jobs:
-  rss-to-bluesky:
+  post-to-bluesky:
     runs-on: ubuntu-latest
     steps:
-      # Jeda 2 menit untuk menunggu Vercel selesai mem-build web dan memperbarui RSS
-      - name: Wait for Vercel Build
-        run: sleep 270
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Generate cache key
-        uses: actions/github-script@v7
-        id: generate-key
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          script: |
-            core.setOutput('cache-key', new Date().valueOf())
+          node-version: '20'
 
-      - name: Retrieve cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ github.workspace }}/blueskyfeedbot
-          key: feed-cache-${{ steps.generate-key.outputs.cache-key }}
-          restore-keys: feed-cache-
+      - name: Install dependencies
+        run: npm install --no-save @atproto/api rss-parser
 
-      - name: Post RSS to Bluesky
-        uses: 'joschi/blueskyfeedbot@v1'
-        with:
-          rss-feed: 'https://jundi.web.id/micro/index.xml'
-          template: |
-            {{item.description}}
-          service-url: 'https://bsky.social'
-          username: 'jundi.web.id'
-          password: ${{ secrets.BLUESKY_PASSWORD }}
-          cache-file: ${{ github.workspace }}/blueskyfeedbot/cache.json
-          initial-post-limit: 3
+      - name: Run Bluesky Script
+        env:
+          BSKY_USERNAME: 'jundi.web.id'
+          BSKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+        run: node scripts/post-to-bsky.mjs
+
+      - name: Commit and Push Cache
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add blueskyfeedbot/cache.json
+          git diff --staged --quiet || git commit -m "Update Bluesky RSS cache [skip ci]"
+          git push
