@@ -30,8 +30,7 @@
       <guid>{{ .Permalink }}</guid>
 
       <!-- INI KUNCINYA: Menggunakan .Plain agar enter dan jarak baris tidak dihapus -->
-      <description>{{ .Plain | html }}</description>
-
+            <description>{{ .Content | replaceRE "</p>" "\n\n" | replaceRE "</h[1-6]>" "\n\n" | replaceRE "<br\\s*/?>" "\n" | plainify | truncate 250 | html }}</description>
     </item>
     {{ end }}
   </channel>
