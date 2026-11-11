@@ -36,12 +36,12 @@ main:
     params:
       icon: about
 
-  - name: RSS
-    weight: 2
-    pageRef: /index.xml
-    parent: More
-    params:
-      icon: rss
+  # - name: RSS
+    # weight: 2
+    # pageRef: /index.xml
+    # parent: More
+    # params:
+      # icon: rss
 
   # - name: Series
   #   weight: 3
@@ -65,13 +65,13 @@ footer:
   #   params:
   #     icon: user-3-line
 
-  - name: Support
+  - name: Support Me
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
       icon: wallet-solid-full
 
-  - name: Microblog
+  - name: Microblogging
     weight: 10
     pageRef: /micro
     params:

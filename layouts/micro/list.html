@@ -8,10 +8,11 @@
       border-bottom: 1px solid rgba(128, 128, 128, 0.15);
     }
     .micro-date {
-      flex: 0 0 60px;
-      text-align: right;
-      border-right: 1px solid rgba(128, 128, 128, 0.15);
-      padding-right: 1rem;
+        flex: 0 0 75px; /* Diperlebar dari 60px menjadi 75px */
+        text-align: right;
+        border-right: 1px solid rgba(128, 128, 128, 0.15);
+        padding-right: 1rem;
+        white-space: nowrap; /* Memaksa teks tanggal agar tidak turun baris */
     }
     .micro-time {
       display: flex;
@@ -61,7 +62,7 @@
 
   <div class="micro-feed" style="margin-top: 2rem;">
     <!-- Mengatur paginasi maksimal 20 post per halaman -->
-    {{ $paginator := .Paginate .Pages.ByDate.Reverse 20 }}
+    {{ $paginator := .Paginate .Pages.ByDate.Reverse 10 }}
 
     <!-- Melakukan perulangan dari data yang sudah dipaginasi -->
     {{ range $paginator.Pages }}

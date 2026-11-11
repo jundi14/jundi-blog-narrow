@@ -54,7 +54,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}"
     fields:
       - {label: "Tanggal", name: "date", widget: "datetime"}
-      - {label: "Konten", name: "body", widget: "markdown", hint: "Tulis catatan pendek di sini. Tidak perlu judul."}
+      - {label: "Konten", name: "body", widget: "markdown", pattern: ['^[\s\S]{1,300}$', "Tulisan melebihi batas maksimal 300 karakter untuk Bluesky!"]}
+
   - name: "about"
     label: "About"
     layout: "about" # Gunakan layout khusus untuk halaman about
