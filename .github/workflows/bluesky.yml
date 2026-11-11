@@ -38,8 +38,6 @@ jobs:
           rss-feed: 'https://jundi.web.id/micro/index.xml'
           template: |
             {{item.description}}
-
-            🔗 {{item.link}}
           service-url: 'https://bsky.social'
           username: 'jundi.web.id'
           password: ${{ secrets.BLUESKY_PASSWORD }}
