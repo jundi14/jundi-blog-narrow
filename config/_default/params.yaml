@@ -48,7 +48,7 @@ contentWidth: "48rem"
 # Responsive image variants. Widths are derived from contentWidth, so no
 # per-image breakpoints are needed.
 image:
-  webp: true # Emit a WebP source for JPEG/PNG images
+  webp: false # Emit a WebP source for JPEG/PNG images
   quality: 82 # WebP quality (1-100)
 # Default backdrop blur radius in px (0-24) for floating dock, popovers and context bar.
 backdropBlur: 12
