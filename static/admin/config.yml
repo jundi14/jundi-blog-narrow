@@ -47,8 +47,9 @@ collections:
   - name: "micro"
     label: "Micro"
     folder: "content/micro"
-    media_folder: "/static/images/micro"
-    public_folder: "/images/micro"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     # Format ini akan menghasilkan nama file seperti: 2026-11-08-1945.md
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}"

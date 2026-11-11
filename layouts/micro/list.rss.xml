@@ -30,11 +30,12 @@
       <guid>{{ .Permalink }}</guid>
       <!-- INI KUNCINYA: Menggunakan .Plain agar enter dan jarak baris <description>{{ .Content | replaceRE "<h[1-6][^>]*>" "\n\n" | replaceRE "<p[^>]*>" "\n\n" | replaceRE "<br\\s*/?>" "\n" | plainify | truncate 250 | html }}</description>tidak dihapus -->
       <description>{{ .Content | replaceRE "(</p>|</h[1-6]>)" " ||BR|| " | plainify | replaceRE "\\s*\\|\\|BR\\|\\|\\s*" "\n\n" | truncate 300 | html }}</description>
-      {{ $imgMatch := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
-            {{ if $imgMatch }}
-              {{ $imgUrl := index $imgMatch 0 | replaceRE "<img src=\"([^\"]+)\"" "$1" | absURL }}
-              <enclosure url="{{ $imgUrl }}" type="image/jpeg" length="0" />
-            {{ end }}
+<!-- Kode ini otomatis mengambil gambar pertama dari dalam folder (Page Bundle) -->
+      {{ with .Resources.ByType "image" }}
+        {{ with index . 0 }}
+          <enclosure url="{{ .Permalink }}" type="{{ .MediaType }}" length="0" />
+        {{ end }}
+      {{ end }}
     </item>
     {{ end }}
   </channel>
