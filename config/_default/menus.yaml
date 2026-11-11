@@ -24,17 +24,24 @@ main:
       icon: categories
 
   # Example: parent item with dropdown submenu children
-  # - name: More
-  #   weight: 30
-  #   params:
-  #     icon: layers
+  - name: More
+    weight: 35
+    params:
+      icon: layers
 
-  # - name: Categories
-  #   weight: 1
-  #   pageRef: /categories
-  #   parent: More
-  #   params:
-  #     icon: categories
+  - name: About
+    weight: 1
+    pageRef: /about
+    parent: More
+    params:
+      icon: about
+
+  - name: RSS
+    weight: 2
+    pageRef: /index.xml
+    parent: More
+    params:
+      icon: rss
 
   # - name: Series
   #   weight: 3
@@ -52,11 +59,11 @@ main:
 
 # footer menu
 footer:
-  - name: About
-    pageRef: /about
-    weight: 20
-    params:
-      icon: user-3-line
+  # - name: About
+  #   pageRef: /about
+  #   weight: 20
+  #   params:
+  #     icon: user-3-line
 
   - name: Support
     weight: 40
