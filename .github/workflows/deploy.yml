@@ -1,15 +1,58 @@
-- name: Install Python Requests & Jalankan Sindikasi
-  env:
-        BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
-        BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+name: Build, Deploy & Syndicate Hugo
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: write # Wajib agar bot bisa menyimpan file .syndicated-micro.json ke repo
+  pages: write    # Untuk deploy ke GitHub Pages
+  id-token: write # Untuk verifikasi token GitHub Pages
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build-and-syndicate:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.165.0
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+        run: hugo --gc --minify
+
+      # --- Bagian Sindikasi Microblog ke Bluesky ---
+      - name: Jalankan Skrip Sindikasi Python
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: |
-          pip install requests
+          python3 -m pip install --quiet requests
           python3 scripts/syndicate.py
 
-- name: Simpan State Sindikasi ke Repo
-  run: |
+      - name: Simpan State Sindikasi ke Repo
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .syndicated-micro.json
-          git diff --staged --quiet || git commit -m "chore: update micro syndication state [skip ci]"
-          git push
+          git diff --staged --quiet || (git pull --rebase && git commit -m "chore: update micro syndication state [skip ci]" && git push)
