@@ -44,8 +44,8 @@ jobs:
       # --- Bagian Sindikasi Microblog ke Bluesky ---
       - name: Jalankan Skrip Sindikasi Python
         env:
-          BSKY_HANDLE: ${{ secrets.jundi.web.id }}
-          BSKY_APP_PASSWORD: ${{ secrets.2csk-sthz-jkrv-3fm4 }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: |
           python3 -m pip install --quiet requests
           python3 scripts/syndicate.py
