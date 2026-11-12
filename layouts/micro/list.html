@@ -1,35 +1,67 @@
 {{ define "main" }}
-  <style>
+<style>
     .micro-article {
       display: flex;
-      gap: 1.5rem;
-      margin-bottom: 1.8rem;
-      padding-bottom: 1.8rem;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
       border-bottom: 1px solid rgba(128, 128, 128, 0.15);
     }
     .micro-date {
-        flex: 0 0 75px;
-        text-align: right;
-        border-right: 1px solid rgba(128, 128, 128, 0.15);
-        padding-right: 1rem;
-        white-space: nowrap; /* Memaksa teks tanggal agar tidak turun baris */
+      flex: 0 0 75px;
+      text-align: right;
+      border-right: 1px solid rgba(128, 128, 128, 0.15);
+      padding-right: 1rem;
+      white-space: nowrap;
     }
     .micro-time {
       display: flex;
       flex-direction: column;
       font-family: monospace;
       opacity: 0.6;
+      line-height: 1.3;
     }
     .micro-content-wrapper {
       flex: 1;
       padding-top: 0;
+      min-width: 0;
     }
+
+    /* Reset total margin bawaan Tailwind Prose agar padat seperti referensi */
+    .micro-content > *:first-child {
+      margin-top: 0 !important;
+    }
+    .micro-content > *:last-child {
+      margin-bottom: 0 !important;
+    }
+    .micro-content h1,
+    .micro-content h2,
+    .micro-content h3,
+    .micro-content h4 {
+      margin-top: 0 !important;
+      margin-bottom: 0.4rem !important;
+      font-size: 1.05rem !important;
+      line-height: 1.4 !important;
+    }
+    .micro-content p {
+      margin-top: 0 !important;
+      margin-bottom: 0.65rem !important;
+      line-height: 1.55 !important;
+    }
+    .micro-content img,
+    .micro-content figure,
+    .micro-content picture {
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.65rem !important;
+      border-radius: 0.5rem;
+    }
+
     /* Styling Navigasi Paginasi */
     .micro-pagination {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       font-size: 0.9em;
       opacity: 0.8;
     }
@@ -37,7 +69,9 @@
     @media (max-width: 640px) {
       .micro-article {
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 0.35rem;
+        margin-bottom: 1.15rem;
+        padding-bottom: 1.15rem;
       }
       .micro-date {
         flex: none;
@@ -48,7 +82,7 @@
       .micro-time {
         flex-direction: row;
         align-items: baseline;
-        gap: 0.5rem;
+        gap: 0.4rem;
       }
     }
   </style>
