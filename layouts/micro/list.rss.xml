@@ -31,11 +31,10 @@
 
       <!-- Teks Micro: Mengubah enter bawaan HTML menjadi enter nyata lalu membatasi 300 karakter -->
       <description>{{ .Content | replaceRE "(</p>|</h[1-6]>)" " ||BR|| " | plainify | replaceRE "\\s*\\|\\|BR\\|\\|\\s*" "\n\n" | truncate 300 | html }}</description>
-
-      <!-- Gambar Micro: Mengambil gambar pertama dari konten (static) dan mengubahnya jadi URL Absolut -->
-      {{ $imgMatch := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
+<!-- Gambar Micro: Menangkap src gambar meskipun ada atribut class/alt/lazy di depannya -->
+      {{ $imgMatch := findRE "<img[^>]+src=\"([^\"]+)\"" .Content 1 }}
       {{ if $imgMatch }}
-        {{ $imgUrl := index $imgMatch 0 | replaceRE "<img src=\"([^\"]+)\"" "$1" | absURL }}
+        {{ $imgUrl := index $imgMatch 0 | replaceRE ".*src=\"([^\"]+)\".*" "$1" | absURL }}
         <enclosure url="{{ $imgUrl }}" type="image/jpeg" length="0" />
       {{ end }}
     </item>

@@ -50,18 +50,23 @@ async function run() {
       createdAt: new Date().toISOString(),
     };
 
-    // 4. Cek apakah ada gambar di <enclosure>
+// 4. Cek apakah ada gambar di <enclosure>
     if (item.enclosure && item.enclosure.url) {
       try {
         console.log(`Mengunduh gambar: ${item.enclosure.url}`);
         const imgRes = await fetch(item.enclosure.url);
         if (imgRes.ok) {
           const arrayBuffer = await imgRes.arrayBuffer();
-          const buffer = Buffer.from(arrayBuffer);
-          const contentType = imgRes.headers.get('content-type') || 'image/jpeg';
+          let buffer = Buffer.from(arrayBuffer);
+
+          // Kompres otomatis ke JPEG di bawah 900KB agar tidak ditolak Bluesky (batas 976KB)
+          buffer = await sharp(buffer)
+            .resize({ width: 1600, withoutEnlargement: true })
+            .jpeg({ quality: 80 })
+            .toBuffer();
 
           // Unggah gambar ke server Bluesky
-          const { data } = await agent.uploadBlob(buffer, { encoding: contentType });
+          const { data } = await agent.uploadBlob(buffer, { encoding: 'image/jpeg' });
           
           // Sematkan gambar ke dalam postingan
           postRecord.embed = {
@@ -73,6 +78,9 @@ async function run() {
               },
             ],
           };
+          console.log('Gambar berhasil diunggah ke Bluesky.');
+        } else {
+          console.error(`Gagal mengambil gambar, status HTTP: ${imgRes.status}`);
         }
       } catch (err) {
         console.error('Gagal mengunggah gambar, lanjut memposting teks saja:', err);
