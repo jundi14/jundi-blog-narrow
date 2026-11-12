@@ -65,13 +65,13 @@ footer:
   #   params:
   #     icon: user-3-line
 
-  - name: Support Me
+  - name: Support
     weight: 40
     url: https://nihbuatjajan.com/jundi/
     params:
       icon: wallet-solid-full
 
-  - name: Microblogging
+  - name: Microblog
     weight: 10
     pageRef: /micro
     params:
