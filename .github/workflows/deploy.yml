@@ -47,7 +47,7 @@ jobs:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: |
-          python3 -m pip install --quiet requests
+          python3 -m pip install --quiet requests Pillow
           python3 scripts/syndicate.py
 
       - name: Simpan State Sindikasi ke Repo

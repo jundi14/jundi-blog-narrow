@@ -1,4 +1,5 @@
 import os
+import io
 import re
 import json
 import html
@@ -7,21 +8,25 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from urllib.parse import urlparse, unquote
 import requests
+from PIL import Image
 
 RSS_PATH = './public/micro/index.xml'
 STATE_FILE = './.syndicated-micro.json'
 MAX_LENGTH = 300
 MAX_IMAGES = 4
+MAX_IMAGE_BYTES = 950000  # Di bawah batas 976 KB Bluesky
 BSKY_PDS = 'https://bsky.social/xrpc'
 
 
 def extract_images(raw_html):
-    """Mengekstrak maksimal 4 URL gambar dan alt text dari tag <img>."""
+    """Mengekstrak maksimal 4 URL gambar dan alt text setelah unescape HTML."""
     if not raw_html:
         return []
+    # Unescape terlebih dahulu agar &lt;img src=&#34;...&#34;&gt; terbaca normal
+    decoded_html = html.unescape(raw_html)
     images = []
-    img_tags = re.findall(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', raw_html, re.IGNORECASE)
-    for match in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', raw_html, re.IGNORECASE):
+
+    for match in re.finditer(r'<img[^>]+src=["\']?([^"\'\s>]+)["\']?[^>]*>', decoded_html, re.IGNORECASE):
         if len(images) >= MAX_IMAGES:
             break
         full_tag = match.group(0)
@@ -31,6 +36,30 @@ def extract_images(raw_html):
         if not any(img['src'] == src for img in images):
             images.append({'src': src, 'alt': alt})
     return images
+
+
+def compress_image_if_needed(img_bytes, mime_type):
+    """Mengompresi gambar secara otomatis jika ukurannya melebihi batas Bluesky."""
+    if len(img_bytes) <= MAX_IMAGE_BYTES:
+        return img_bytes, mime_type
+
+    print(f"Ukuran gambar ({len(img_bytes)} bytes) > 950KB, mengompresi otomatis...")
+    img = Image.open(io.BytesIO(img_bytes))
+    if img.mode in ('RGBA', 'P'):
+        img = img.convert('RGB')
+
+    # Kecilkan resolusi maksimal ke 1920px jika terlalu besar
+    img.thumbnail((1920, 1920), Image.Resampling.LANCZOS)
+
+    for quality in [85, 75, 65, 50]:
+        buf = io.BytesIO()
+        img.save(buf, format='JPEG', quality=quality, optimize=True)
+        compressed = buf.getvalue()
+        if len(compressed) <= MAX_IMAGE_BYTES:
+            print(f"Berhasil dikompresi menjadi {len(compressed)} bytes (quality={quality}).")
+            return compressed, 'image/jpeg'
+
+    return buf.getvalue(), 'image/jpeg'
 
 
 def get_image_bytes(src):
@@ -56,15 +85,16 @@ def get_image_bytes(src):
                 print(f"Mengambil gambar lokal dari: {fpath}")
                 mime_type, _ = mimetypes.guess_type(fpath)
                 with open(fpath, 'rb') as f:
-                    return f.read(), (mime_type or 'image/jpeg')
+                    return compress_image_if_needed(f.read(), mime_type or 'image/jpeg')
 
-        # Fallback: unduh jika gambar berada di URL eksternal
         if src.startswith(('http://', 'https://')):
+            print(f"Mengunduh gambar dari URL: {src}")
             resp = requests.get(src, timeout=15)
             resp.raise_for_status()
             mime_type = resp.headers.get('Content-Type') or 'image/jpeg'
-            return resp.content, mime_type
+            return compress_image_if_needed(resp.content, mime_type)
 
+        print(f"File gambar tidak ditemukan di lokal untuk path: {src} (dicek: {candidate_paths})")
     except Exception as e:
         print(f"Melewati gambar ({src}): {e}")
     return None, None
@@ -74,7 +104,8 @@ def clean_html(raw_html):
     """Membersihkan tag HTML menjadi teks biasa."""
     if not raw_html:
         return ''
-    text = re.sub(r'</p>', '\n\n', raw_html, flags=re.IGNORECASE)
+    text = html.unescape(raw_html)
+    text = re.sub(r'</p>', '\n\n', text, flags=re.IGNORECASE)
     text = re.sub(r'<br\s*/?>', '\n', text, flags=re.IGNORECASE)
     text = re.sub(r'<[^>]+>', '', text)
     text = html.unescape(text)
@@ -83,54 +114,47 @@ def clean_html(raw_html):
 
 
 def detect_facets(text):
-    """Mendeteksi URL dan Hashtag secara otomatis menggunakan perhitungan byte UTF-8."""
+    """Mendeteksi URL dan Hashtag secara otomatis."""
     facets = []
-
-    # 1. Deteksi Link URL (http:// atau https://)
-    url_pattern = re.compile(r'https?://[^\s)\]>]+')
-    for match in url_pattern.finditer(text):
+    for match in re.finditer(r'https?://[^\s)\]>]+', text):
         url = match.group(0).rstrip('.,;:!?')
         start_char = match.start()
         end_char = start_char + len(url)
-        byte_start = len(text[:start_char].encode('utf-8'))
-        byte_end = len(text[:end_char].encode('utf-8'))
         facets.append({
-            'index': {'byteStart': byte_start, 'byteEnd': byte_end},
+            'index': {
+                'byteStart': len(text[:start_char].encode('utf-8')),
+                'byteEnd': len(text[:end_char].encode('utf-8'))
+            },
             'features': [{'$type': 'app.bsky.richtext.facet#link', 'uri': url}]
         })
 
-    # 2. Deteksi Hashtag (#tag)
-    tag_pattern = re.compile(r'(?<!\w)#([a-zA-Z0-9_]+)')
-    for match in tag_pattern.finditer(text):
+    for match in re.finditer(r'(?<!\w)#([a-zA-Z0-9_]+)', text):
         full_tag = match.group(0)
         tag_name = match.group(1)
         start_char = match.start()
         end_char = start_char + len(full_tag)
-        byte_start = len(text[:start_char].encode('utf-8'))
-        byte_end = len(text[:end_char].encode('utf-8'))
         facets.append({
-            'index': {'byteStart': byte_start, 'byteEnd': byte_end},
+            'index': {
+                'byteStart': len(text[:start_char].encode('utf-8')),
+                'byteEnd': len(text[:end_char].encode('utf-8'))
+            },
             'features': [{'$type': 'app.bsky.richtext.facet#tag', 'tag': tag_name}]
         })
-
     return facets
 
 
 def main():
     if not os.path.exists(RSS_PATH):
-        print(f"File {RSS_PATH} tidak ditemukan. Pastikan sudah menjalankan perintah 'hugo'.")
+        print(f"File {RSS_PATH} tidak ditemukan.")
         return
 
-    # 1. Baca riwayat sindikasi
     syndicated = []
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, 'r', encoding='utf-8') as f:
             syndicated = json.load(f)
 
-    # 2. Parse XML
     tree = ET.parse(RSS_PATH)
-    root = tree.getroot()
-    channel = root.find('channel')
+    channel = tree.getroot().find('channel')
     if channel is None:
         return
 
@@ -139,19 +163,16 @@ def main():
         print("Belum ada item di dalam RSS microblog.")
         return
 
-    # Inisialisasi pertama: simpan semua artikel lama agar tidak spam
     if len(syndicated) == 0:
         print("Inisialisasi pertama: mendata semua micro-post lama ke state file.")
-        all_guids = []
-        for item in items:
-            guid = item.findtext('guid') or item.findtext('link')
-            if guid:
-                all_guids.append(guid.strip())
+        all_guids = [
+            (item.findtext('guid') or item.findtext('link')).strip()
+            for item in items if (item.findtext('guid') or item.findtext('link'))
+        ]
         with open(STATE_FILE, 'w', encoding='utf-8') as f:
             json.dump(all_guids, f, indent=2)
         return
 
-    # 3. Filter maksimal 3 micro-post baru (urutkan dari yang terlama)
     new_items = []
     for item in items:
         item_id = (item.findtext('guid') or item.findtext('link') or '').strip()
@@ -163,7 +184,6 @@ def main():
         print("Tidak ada micro-post baru untuk dikirim ke Bluesky.")
         return
 
-    # 4. Login ke Bluesky via XRPC
     handle = os.environ.get('BSKY_HANDLE')
     password = os.environ.get('BSKY_APP_PASSWORD')
     if not handle or not password:
@@ -176,11 +196,9 @@ def main():
     )
     session_resp.raise_for_status()
     session_data = session_resp.json()
-    access_jwt = session_data['accessJwt']
+    auth_headers = {'Authorization': f"Bearer {session_data['accessJwt']}"}
     did = session_data['did']
-    auth_headers = {'Authorization': f'Bearer {access_jwt}'}
 
-    # 5. Proses tiap micro-post
     for item in new_items:
         item_id = (item.findtext('guid') or item.findtext('link')).strip()
         link = (item.findtext('link') or '').strip()
@@ -188,6 +206,7 @@ def main():
 
         content = clean_html(raw_html)
         extracted_images = extract_images(raw_html)
+        print(f"Memproses {link} -> Ditemukan {len(extracted_images)} tag gambar di RSS.")
 
         if not content and not extracted_images:
             continue
@@ -198,15 +217,10 @@ def main():
             allowed_len = MAX_LENGTH - len(suffix)
             post_text = content[:allowed_len].strip() + suffix
 
-        # Unggah gambar jika ada
         embedded_images = []
         for img in extracted_images:
             img_bytes, mime_type = get_image_bytes(img['src'])
             if not img_bytes:
-                continue
-
-            if len(img_bytes) > 976000:
-                print(f"Gambar {img['src']} melebihi batas 976KB Bluesky, dilewati.")
                 continue
 
             blob_resp = requests.post(
@@ -216,14 +230,11 @@ def main():
                 timeout=30
             )
             blob_resp.raise_for_status()
-            blob_data = blob_resp.json().get('blob')
-
             embedded_images.append({
                 'alt': img['alt'],
-                'image': blob_data
+                'image': blob_resp.json().get('blob')
             })
 
-        # Susun record postingan Bluesky
         record = {
             '$type': 'app.bsky.feed.post',
             'text': post_text,
@@ -243,18 +254,13 @@ def main():
         post_resp = requests.post(
             f"{BSKY_PDS}/com.atproto.repo.createRecord",
             headers=auth_headers,
-            json={
-                'repo': did,
-                'collection': 'app.bsky.feed.post',
-                'record': record
-            },
+            json={'repo': did, 'collection': 'app.bsky.feed.post', 'record': record},
             timeout=15
         )
         post_resp.raise_for_status()
         print(f"Terkirim ke Bluesky ({len(embedded_images)} gambar): {link}")
         syndicated.append(item_id)
 
-    # 6. Simpan state terbaru
     with open(STATE_FILE, 'w', encoding='utf-8') as f:
         json.dump(syndicated, f, indent=2)
 
