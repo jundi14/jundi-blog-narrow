@@ -1,7 +1,7 @@
 # Hi there, I'm Muhammad Jundi Al Mubarok 👋
 
 <div align="center">
-  <p><strong>Kepala Sekolah | Guru IPA | Tech Tinkerer & Blogger</strong></p>
+  <p><strong>Tech Tinkerer & Blogger</strong></p>
   <a href="https://jundi.web.id">
     <img src="https://img.shields.io/badge/Website-jundi.web.id-blue?style=flat-square&logo=google-chrome" alt="Website" />
   </a>
@@ -20,7 +20,7 @@
 - 🔭 Saat ini sedang mengembangkan dan mengelola blog personal berbasis **Hugo** (*static site generation*) yang di-*deploy* via Vercel.
 - 💻 Pengguna setia sistem operasi minimalis: **Debian / Linux Mint** dipadukan dengan **i3wm** dan *Polybar*.
 - ✍️ Senang menulis refleksi harian seputar dunia pendidikan, teknologi, dan *parenting*.
-- ⚡ Fakta unik: Pendidik di siang hari, pengulik *open-source* dan pengetik cepat (70 WPM) di malam hari.
+- ⚡ Fakta unik: Pendidik di siang hari, pengulik *open-source* dan pengetik cepat.
 
 ### 🛠️ Teknologi & Tools
 
