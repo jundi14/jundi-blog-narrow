@@ -95,8 +95,8 @@
   </header>
 
   <div class="micro-feed" style="margin-top: 2rem;">
-    <!-- Mengatur paginasi maksimal 20 post per halaman -->
-    {{ $paginator := .Paginate .Pages.ByDate.Reverse 10 }}
+    <!-- Mengatur paginasi maksimal 8 post per halaman -->
+    {{ $paginator := .Paginate .Pages.ByDate.Reverse 8 }}
 
     <!-- Melakukan perulangan dari data yang sudah dipaginasi -->
     {{ range $paginator.Pages }}
@@ -109,6 +109,7 @@
         </div>
         <div class="micro-content prose micro-content-wrapper">
           {{ .Content }}
+          {{ partial "syndication.html" . }}
         </div>
       </article>
     {{ end }}

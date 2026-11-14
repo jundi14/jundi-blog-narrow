@@ -11,21 +11,50 @@ import requests
 from PIL import Image
 
 RSS_PATH = './public/micro/index.xml'
-STATE_FILE = './.syndicated-micro.json'
+OLD_STATE_FILE = './.syndicated-micro.json'
+DATA_FILE = './data/syndication.json'
 MAX_LENGTH = 300
 MAX_IMAGES = 4
-MAX_IMAGE_BYTES = 950000  # Di bawah batas 976 KB Bluesky
+MAX_IMAGE_BYTES = 950000
 BSKY_PDS = 'https://bsky.social/xrpc'
 
 
+def load_syndication_data():
+    """Membaca data/syndication.json dan memigrasikan .syndicated-micro.json lama jika ada."""
+    os.makedirs('./data', exist_ok=True)
+    data = {}
+
+    # Migrasikan file state lama (list) ke format dict jika masih ada
+    if os.path.exists(OLD_STATE_FILE):
+        with open(OLD_STATE_FILE, 'r', encoding='utf-8') as f:
+            old_data = json.load(f)
+            if isinstance(old_data, list):
+                for url in old_data:
+                    data[url] = {}
+            elif isinstance(old_data, dict):
+                data.update(old_data)
+
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, 'r', encoding='utf-8') as f:
+            current_data = json.load(f)
+            if isinstance(current_data, dict):
+                data.update(current_data)
+
+    return data
+
+
+def save_syndication_data(data):
+    """Menyimpan data sindikasi ke data/syndication.json."""
+    os.makedirs('./data', exist_ok=True)
+    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
 def extract_images(raw_html):
-    """Mengekstrak maksimal 4 URL gambar dan alt text setelah unescape HTML."""
     if not raw_html:
         return []
-    # Unescape terlebih dahulu agar &lt;img src=&#34;...&#34;&gt; terbaca normal
     decoded_html = html.unescape(raw_html)
     images = []
-
     for match in re.finditer(r'<img[^>]+src=["\']?([^"\'\s>]+)["\']?[^>]*>', decoded_html, re.IGNORECASE):
         if len(images) >= MAX_IMAGES:
             break
@@ -39,16 +68,12 @@ def extract_images(raw_html):
 
 
 def compress_image_if_needed(img_bytes, mime_type):
-    """Mengompresi gambar secara otomatis jika ukurannya melebihi batas Bluesky."""
     if len(img_bytes) <= MAX_IMAGE_BYTES:
         return img_bytes, mime_type
 
-    print(f"Ukuran gambar ({len(img_bytes)} bytes) > 950KB, mengompresi otomatis...")
     img = Image.open(io.BytesIO(img_bytes))
     if img.mode in ('RGBA', 'P'):
         img = img.convert('RGB')
-
-    # Kecilkan resolusi maksimal ke 1920px jika terlalu besar
     img.thumbnail((1920, 1920), Image.Resampling.LANCZOS)
 
     for quality in [85, 75, 65, 50]:
@@ -56,14 +81,12 @@ def compress_image_if_needed(img_bytes, mime_type):
         img.save(buf, format='JPEG', quality=quality, optimize=True)
         compressed = buf.getvalue()
         if len(compressed) <= MAX_IMAGE_BYTES:
-            print(f"Berhasil dikompresi menjadi {len(compressed)} bytes (quality={quality}).")
             return compressed, 'image/jpeg'
 
     return buf.getvalue(), 'image/jpeg'
 
 
 def get_image_bytes(src):
-    """Mencari file gambar di ./public, ./static, atau ./static/images/micro."""
     try:
         if src.startswith(('http://', 'https://')):
             parsed = urlparse(src)
@@ -82,26 +105,21 @@ def get_image_bytes(src):
 
         for fpath in candidate_paths:
             if os.path.isfile(fpath):
-                print(f"Mengambil gambar lokal dari: {fpath}")
                 mime_type, _ = mimetypes.guess_type(fpath)
                 with open(fpath, 'rb') as f:
                     return compress_image_if_needed(f.read(), mime_type or 'image/jpeg')
 
         if src.startswith(('http://', 'https://')):
-            print(f"Mengunduh gambar dari URL: {src}")
             resp = requests.get(src, timeout=15)
             resp.raise_for_status()
             mime_type = resp.headers.get('Content-Type') or 'image/jpeg'
             return compress_image_if_needed(resp.content, mime_type)
-
-        print(f"File gambar tidak ditemukan di lokal untuk path: {src} (dicek: {candidate_paths})")
     except Exception as e:
         print(f"Melewati gambar ({src}): {e}")
     return None, None
 
 
 def clean_html(raw_html):
-    """Membersihkan tag HTML menjadi teks biasa."""
     if not raw_html:
         return ''
     text = html.unescape(raw_html)
@@ -114,7 +132,6 @@ def clean_html(raw_html):
 
 
 def detect_facets(text):
-    """Mendeteksi URL dan Hashtag secara otomatis."""
     facets = []
     for match in re.finditer(r'https?://[^\s)\]>]+', text):
         url = match.group(0).rstrip('.,;:!?')
@@ -148,10 +165,7 @@ def main():
         print(f"File {RSS_PATH} tidak ditemukan.")
         return
 
-    syndicated = []
-    if os.path.exists(STATE_FILE):
-        with open(STATE_FILE, 'r', encoding='utf-8') as f:
-            syndicated = json.load(f)
+    syndicated = load_syndication_data()
 
     tree = ET.parse(RSS_PATH)
     channel = tree.getroot().find('channel')
@@ -160,17 +174,15 @@ def main():
 
     items = channel.findall('item')
     if not items:
-        print("Belum ada item di dalam RSS microblog.")
         return
 
     if len(syndicated) == 0:
-        print("Inisialisasi pertama: mendata semua micro-post lama ke state file.")
-        all_guids = [
-            (item.findtext('guid') or item.findtext('link')).strip()
-            for item in items if (item.findtext('guid') or item.findtext('link'))
-        ]
-        with open(STATE_FILE, 'w', encoding='utf-8') as f:
-            json.dump(all_guids, f, indent=2)
+        print("Inisialisasi pertama: mendata semua micro-post lama ke data/syndication.json.")
+        for item in items:
+            guid = (item.findtext('guid') or item.findtext('link') or '').strip()
+            if guid:
+                syndicated[guid] = {}
+        save_syndication_data(syndicated)
         return
 
     new_items = []
@@ -182,12 +194,13 @@ def main():
 
     if not new_items:
         print("Tidak ada micro-post baru untuk dikirim ke Bluesky.")
+        save_syndication_data(syndicated)
         return
 
     handle = os.environ.get('BSKY_HANDLE')
     password = os.environ.get('BSKY_APP_PASSWORD')
     if not handle or not password:
-        raise ValueError("Environment variable BSKY_HANDLE dan BSKY_APP_PASSWORD belum diisi!")
+        raise ValueError("BSKY_HANDLE dan BSKY_APP_PASSWORD belum diisi!")
 
     session_resp = requests.post(
         f"{BSKY_PDS}/com.atproto.server.createSession",
@@ -206,7 +219,6 @@ def main():
 
         content = clean_html(raw_html)
         extracted_images = extract_images(raw_html)
-        print(f"Memproses {link} -> Ditemukan {len(extracted_images)} tag gambar di RSS.")
 
         if not content and not extracted_images:
             continue
@@ -258,11 +270,18 @@ def main():
             timeout=15
         )
         post_resp.raise_for_status()
-        print(f"Terkirim ke Bluesky ({len(embedded_images)} gambar): {link}")
-        syndicated.append(item_id)
 
-    with open(STATE_FILE, 'w', encoding='utf-8') as f:
-        json.dump(syndicated, f, indent=2)
+        # Ambil rkey dari URI respons Bluesky untuk membentuk URL postingan publik
+        at_uri = post_resp.json().get('uri', '')
+        rkey = at_uri.split('/')[-1] if at_uri else ''
+        bsky_url = f"https://bsky.app/profile/{handle}/post/{rkey}" if rkey else ''
+
+        syndicated[item_id] = {
+            'bluesky': bsky_url
+        }
+        print(f"Terkirim ke Bluesky: {bsky_url}")
+
+    save_syndication_data(syndicated)
 
 
 if __name__ == '__main__':
