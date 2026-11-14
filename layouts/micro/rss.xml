@@ -1,12 +1,12 @@
 {{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- if .IsHome -}}{{ $pctx = site }}{{- end -}}
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
 {{- $pages = $pctx.RegularPages -}}
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
-{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- $limit := site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
 {{- end -}}
@@ -25,16 +25,15 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
       <description>
-        {{- /* Jika gambar ditaruh di frontmatter 'image' atau 'images', tampilkan juga di RSS */ -}}
         {{- with .Params.image -}}
-          {{ printf "<img src=%q />" (. | relURL) | html }}
+          {{ printf "<img src=%q />" (. | relURL) | transform.XMLEscape | safeHTML }}
         {{- end -}}
         {{- with .Params.images -}}
           {{- range . -}}
-            {{ printf "<img src=%q />" (. | relURL) | html }}
+            {{ printf "<img src=%q />" (. | relURL) | transform.XMLEscape | safeHTML }}
           {{- end -}}
         {{- end -}}
-        {{ .Content | html }}
+        {{ .Content | transform.XMLEscape | safeHTML }}
       </description>
     </item>
     {{- end }}
