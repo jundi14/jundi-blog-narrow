@@ -50,14 +50,13 @@ jobs:
           python3 -m pip install --quiet requests Pillow
           python3 scripts/syndicate.py
 
-      - name: Simpan State Sindikasi & Rebuild Hugo
+      - name: Simpan State Sindikasi ke Repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/syndication.json
+          git add .syndicated-micro.json
           if ! git diff --staged --quiet; then
-            hugo --gc --minify
-            git commit -m "chore: update micro syndication links [skip ci]"
+            git commit -m "chore: update micro syndication state [skip ci]"
             git pull --rebase --autostash
             git push
           fi
