@@ -101,15 +101,26 @@ def get_image_bytes(src):
 
 
 def clean_html(raw_html):
-    """Membersihkan tag HTML menjadi teks biasa."""
+    """Membersihkan tag HTML menjadi teks biasa dan merapatkan jarak spasi."""
     if not raw_html:
         return ''
+
     text = html.unescape(raw_html)
     text = re.sub(r'</p>', '\n\n', text, flags=re.IGNORECASE)
     text = re.sub(r'<br\s*/?>', '\n', text, flags=re.IGNORECASE)
+
+    # Hapus semua tag HTML yang tersisa
     text = re.sub(r'<[^>]+>', '', text)
     text = html.unescape(text)
+
+    # KUNCI PERBAIKAN: Bersihkan spasi hantu di awal dan akhir tiap baris
+    # Ini memastikan tidak ada spasi kosong yang menghalangi kompresi enter
+    lines = [line.strip() for line in text.split('\n')]
+    text = '\n'.join(lines)
+
+    # Hapus enter bertumpuk (3 atau lebih dikompres jadi maksimal 2)
     text = re.sub(r'\n{3,}', '\n\n', text)
+
     return text.strip()
 
 
