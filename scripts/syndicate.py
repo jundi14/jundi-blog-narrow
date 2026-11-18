@@ -101,19 +101,36 @@ def get_image_bytes(src):
 
 
 def clean_html(raw_html):
+    """Membersihkan tag HTML menjadi teks biasa dan menghilangkan gap kosong."""
     if not raw_html:
         return ''
-
+    
     text = html.unescape(raw_html)
+    
+    # Ubah penutup paragraf menjadi baris baru
     text = re.sub(r'</p>', '\n\n', text, flags=re.IGNORECASE)
     text = re.sub(r'<br\s*/?>', '\n', text, flags=re.IGNORECASE)
-
-    # Hapus semua tag HTML yang tersisa
+    text = re.sub(r'</div>', '\n\n', text, flags=re.IGNORECASE)
+    text = re.sub(r'</figure>', '\n\n', text, flags=re.IGNORECASE)
+    
+    # Sapu bersih semua tag HTML (termasuk bekas <img>)
     text = re.sub(r'<[^>]+>', '', text)
     text = html.unescape(text)
-    text = re.sub(r'\n{3,}', '\n\n', text)
-
-    return text.strip()
+    
+    # Hapus spasi tak terlihat di setiap baris
+    lines = [line.strip() for line in text.split('\n')]
+    
+    # Filter agresif: Rapatkan teks agar tidak ada gap lebar di tengah
+    cleaned_lines = []
+    for line in lines:
+        if line == '':
+            # Hanya izinkan 1 enter kosong antar paragraf (hindari penumpukan gap)
+            if cleaned_lines and cleaned_lines[-1] != '':
+                cleaned_lines.append('')
+        else:
+            cleaned_lines.append(line)
+            
+    return '\n'.join(cleaned_lines).strip()
 
 
 def detect_facets(text):
