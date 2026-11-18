@@ -52,7 +52,7 @@ image:
 # Default backdrop blur radius in px (0-24) for floating dock, popovers and context bar.
 backdropBlur: 12
 # Default background grain size (0-100, 0 disables the grain texture).
-grainSize: 25
+grainSize: 10
 
 # TOC (Table of Contents)
 toc:
@@ -155,7 +155,7 @@ codeblock:
 
 # Reading progress
 readingProgress:
-  enabled: true
+  enabled: false
   showOnHomepage: false
 
 # Date format
