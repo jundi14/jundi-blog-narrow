@@ -119,21 +119,21 @@
     <nav class="micro-pagination">
       <div>
         {{ if $paginator.HasPrev }}
-          <a href="{{ $paginator.Prev.URL }}" style="text-decoration: none;">← Lebih baru</a>
+          <a href="{{ $paginator.Prev.URL }}" style="text-decoration: none;">← Newest</a>
         {{ else }}
-          <span style="opacity: 0.4;">← Lebih baru</span>
+          <span style="opacity: 0.4;">← Newest</span>
         {{ end }}
       </div>
 
       <div style="font-size: 0.85em; font-family: monospace;">
-        Halaman {{ $paginator.PageNumber }} dari {{ $paginator.TotalPages }}
+        Page {{ $paginator.PageNumber }} dari {{ $paginator.TotalPages }}
       </div>
 
       <div>
         {{ if $paginator.HasNext }}
-          <a href="{{ $paginator.Next.URL }}" style="text-decoration: none;">Lebih lama →</a>
+          <a href="{{ $paginator.Next.URL }}" style="text-decoration: none;">Oldest →</a>
         {{ else }}
-          <span style="opacity: 0.4;">Lebih lama →</span>
+          <span style="opacity: 0.4;">Oldest →</span>
         {{ end }}
       </div>
     </nav>
