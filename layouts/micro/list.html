@@ -107,8 +107,11 @@
             <span style="font-size: 0.75em;">{{ .Date.Format "2 Jan" }}</span>
           </time>
         </div>
-        <div class="micro-content prose micro-content-wrapper">
-          {{ .Content }}
+        <div class="micro-content-wrapper">
+          <div class="micro-content prose">
+            {{ .Content }}
+          </div>
+          {{ partial "syndication.html" . }}
         </div>
       </article>
     {{ end }}
