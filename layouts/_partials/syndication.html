@@ -1,6 +1,6 @@
 {{- $synData := dict -}}
-{{- if site.Data.syndication -}}
-  {{- $synData = index site.Data.syndication .Permalink | default (index site.Data.syndication .RelPermalink) | default dict -}}
+{{- if hugo.Data.syndication -}}
+  {{- $synData = index hugo.Data.syndication .Permalink | default (index hugo.Data.syndication .RelPermalink) | default dict -}}
 {{- end -}}
 
 {{- $bsky := $synData.bluesky | default .Params.bluesky -}}
