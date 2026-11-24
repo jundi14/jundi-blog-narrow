@@ -48,7 +48,7 @@ Jika Anda merasa tulisan saya bermanfaat atau sekadar ingin memberi semangat, An
 
 Terima kasih sudah mampir!
 
-Dukung saya disini <button type="button">[**Support Me**](https://nihbuatjajan.com/jundi)</button>\
+Dukung saya disini <button type="button">[**Support Me**](https://saweria.co/jundimubarok)</button>\
 Salam hangat,\
 Jundi
 
