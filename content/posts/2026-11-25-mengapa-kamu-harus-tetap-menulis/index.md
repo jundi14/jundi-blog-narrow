@@ -23,7 +23,7 @@ Memang cocok ketika dibaca ketika santai, karena ringan ketika membaca kata demi
 
 Beliau ini penulis partikelir, atau bisa dibilang independent bekerja secara mandiri tidak terikat birokrasi negara.
 
-Silahkan baca saja [disini](agusmulyadi.web.id) saja tulisannya.
+Silahkan baca saja [disini](https://agusmulyadi.web.id) saja tulisannya.
 
 Maksud saya adalah cobalah menulis santai apa adanya, walaupun ya...mungkin masih semrawut tanda bacanya atau diksinya kurang tepat atau mungkin karena kurang pede akhirnya ngga nulis apapun?
 
